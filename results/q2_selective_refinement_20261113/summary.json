@@ -1,0 +1,341 @@
+{
+  "pooled": [
+    {
+      "seed": 0,
+      "validation_target_call_fraction": 0.2,
+      "actual_call_fraction": 0.19555555555555557,
+      "quality_gate_gain_db": 0.018485603854060173,
+      "random_same_calls_gain_db": 0.017977938055992126,
+      "random_same_MAC_gain_db": 0.019374370574951172,
+      "SNR_low_first_same_MAC_gain_db": 0.013860958198797005,
+      "SNR_validation_gain_order_same_MAC_gain_db": 0.0213010365847758,
+      "SNR_validation_order": [
+        10,
+        20,
+        0
+      ],
+      "SNR_validation_mean_gains": {
+        "0": 0.05839996412396431,
+        "10": 0.11364944279193878,
+        "20": 0.111533023416996
+      },
+      "low_first_probabilities": {
+        "0": 0.6322358842329545,
+        "10": 0.0,
+        "20": 0.0
+      },
+      "validation_order_probabilities": {
+        "0": 0.0,
+        "10": 0.6322358842329545,
+        "20": 0.0
+      },
+      "mean_added_MACs": 341832.24,
+      "total_decoder_MAC_saving_relative_always_refine": 0.05342543780869635,
+      "baseline_type": "analytical expected randomized controls matched observed quality-gate compute; not full deployed resource controller"
+    },
+    {
+      "seed": 0,
+      "validation_target_call_fraction": 0.5,
+      "actual_call_fraction": 0.4318518518518519,
+      "quality_gate_gain_db": 0.04704135283827782,
+      "random_same_calls_gain_db": 0.03970128297805786,
+      "random_same_MAC_gain_db": 0.04109771549701691,
+      "SNR_low_first_same_MAC_gain_db": 0.033416751560489025,
+      "SNR_validation_gain_order_same_MAC_gain_db": 0.04608033731649938,
+      "SNR_validation_order": [
+        10,
+        20,
+        0
+      ],
+      "SNR_validation_mean_gains": {
+        "0": 0.05839996412396431,
+        "10": 0.11364944279193878,
+        "20": 0.111533023416996
+      },
+      "low_first_probabilities": {
+        "0": 1.0,
+        "10": 0.34112477312184364,
+        "20": 0.0
+      },
+      "validation_order_probabilities": {
+        "0": 0.0,
+        "10": 1.0,
+        "20": 0.34112477312184364
+      },
+      "mean_added_MACs": 725108.6133333334,
+      "total_decoder_MAC_saving_relative_always_refine": 0.037430305948046305,
+      "baseline_type": "analytical expected randomized controls matched observed quality-gate compute; not full deployed resource controller"
+    },
+    {
+      "seed": 1,
+      "validation_target_call_fraction": 0.2,
+      "actual_call_fraction": 0.19407407407407407,
+      "quality_gate_gain_db": 0.009836108423769474,
+      "random_same_calls_gain_db": 0.02257758565247059,
+      "random_same_MAC_gain_db": 0.024344682693481445,
+      "SNR_low_first_same_MAC_gain_db": 0.0045485850580526494,
+      "SNR_validation_gain_order_same_MAC_gain_db": 0.044194318489641574,
+      "SNR_validation_order": [
+        20,
+        10,
+        0
+      ],
+      "SNR_validation_mean_gains": {
+        "0": 0.02795242704451084,
+        "10": 0.11832927167415619,
+        "20": 0.20540323853492737
+      },
+      "low_first_probabilities": {
+        "0": 0.62779143978851,
+        "10": 0.0,
+        "20": 0.0
+      },
+      "validation_order_probabilities": {
+        "0": 0.0,
+        "10": 0.0,
+        "20": 0.62779143978851
+      },
+      "mean_added_MACs": 339429.2533333333,
+      "total_decoder_MAC_saving_relative_always_refine": 0.053525720767070184,
+      "baseline_type": "analytical expected randomized controls matched observed quality-gate compute; not full deployed resource controller"
+    },
+    {
+      "seed": 1,
+      "validation_target_call_fraction": 0.5,
+      "actual_call_fraction": 0.44462962962962965,
+      "quality_gate_gain_db": 0.032955560833215714,
+      "random_same_calls_gain_db": 0.05172593891620636,
+      "random_same_MAC_gain_db": 0.05349303409457207,
+      "SNR_low_first_same_MAC_gain_db": 0.021927750703257042,
+      "SNR_validation_gain_order_same_MAC_gain_db": 0.08507887210902955,
+      "SNR_validation_order": [
+        20,
+        10,
+        0
+      ],
+      "SNR_validation_mean_gains": {
+        "0": 0.02795242704451084,
+        "10": 0.11832927167415619,
+        "20": 0.20540323853492737
+      },
+      "low_first_probabilities": {
+        "0": 1.0,
+        "10": 0.37945810645517697,
+        "20": 0.0
+      },
+      "validation_order_probabilities": {
+        "0": 0.0,
+        "10": 0.37945810645517697,
+        "20": 1.0
+      },
+      "mean_added_MACs": 745834.3733333334,
+      "total_decoder_MAC_saving_relative_always_refine": 0.03656536543207067,
+      "baseline_type": "analytical expected randomized controls matched observed quality-gate compute; not full deployed resource controller"
+    },
+    {
+      "seed": 2,
+      "validation_target_call_fraction": 0.2,
+      "actual_call_fraction": 0.22,
+      "quality_gate_gain_db": 0.011643562465906143,
+      "random_same_calls_gain_db": 0.014370584860444069,
+      "random_same_MAC_gain_db": 0.01536279171705246,
+      "SNR_low_first_same_MAC_gain_db": 0.019580725450693986,
+      "SNR_validation_gain_order_same_MAC_gain_db": 0.019580725450693986,
+      "SNR_validation_order": [
+        0,
+        20,
+        10
+      ],
+      "SNR_validation_mean_gains": {
+        "0": 0.09362867474555969,
+        "10": 0.08789576590061188,
+        "20": 0.09149404615163803
+      },
+      "low_first_probabilities": {
+        "0": 0.7055692175662879,
+        "10": 0.0,
+        "20": 0.0
+      },
+      "validation_order_probabilities": {
+        "0": 0.7055692175662879,
+        "10": 0.0,
+        "20": 0.0
+      },
+      "mean_added_MACs": 381481.52,
+      "total_decoder_MAC_saving_relative_always_refine": 0.05177076899552557,
+      "baseline_type": "analytical expected randomized controls matched observed quality-gate compute; not full deployed resource controller"
+    },
+    {
+      "seed": 2,
+      "validation_target_call_fraction": 0.5,
+      "actual_call_fraction": 0.4672222222222222,
+      "quality_gate_gain_db": 0.034308742731809616,
+      "random_same_calls_gain_db": 0.03051934763789177,
+      "random_same_MAC_gain_db": 0.03151155635714531,
+      "SNR_low_first_same_MAC_gain_db": 0.03648436663975093,
+      "SNR_validation_gain_order_same_MAC_gain_db": 0.0358212562269864,
+      "SNR_validation_order": [
+        0,
+        20,
+        10
+      ],
+      "SNR_validation_mean_gains": {
+        "0": 0.09362867474555969,
+        "10": 0.08789576590061188,
+        "20": 0.09149404615163803
+      },
+      "low_first_probabilities": {
+        "0": 1.0,
+        "10": 0.44723588423295446,
+        "20": 0.0
+      },
+      "validation_order_probabilities": {
+        "0": 1.0,
+        "10": 0.0,
+        "20": 0.44723588423295446
+      },
+      "mean_added_MACs": 782479.9199999999,
+      "total_decoder_MAC_saving_relative_always_refine": 0.035036050316867406,
+      "baseline_type": "analytical expected randomized controls matched observed quality-gate compute; not full deployed resource controller"
+    }
+  ],
+  "relative_bad_risk": [
+    {
+      "seed": 0,
+      "snr": 0,
+      "bad_nmse_db_threshold": -1.0409724712371826,
+      "baseline_bad_fraction": 0.16555555555555557,
+      "all_refined_bad_fraction": 0.15666666666666668,
+      "quality_gate_bad_fraction": 0.1622222222222222,
+      "random_same_calls_expected_bad_fraction": 0.16395061728395063,
+      "random_same_MAC_expected_bad_fraction": 0.1638155973800505,
+      "quality_minus_random_same_MAC_bad_fraction": -0.0015933751578282836,
+      "quality_minus_random_same_MAC_H_CI95": [
+        -0.006280783913352274,
+        0.0027429128319326063
+      ]
+    },
+    {
+      "seed": 0,
+      "snr": 10,
+      "bad_nmse_db_threshold": -1.8793853521347046,
+      "baseline_bad_fraction": 0.1638888888888889,
+      "all_refined_bad_fraction": 0.15555555555555556,
+      "quality_gate_bad_fraction": 0.15944444444444444,
+      "random_same_calls_expected_bad_fraction": 0.16226851851851853,
+      "random_same_MAC_expected_bad_fraction": 0.16214193735861215,
+      "quality_minus_random_same_MAC_bad_fraction": -0.0026974929141677186,
+      "quality_minus_random_same_MAC_H_CI95": [
+        -0.007501413655735962,
+        0.0020434876344554483
+      ]
+    },
+    {
+      "seed": 0,
+      "snr": 20,
+      "bad_nmse_db_threshold": -2.0333733558654785,
+      "baseline_bad_fraction": 0.1638888888888889,
+      "all_refined_bad_fraction": 0.1527777777777778,
+      "quality_gate_bad_fraction": 0.15666666666666668,
+      "random_same_calls_expected_bad_fraction": 0.16153703703703703,
+      "random_same_MAC_expected_bad_fraction": 0.1613682621571619,
+      "quality_minus_random_same_MAC_bad_fraction": -0.00470159549049523,
+      "quality_minus_random_same_MAC_H_CI95": [
+        -0.010059090092548753,
+        -0.00022831248205251338
+      ]
+    },
+    {
+      "seed": 1,
+      "snr": 0,
+      "bad_nmse_db_threshold": -0.9400936365127563,
+      "baseline_bad_fraction": 0.18333333333333332,
+      "all_refined_bad_fraction": 0.18,
+      "quality_gate_bad_fraction": 0.18055555555555555,
+      "random_same_calls_expected_bad_fraction": 0.18261851851851854,
+      "random_same_MAC_expected_bad_fraction": 0.18256788605455598,
+      "quality_minus_random_same_MAC_bad_fraction": -0.0020123304990004205,
+      "quality_minus_random_same_MAC_H_CI95": [
+        -0.00518421884247751,
+        0.0009394106291868326
+      ]
+    },
+    {
+      "seed": 1,
+      "snr": 10,
+      "bad_nmse_db_threshold": -1.5959755182266235,
+      "baseline_bad_fraction": 0.1711111111111111,
+      "all_refined_bad_fraction": 0.16,
+      "quality_gate_bad_fraction": 0.16777777777777778,
+      "random_same_calls_expected_bad_fraction": 0.16894444444444445,
+      "random_same_MAC_expected_bad_fraction": 0.1687756695645693,
+      "quality_minus_random_same_MAC_bad_fraction": -0.0009978917867915268,
+      "quality_minus_random_same_MAC_H_CI95": [
+        -0.0037756695645693042,
+        0.0017488248465010335
+      ]
+    },
+    {
+      "seed": 1,
+      "snr": 20,
+      "bad_nmse_db_threshold": -1.58251953125,
+      "baseline_bad_fraction": 0.17277777777777778,
+      "all_refined_bad_fraction": 0.14166666666666666,
+      "quality_gate_bad_fraction": 0.16722222222222222,
+      "random_same_calls_expected_bad_fraction": 0.16740246913580248,
+      "random_same_MAC_expected_bad_fraction": 0.1669298994721521,
+      "quality_minus_random_same_MAC_bad_fraction": 0.0002923227500701476,
+      "quality_minus_random_same_MAC_H_CI95": [
+        -0.004638449486455261,
+        0.0040777247224030675
+      ]
+    },
+    {
+      "seed": 2,
+      "snr": 0,
+      "bad_nmse_db_threshold": -1.1702216863632202,
+      "baseline_bad_fraction": 0.17055555555555554,
+      "all_refined_bad_fraction": 0.16555555555555557,
+      "quality_gate_bad_fraction": 0.16833333333333333,
+      "random_same_calls_expected_bad_fraction": 0.169575,
+      "random_same_MAC_expected_bad_fraction": 0.16949905130405618,
+      "quality_minus_random_same_MAC_bad_fraction": -0.001165717970722853,
+      "quality_minus_random_same_MAC_H_CI95": [
+        -0.005195996610939033,
+        0.0025211486179338954
+      ]
+    },
+    {
+      "seed": 2,
+      "snr": 10,
+      "bad_nmse_db_threshold": -2.368119716644287,
+      "baseline_bad_fraction": 0.165,
+      "all_refined_bad_fraction": 0.15611111111111112,
+      "quality_gate_bad_fraction": 0.16,
+      "random_same_calls_expected_bad_fraction": 0.16279259259259257,
+      "random_same_MAC_expected_bad_fraction": 0.1626575726886925,
+      "quality_minus_random_same_MAC_bad_fraction": -0.002657572688692481,
+      "quality_minus_random_same_MAC_H_CI95": [
+        -0.006518567784370397,
+        0.0008791615235471024
+      ]
+    },
+    {
+      "seed": 2,
+      "snr": 20,
+      "bad_nmse_db_threshold": -2.495896339416504,
+      "baseline_bad_fraction": 0.15833333333333333,
+      "all_refined_bad_fraction": 0.1527777777777778,
+      "quality_gate_bad_fraction": 0.15555555555555556,
+      "random_same_calls_expected_bad_fraction": 0.1571358024691358,
+      "random_same_MAC_expected_bad_fraction": 0.15705141502919825,
+      "quality_minus_random_same_MAC_bad_fraction": -0.0014958594736426772,
+      "quality_minus_random_same_MAC_H_CI95": [
+        -0.00529934476601957,
+        0.0012391300702335854
+      ]
+    }
+  ],
+  "audit": "PASS",
+  "note": "Three source-model seeds, same shared refiner architecture; SNR controls added during analysis, all rules retained."
+}

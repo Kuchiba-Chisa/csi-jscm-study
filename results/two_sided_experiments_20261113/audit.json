@@ -1,0 +1,41 @@
+{
+  "split_exact_content_overlap": {
+    "ue_train_bs_train": 0,
+    "ue_train_val": 0,
+    "ue_train_test": 0,
+    "bs_train_val": 0,
+    "bs_train_test": 0,
+    "val_test": 0
+  },
+  "checks": [
+    {
+      "seed": 0,
+      "cached_link_y_max_abs_error": 0.0,
+      "cached_loss_max_abs_error": 0.0,
+      "UE_input_noise_invariant": true,
+      "backbone_unchanged": true,
+      "source_hash_verified": true
+    },
+    {
+      "seed": 1,
+      "cached_link_y_max_abs_error": 0.0,
+      "cached_loss_max_abs_error": 0.0,
+      "UE_input_noise_invariant": true,
+      "backbone_unchanged": true,
+      "source_hash_verified": true
+    },
+    {
+      "seed": 2,
+      "cached_link_y_max_abs_error": 0.0,
+      "cached_loss_max_abs_error": 0.0,
+      "UE_input_noise_invariant": true,
+      "backbone_unchanged": true,
+      "source_hash_verified": true
+    }
+  ],
+  "protocol_script_sha_matches": true,
+  "constellation_uniform_mean_energy": {
+    "2": 0.9999999403953552,
+    "4": 0.9999998807907104
+  }
+}

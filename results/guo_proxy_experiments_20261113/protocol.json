@@ -1,0 +1,21 @@
+{
+  "args": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "epochs": 45,
+    "rank": 48,
+    "mc": 8,
+    "reference_draws": 32,
+    "threads": 4
+  },
+  "script_sha256": "a357938f113d6831f0c267bc57f8e5167d3f8deaed0009b0edfbe19738fca4fe",
+  "source_protocol_sha256": "4f3f1e015dc3d7cb3eb0fad379d70d3169ff4c57c1b5a7fe993ff9e05943efc8",
+  "method": "Output MSE distillation, one residual block versus five; rank48 FC warm-start from own teacher",
+  "UE_information": "true source H, deterministic finite-QAM codeword, known SNR; own independent simulated AWGN",
+  "scope": "Guo-inspired noisy-feedback adaptation, NOT paper reproduction or a test of official Guo results",
+  "selection": "proxy chosen by validation KD MSE; quality/decision heads chosen by their validation MSE; no test selection",
+  "split": "proxy train H[0:3000], BS train H[3000:5000], val first500 independent val H, test first600 independent test H"
+}

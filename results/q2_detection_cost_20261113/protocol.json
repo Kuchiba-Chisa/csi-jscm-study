@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-13",
+  "args": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "bootstrap": 1000,
+    "timing_blocks": 9,
+    "timing_iterations": 100
+  },
+  "script_sha256": "024056eeeed5c34a2fd940944f994badb2d9d2e6f83cda2618685d45acdc3ae1",
+  "primary_target_validation_recall": 0.9,
+  "secondary_targets": [
+    0.8,
+    0.9,
+    0.95
+  ],
+  "methods": [
+    "bs_small",
+    "bs_large",
+    "ue_proxy"
+  ],
+  "training": false,
+  "bad_definition": "per model/SNR, NMSE_dB > 80th percentile from first250 validation H, both cached noise repeats",
+  "alarm_calibration": "last250 validation H, choose largest observed bad score cutoff achieving >= target recall; alarm score >= cutoff",
+  "test": "600 H per SNR,3 actual noise repeats per H; fixed bad definition and alarm thresholds; report actual test recall",
+  "validation_reuse": "validation used previously in model selection; A/B split newly separates quality definition and threshold setting, not a new independent validation dataset",
+  "UE_score": "single pass frozen proxy on clean codeword, compare to UE H; raw NMSE_dB, no full-validation affine fit required for rankings",
+  "cost": "incremental monitor only; conv/linear MACs exclude normalization/activation/pooling; timing includes them",
+  "hardware": {
+    "cpu": "AMD Ryzen 7 7735H with Radeon Graphics",
+    "os": "Windows-11-10.0.26200-SP0",
+    "torch": "2.15.0+cpu",
+    "torch_threads": 1,
+    "batch": 1,
+    "device": "cpu",
+    "dtype": "float32"
+  },
+  "latency": "preloaded tensors, no IO/network/encoder, no device transfer; randomized timing blocks; same PC, not actual UE/BS hardware",
+  "scope": "synthetic CSI,Ns64,finite16QAM,AWGN,our frozen RD-AE adaptation; not official Guo or RD-JSCC reproduction"
+}

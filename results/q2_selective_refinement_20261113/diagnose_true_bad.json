@@ -1,0 +1,115 @@
+{
+  "note": "Posthoc diagnostic; true-quality and realized-gain rankings use test truth.\n\nThese are diagnostic comparisons, never deployable policies or gate training.\nAll gains are means of per-observation NMSE_dB improvements over the whole set.\n",
+  "by_seed": [
+    {
+      "seed": 0,
+      "snr": 0,
+      "count": 1800,
+      "calls": 325,
+      "predicted_bad_gain_db": 0.014025542885065079,
+      "random_same_calls_gain_db": 0.011875344440340996,
+      "true_bad_gain_db": 0.0021776645444333553,
+      "hindsight_best_gain_db": 0.07277635484933853
+    },
+    {
+      "seed": 0,
+      "snr": 10,
+      "count": 1800,
+      "calls": 350,
+      "predicted_bad_gain_db": 0.02079051174223423,
+      "random_same_calls_gain_db": 0.019653432071208954,
+      "true_bad_gain_db": 0.010141960345208645,
+      "hindsight_best_gain_db": 0.08542158454656601
+    },
+    {
+      "seed": 0,
+      "snr": 20,
+      "count": 1800,
+      "calls": 381,
+      "predicted_bad_gain_db": 0.02064075879752636,
+      "random_same_calls_gain_db": 0.02306150458753109,
+      "true_bad_gain_db": 0.01653704047203064,
+      "hindsight_best_gain_db": 0.08694782853126526
+    },
+    {
+      "seed": 1,
+      "snr": 0,
+      "count": 1800,
+      "calls": 386,
+      "predicted_bad_gain_db": 0.004469235893338919,
+      "random_same_calls_gain_db": 0.00466119172051549,
+      "true_bad_gain_db": 0.0027688094414770603,
+      "hindsight_best_gain_db": 0.042835161089897156
+    },
+    {
+      "seed": 1,
+      "snr": 10,
+      "count": 1800,
+      "calls": 351,
+      "predicted_bad_gain_db": 0.010475101880729198,
+      "random_same_calls_gain_db": 0.022635409608483315,
+      "true_bad_gain_db": 0.01595917157828808,
+      "hindsight_best_gain_db": 0.0924047902226448
+    },
+    {
+      "seed": 1,
+      "snr": 20,
+      "count": 1800,
+      "calls": 311,
+      "predicted_bad_gain_db": 0.014563989825546741,
+      "random_same_calls_gain_db": 0.0364888496696949,
+      "true_bad_gain_db": 0.027956146746873856,
+      "hindsight_best_gain_db": 0.15550947189331055
+    },
+    {
+      "seed": 2,
+      "snr": 0,
+      "count": 1800,
+      "calls": 353,
+      "predicted_bad_gain_db": 0.002866526134312153,
+      "random_same_calls_gain_db": 0.016327233985066414,
+      "true_bad_gain_db": 0.001082868897356093,
+      "hindsight_best_gain_db": 0.08618156611919403
+    },
+    {
+      "seed": 2,
+      "snr": 10,
+      "count": 1800,
+      "calls": 447,
+      "predicted_bad_gain_db": 0.020006585866212845,
+      "random_same_calls_gain_db": 0.014546814374625683,
+      "true_bad_gain_db": 0.011398020200431347,
+      "hindsight_best_gain_db": 0.08242157101631165
+    },
+    {
+      "seed": 2,
+      "snr": 20,
+      "count": 1800,
+      "calls": 388,
+      "predicted_bad_gain_db": 0.012057575397193432,
+      "random_same_calls_gain_db": 0.011667960323393345,
+      "true_bad_gain_db": 0.00978176575154066,
+      "hindsight_best_gain_db": 0.06860676407814026
+    }
+  ],
+  "three_seed_means": {
+    "0": {
+      "predicted_bad_gain_db": 0.007120434970905383,
+      "random_same_calls_gain_db": 0.010954590048640966,
+      "true_bad_gain_db": 0.002009780961088836,
+      "hindsight_best_gain_db": 0.06726436068614323
+    },
+    "10": {
+      "predicted_bad_gain_db": 0.017090733163058758,
+      "random_same_calls_gain_db": 0.01894521868477265,
+      "true_bad_gain_db": 0.01249971737464269,
+      "hindsight_best_gain_db": 0.08674931526184082
+    },
+    "20": {
+      "predicted_bad_gain_db": 0.015754108006755512,
+      "random_same_calls_gain_db": 0.02373943819353978,
+      "true_bad_gain_db": 0.018091650990148384,
+      "hindsight_best_gain_db": 0.10368802150090535
+    }
+  }
+}

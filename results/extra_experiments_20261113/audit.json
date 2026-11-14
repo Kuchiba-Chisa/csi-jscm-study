@@ -1,0 +1,142 @@
+{
+  "train_val_test_H_overlap": {
+    "0_1": 0,
+    "0_2": 0,
+    "1_2": 0
+  },
+  "q1_frozen_state": [
+    {
+      "seed": 0,
+      "ns": 16,
+      "mode": "bn_affine",
+      "changed_tensors": 32,
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "ns": 16,
+      "mode": "af",
+      "changed_tensors": 68,
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "ns": 16,
+      "mode": "decoder",
+      "changed_tensors": 134,
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "ns": 32,
+      "mode": "bn_affine",
+      "changed_tensors": 32,
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "ns": 32,
+      "mode": "af",
+      "changed_tensors": 68,
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "ns": 32,
+      "mode": "decoder",
+      "changed_tensors": 134,
+      "passed": true
+    },
+    {
+      "seed": 1,
+      "ns": 16,
+      "mode": "bn_affine",
+      "changed_tensors": 32,
+      "passed": true
+    },
+    {
+      "seed": 1,
+      "ns": 16,
+      "mode": "af",
+      "changed_tensors": 68,
+      "passed": true
+    },
+    {
+      "seed": 1,
+      "ns": 16,
+      "mode": "decoder",
+      "changed_tensors": 134,
+      "passed": true
+    },
+    {
+      "seed": 1,
+      "ns": 32,
+      "mode": "bn_affine",
+      "changed_tensors": 32,
+      "passed": true
+    },
+    {
+      "seed": 1,
+      "ns": 32,
+      "mode": "af",
+      "changed_tensors": 68,
+      "passed": true
+    },
+    {
+      "seed": 1,
+      "ns": 32,
+      "mode": "decoder",
+      "changed_tensors": 134,
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "ns": 16,
+      "mode": "bn_affine",
+      "changed_tensors": 32,
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "ns": 16,
+      "mode": "af",
+      "changed_tensors": 68,
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "ns": 16,
+      "mode": "decoder",
+      "changed_tensors": 134,
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "ns": 32,
+      "mode": "bn_affine",
+      "changed_tensors": 32,
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "ns": 32,
+      "mode": "af",
+      "changed_tensors": 68,
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "ns": 32,
+      "mode": "decoder",
+      "changed_tensors": 134,
+      "passed": true
+    }
+  ],
+  "q2_invariance": [
+    "paired noise reproducible",
+    "backbone state unchanged during feature collection",
+    "prediction invariant to target-label mutation",
+    "y unchanged by decoder BN calibration"
+  ],
+  "status": "PASS"
+}

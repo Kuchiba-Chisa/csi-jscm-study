@@ -1,0 +1,52 @@
+# Environments and Python caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# New experiments and local binary assets
+/runs/
+/assets/
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+*.mat
+*.h5
+*.hdf5
+*.safetensors
+*.log
+*.tmp
+
+# Original research scripts may write beside themselves if invoked directly
+/simulation/data/
+/simulation/data_*/
+/simulation/ckpt*/
+/simulation/bn_stats/
+/simulation/*.json
+/simulation/*.png
+/experiments/**/*.json
+/experiments/**/*.png
+/experiments/**/*.pdf
+
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+.ssh/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+~$*
+
+# Release archives and private validation records
+*.zip

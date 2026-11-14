@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "direct_forward_exact": true,
+  "retransmission_noise_power_ratio": 0.5009031295776367,
+  "anchor_bank_count": 18,
+  "interpolation_endpoints": true,
+  "gain_prediction_ignores_labels": true,
+  "policy_recomputations": [
+    {
+      "seed": 0,
+      "snr": 0,
+      "fraction": 0.2,
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "snr": 0,
+      "fraction": 0.3,
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "snr": 10,
+      "fraction": 0.2,
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "snr": 10,
+      "fraction": 0.3,
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "snr": 20,
+      "fraction": 0.2,
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "snr": 20,
+      "fraction": 0.3,
+      "passed": true
+    },
+    {
+      "seed": 1,
+      "snr": 0,
+      "fraction": 0.2,
+      "passed": true
+    },
+    {
+      "seed": 1,
+      "snr": 0,
+      "fraction": 0.3,
+      "passed": true
+    },
+    {
+      "seed": 1,
+      "snr": 10,
+      "fraction": 0.2,
+      "passed": true
+    },
+    {
+      "seed": 1,
+      "snr": 10,
+      "fraction": 0.3,
+      "passed": true
+    },
+    {
+      "seed": 1,
+      "snr": 20,
+      "fraction": 0.2,
+      "passed": true
+    },
+    {
+      "seed": 1,
+      "snr": 20,
+      "fraction": 0.3,
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "snr": 0,
+      "fraction": 0.2,
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "snr": 0,
+      "fraction": 0.3,
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "snr": 10,
+      "fraction": 0.2,
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "snr": 10,
+      "fraction": 0.3,
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "snr": 20,
+      "fraction": 0.2,
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "snr": 20,
+      "fraction": 0.3,
+      "passed": true
+    }
+  ]
+}

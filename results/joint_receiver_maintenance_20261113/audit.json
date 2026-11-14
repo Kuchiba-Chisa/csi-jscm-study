@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "seed": 0,
+      "max_full_forward_replay_error": 0.0,
+      "regenerated_received_y_exact": true,
+      "only_decoder_BN_buffers_change": true,
+      "train_only_moments_rebuilt": true,
+      "all_policy_gates_and_same_MAC_budgets_recomputed": true
+    },
+    {
+      "seed": 1,
+      "max_full_forward_replay_error": 0.0,
+      "regenerated_received_y_exact": true,
+      "only_decoder_BN_buffers_change": true,
+      "train_only_moments_rebuilt": true,
+      "all_policy_gates_and_same_MAC_budgets_recomputed": true
+    },
+    {
+      "seed": 2,
+      "max_full_forward_replay_error": 0.0,
+      "regenerated_received_y_exact": true,
+      "only_decoder_BN_buffers_change": true,
+      "train_only_moments_rebuilt": true,
+      "all_policy_gates_and_same_MAC_budgets_recomputed": true
+    }
+  ],
+  "scope": "Full held-out-observation forward replay, source hashes, train-only moments, model-update boundaries and independent NumPy policy budgets; not external-validity or historical-data-use certification."
+}

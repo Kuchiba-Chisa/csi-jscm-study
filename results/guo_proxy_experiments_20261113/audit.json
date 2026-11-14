@@ -1,0 +1,55 @@
+{
+  "checks": [
+    {
+      "seed": 0,
+      "source_sha_verified": true,
+      "source_unchanged": true,
+      "UE_MC_score_same_for_all_actual_noise_repeats": true,
+      "independent_local_MC_recompute_max_abs": {
+        "0.0": 2.384185791015625e-07,
+        "10.0": 4.76837158203125e-07,
+        "20.0": 4.76837158203125e-07
+      },
+      "proxy_validation_KD_improved": true,
+      "total_symbol_budgets_verified": true,
+      "single_pass_finished": true
+    },
+    {
+      "seed": 1,
+      "source_sha_verified": true,
+      "source_unchanged": true,
+      "UE_MC_score_same_for_all_actual_noise_repeats": true,
+      "independent_local_MC_recompute_max_abs": {
+        "0.0": 4.76837158203125e-07,
+        "10.0": 4.76837158203125e-07,
+        "20.0": 4.76837158203125e-07
+      },
+      "proxy_validation_KD_improved": true,
+      "total_symbol_budgets_verified": true,
+      "single_pass_finished": true
+    },
+    {
+      "seed": 2,
+      "source_sha_verified": true,
+      "source_unchanged": true,
+      "UE_MC_score_same_for_all_actual_noise_repeats": true,
+      "independent_local_MC_recompute_max_abs": {
+        "0.0": 2.384185791015625e-07,
+        "10.0": 2.384185791015625e-07,
+        "20.0": 4.76837158203125e-07
+      },
+      "proxy_validation_KD_improved": true,
+      "total_symbol_budgets_verified": true,
+      "single_pass_finished": true
+    }
+  ],
+  "previous_H_split_audit": {
+    "ue_train_bs_train": 0,
+    "ue_train_val": 0,
+    "ue_train_test": 0,
+    "bs_train_val": 0,
+    "bs_train_test": 0,
+    "val_test": 0
+  },
+  "limitation": "fitted proxy approximates teacher; not exact mapping identity; no official Guo reproduction"
+}

@@ -1,0 +1,49 @@
+{
+  "seed": 0,
+  "meta": {
+    "selected_epoch": 5,
+    "validation_nmse_db": [
+      -3.276797294616699,
+      -3.278477907180786,
+      -3.2784602642059326,
+      -3.2790732383728027,
+      -3.280069589614868,
+      -3.279557943344116,
+      -3.279352903366089,
+      -3.27992844581604,
+      -3.279139280319214,
+      -3.2796719074249268
+    ],
+    "seconds": 19.569232900001225,
+    "parameters": 39106
+  },
+  "cells": {
+    "0": {
+      "original_continuation_improvement_db": 0.008656522259116173,
+      "adapted_continuation_improvement_db": 0.09019871801137924,
+      "adaptation_extra_update_benefit_db": 0.08154220134019852,
+      "adaptation_extra_update_benefit_H_CI95": [
+        0.07063643771324618,
+        0.09229850157381346
+      ]
+    },
+    "10": {
+      "original_continuation_improvement_db": 0.0026671842206269503,
+      "adapted_continuation_improvement_db": 0.056599896401166916,
+      "adaptation_extra_update_benefit_db": 0.05393270403146744,
+      "adaptation_extra_update_benefit_H_CI95": [
+        0.03922130329643066,
+        0.06772586097676928
+      ]
+    },
+    "20": {
+      "original_continuation_improvement_db": 0.00348183186724782,
+      "adapted_continuation_improvement_db": 0.0807010754942894,
+      "adaptation_extra_update_benefit_db": 0.07721924781799316,
+      "adaptation_extra_update_benefit_H_CI95": [
+        0.0575834635674255,
+        0.09740692875441163
+      ]
+    }
+  }
+}

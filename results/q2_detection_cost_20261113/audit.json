@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "seed": 0,
+      "thresholds_independently_recomputed": true,
+      "confusion_counts_and_rates_recomputed": true,
+      "validation_H_groups_disjoint": true,
+      "UE_scores_identical_across_actual_noise_repeats": true,
+      "saved_sources_unchanged": true,
+      "analytic_MACs_and_parameters_verified": true,
+      "label_forward_max_abs_error": 0.0,
+      "feature_forward_max_abs_error": 0.0
+    },
+    {
+      "seed": 1,
+      "thresholds_independently_recomputed": true,
+      "confusion_counts_and_rates_recomputed": true,
+      "validation_H_groups_disjoint": true,
+      "UE_scores_identical_across_actual_noise_repeats": true,
+      "saved_sources_unchanged": true,
+      "analytic_MACs_and_parameters_verified": true,
+      "label_forward_max_abs_error": 0.0,
+      "feature_forward_max_abs_error": 0.0
+    },
+    {
+      "seed": 2,
+      "thresholds_independently_recomputed": true,
+      "confusion_counts_and_rates_recomputed": true,
+      "validation_H_groups_disjoint": true,
+      "UE_scores_identical_across_actual_noise_repeats": true,
+      "saved_sources_unchanged": true,
+      "analytic_MACs_and_parameters_verified": true,
+      "label_forward_max_abs_error": 0.0,
+      "feature_forward_max_abs_error": 0.0
+    }
+  ],
+  "prior_source_H_overlap": {
+    "ue_train_bs_train": 0,
+    "ue_train_val": 0,
+    "ue_train_test": 0,
+    "bs_train_val": 0,
+    "bs_train_test": 0,
+    "val_test": 0
+  },
+  "audit_script_sha256": "0e2826ec08e0c486e6b79aa7c86216f4b7cacbe3cf42449f68d423561a977b83",
+  "limits": "same previously used validation set; thresholds fixed but test recall may drift; no mobile/BS hardware or power/throughput measurements"
+}

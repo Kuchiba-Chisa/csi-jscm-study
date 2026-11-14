@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "seed": 0,
+      "current_loss_max_replay_error": 0.0,
+      "sampled_future_draws_replayed": [
+        0,
+        15
+      ],
+      "UE_scores_and_flags_noise_invariant": true,
+      "BS_scores_and_topk_replayed": true,
+      "max_equivalent_budget_error": 7.629394538355427e-07,
+      "original_hashes_unchanged": true
+    },
+    {
+      "seed": 1,
+      "current_loss_max_replay_error": 0.0,
+      "sampled_future_draws_replayed": [
+        0,
+        15
+      ],
+      "UE_scores_and_flags_noise_invariant": true,
+      "BS_scores_and_topk_replayed": true,
+      "max_equivalent_budget_error": 1.1444091789769573e-06,
+      "original_hashes_unchanged": true
+    },
+    {
+      "seed": 2,
+      "current_loss_max_replay_error": 0.0,
+      "sampled_future_draws_replayed": [
+        0,
+        15
+      ],
+      "UE_scores_and_flags_noise_invariant": true,
+      "BS_scores_and_topk_replayed": true,
+      "max_equivalent_budget_error": 1.1444091789769573e-06,
+      "original_hashes_unchanged": true
+    }
+  ],
+  "limitation": "Checks implementation, replay and inputs; does not validate a real control protocol, independent population generalization or a causal error decomposition."
+}

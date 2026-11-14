@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "seed": 0,
+      "source_hashes_unchanged": true,
+      "base_decoder_frozen": true,
+      "validation_selection_recomputed": true,
+      "gate_predictions_replayed": true,
+      "gate_and_policy_gains_recomputed": true,
+      "same_compute_random_recomputed": true,
+      "refined_forward_loss_max_abs_error": 0.0,
+      "parameter_MAC_counts_verified": true,
+      "no_true_H_in_gate_or_refiner_inputs": true
+    },
+    {
+      "seed": 1,
+      "source_hashes_unchanged": true,
+      "base_decoder_frozen": true,
+      "validation_selection_recomputed": true,
+      "gate_predictions_replayed": true,
+      "gate_and_policy_gains_recomputed": true,
+      "same_compute_random_recomputed": true,
+      "refined_forward_loss_max_abs_error": 0.0,
+      "parameter_MAC_counts_verified": true,
+      "no_true_H_in_gate_or_refiner_inputs": true
+    },
+    {
+      "seed": 2,
+      "source_hashes_unchanged": true,
+      "base_decoder_frozen": true,
+      "validation_selection_recomputed": true,
+      "gate_predictions_replayed": true,
+      "gate_and_policy_gains_recomputed": true,
+      "same_compute_random_recomputed": true,
+      "refined_forward_loss_max_abs_error": 0.0,
+      "parameter_MAC_counts_verified": true,
+      "no_true_H_in_gate_or_refiner_inputs": true
+    }
+  ],
+  "script_sha256": "23a38eed48e93835fa93e42db79c745ee79a9439354903f6271d77c43385c3bd",
+  "scope": "feasibility only, one architecture/hyperparameter; no official diffusion or system throughput test"
+}

@@ -1,0 +1,35 @@
+{
+  "args": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "ntrain": 2000,
+    "monitor_epochs": 30,
+    "refiner_epochs": 12,
+    "threads": 4
+  },
+  "script_sha256": "ae1c60ff497d199ceeba405d6cfd5800a78f4346b659d55f8a868c4824ba9314",
+  "scope": "PyTorch RD-AE adaptation; finite16QAM; AWGN; Ns64; three pretrained source seeds; NOT official full RD-JSCC",
+  "receiver": "frozen weights; decoder BN running_mean/var from existing SNR0/20 training-calibrated anchors; linear interpolation at10",
+  "old_refiner": "uniform variant fixed prospectively, no test-driven choice between uniform and tail-weighted",
+  "data": "train first2000 H one balanced random SNR/H; val first500 H two fresh noises/condition; test H600:1000 three fresh noises/condition",
+  "validation": "first250 H fits affine / early stops small-module updates; last250 H sets runtime score80th-percentile gates",
+  "bad_event": "per-condition S0-loss80th-percentile from first250 validation H; fixed for all arms, never redefined on test/adapted output",
+  "historical_caveat": "validation/test H have been used in previous project work; fresh noises and prospective policy lock are not independent-population replication",
+  "runtime_gate": "validation-fixed thresholds; random benchmark has same actual conv/linear MAC including monitor overhead; call-rate drift reported",
+  "ranking_diagnostic": "also report exactly20% offline-pool top scores; not a causal runtime scheduler",
+  "calibration": "positive per-SNR affine fit,6scalars; does not change within-condition rankings; rethreshold baseline separates gate drift",
+  "refiner_moments": "update input map mean/std using2000 training H,36scalars; y normalization unchanged; weights unchanged",
+  "updates": "offline Adam lr1e-4 monitor30/refiner12 epochs max; identity old state eligible by val; original codec frozen; all arms reported",
+  "cost": {
+    "parameters": 39106,
+    "weights_bytes": 156424,
+    "refiner_MACs": 6225920,
+    "monitor_MACs": 24638,
+    "base_decoder_MACs": 22340048,
+    "caveat": "Conv/linear MACs exclude normalization, activation, resize and memory traffic; actual latency separately measured."
+  },
+  "hardware": "local CPU timings only; no RF/PUCCH/CQI/MCS implementation"
+}

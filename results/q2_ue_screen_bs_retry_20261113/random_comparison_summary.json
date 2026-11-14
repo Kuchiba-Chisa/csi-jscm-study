@@ -1,0 +1,32 @@
+{
+  "0": {
+    "random_gain_db": 0.136752059062322,
+    "BS_gain_db": 0.15105975170930228,
+    "extra_gain_db": 0.014307692646980286,
+    "base_bad_fraction": 0.13761126001675925,
+    "random_bad_fraction": 0.12017906953891118,
+    "BS_worst_bad_fraction": 0.10680757959683736,
+    "bad_reduction_percentage_points": 1.3371489942073822,
+    "relative_bad_reduction": 0.11126305099029282
+  },
+  "10": {
+    "random_gain_db": 0.028760216509302456,
+    "BS_gain_db": 0.031263078252474465,
+    "extra_gain_db": 0.0025028617431720086,
+    "base_bad_fraction": 0.14447027941544852,
+    "random_bad_fraction": 0.1419680416584015,
+    "BS_worst_bad_fraction": 0.1383995314439138,
+    "bad_reduction_percentage_points": 0.35685102144877023,
+    "relative_bad_reduction": 0.02513601070214187
+  },
+  "20": {
+    "random_gain_db": 0.002951313741505146,
+    "BS_gain_db": 0.0030338647775352,
+    "extra_gain_db": 8.255103603005409e-05,
+    "base_bad_fraction": 0.15385775764783224,
+    "random_bad_fraction": 0.15342195828755698,
+    "BS_worst_bad_fraction": 0.1523993362983068,
+    "bad_reduction_percentage_points": 0.10226219892501831,
+    "relative_bad_reduction": 0.006665421303862481
+  }
+}

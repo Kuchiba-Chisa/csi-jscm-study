@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-13",
+  "args": {
+    "seeds": [
+      1,
+      2
+    ],
+    "ntrain": 6000,
+    "epochs": 45,
+    "width": 16,
+    "threads": 4
+  },
+  "script_sha256": "3fb893b492dfbd22af5bc84d8164ca7c469fc1f4ef17a6fe6021e61737f4037f",
+  "task": "Attempt a genuine quality-worst-first refinement advantage; success is not guaranteed.",
+  "architecture": "one shared residual CNN, 128->256 observed-y projection reshaped 4x8x8 and bilinear resized, spatial conv(24,w,3)-SiLU-conv(w,w,3)-SiLU-conv(w,2,3); no BN; zero output initialization",
+  "frozen": "RD-AE adaptation, finite16QAM, AWGN, Ns64, SNR0/10/20; encoder, decoder, constellation, power calibration and BS monitor frozen",
+  "train": "all6000trainH once each, balanced random assignment to one SNR, independent fixed noise; same cache, initialization and minibatch order for both variants",
+  "objective": "mean per-observation NMSE_dB; uniform weights or 5x weight for predicted-worst40% in each SNR, determined on training scores",
+  "splits": "valH0:250 selects epoch using the respective training objective; valH250:500 fixes 20% quality gates and selects variant before final test; final testH600:1000 with three new independent noises",
+  "validation_caveat": "existing BS monitor previously selected using full500valH; these are not new independent validation H",
+  "historical_test_caveat": "testH600:1000 was withheld from previous refinement experiment but may have been used by other project experiments; new noise and fixed follow-up protocol do not establish independent-population replication",
+  "primary": "pooled equal-SNR quality gate minus random same conv/linear MAC, positive absolute gate gain, compare to uniform-refiner random same budget; per-SNR results and bad-risk/SGCS/harm always reported",
+  "stop": "run seed0; expand to source seeds1/2 if at least one variant has positive mean calibration gate-vs-random advantage and nonnegative all-refinement mean gain; otherwise report failure of this fixed design without test-driven search",
+  "cost": {
+    "parameters": 39106,
+    "weights_bytes": 156424,
+    "refiner_MACs": 6225920,
+    "monitor_MACs": 24638,
+    "base_decoder_MACs": 22340048,
+    "caveat": "Conv/linear MACs exclude normalization, activation, resize and memory traffic; actual latency separately measured."
+  },
+  "previous_runs": [
+    {
+      "seeds": [
+        0
+      ],
+      "ntrain": 6000,
+      "epochs": 45,
+      "width": 16,
+      "threads": 4
+    },
+    {
+      "seeds": [
+        1,
+        2
+      ],
+      "ntrain": 6000,
+      "epochs": 45,
+      "width": 16,
+      "threads": 4
+    }
+  ]
+}

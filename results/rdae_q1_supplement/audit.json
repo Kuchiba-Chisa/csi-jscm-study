@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "original_sources_checkpoints_data_unchanged": true,
+  "supplied_noise_forward_smoke": "run separately before launch",
+  "total_seconds": 937.6203329999989,
+  "models": [
+    "teacher_0",
+    "teacher_10",
+    "teacher_20",
+    "shared",
+    "weighted",
+    "distilled"
+  ]
+}

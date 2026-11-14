@@ -1,0 +1,574 @@
+{
+  "posthoc": true,
+  "description": "Posthoc missing strong control: UE-worst-first for the BAD-RATE objective.\n\nAdded after observing secondary bad-risk results. No fitting/threshold tuning;\nuses the identical eligible cohort and frozen UE proxy quality scores. This\nmust not be described as a preregistered primary comparison.\n",
+  "records": [
+    {
+      "seed": 0,
+      "snr": 0.0,
+      "UE_quality_worst_gain_db": 0.07725700736045837,
+      "UE_quality_worst_bad_fraction": 0.07993876188993454,
+      "BS_quality_worst_bad_fraction": 0.09751065075397491,
+      "random_bad_fraction": 0.10978323966264725,
+      "abstract_control_cost_sensitivity": {
+        "passflag0_request1": {
+          "UE_bad_fraction": 0.08068423718214035,
+          "BS_bad_fraction": 0.09830937534570694,
+          "BS_minus_UE_bad": {
+            "mean": 0.01762513257563114,
+            "CI95": [
+              0.006075279565411,
+              0.029980031955546837
+            ]
+          },
+          "expected_UE_retries": 187.8000030517578,
+          "expected_BS_retries": 184.9107666015625
+        },
+        "passflag1_request1": {
+          "UE_bad_fraction": 0.08466682583093643,
+          "BS_bad_fraction": 0.09910809248685837,
+          "BS_minus_UE_bad": {
+            "mean": 0.014441268518567085,
+            "CI95": [
+              0.002756168261067238,
+              0.026719680830987046
+            ]
+          },
+          "expected_UE_retries": 173.1281280517578,
+          "expected_BS_retries": 170.46461486816406
+        },
+        "passflag1_request4": {
+          "UE_bad_fraction": 0.08466682583093643,
+          "BS_bad_fraction": 0.10050585865974426,
+          "BS_minus_UE_bad": {
+            "mean": 0.01583903282880783,
+            "CI95": [
+              0.004554447275214492,
+              0.028082843519017273
+            ]
+          },
+          "expected_UE_retries": 173.1281280517578,
+          "expected_BS_retries": 162.94412231445312
+        }
+      },
+      "BS_quality_worst_minus_UE_quality_worst_bad": {
+        "mean": 0.017571885138750076,
+        "CI95": [
+          0.00558772630457934,
+          0.03005358093716719
+        ]
+      },
+      "BS_quality_worst_minus_UE_quality_worst_gain": {
+        "mean": 0.02704509161412716,
+        "CI95": [
+          0.002833643423133511,
+          0.05152971645751699
+        ]
+      }
+    },
+    {
+      "seed": 0,
+      "snr": 10.0,
+      "UE_quality_worst_gain_db": 0.014649705961346626,
+      "UE_quality_worst_bad_fraction": 0.1453953981399536,
+      "BS_quality_worst_bad_fraction": 0.14476977288722992,
+      "random_bad_fraction": 0.1479347050189972,
+      "abstract_control_cost_sensitivity": {
+        "passflag0_request1": {
+          "UE_bad_fraction": 0.14512012898921967,
+          "BS_bad_fraction": 0.14476977288722992,
+          "BS_minus_UE_bad": {
+            "mean": -0.0003503503685351461,
+            "CI95": [
+              -0.004999687223582416,
+              0.004424111600275388
+            ]
+          },
+          "expected_UE_retries": 199.8000030517578,
+          "expected_BS_retries": 196.7261505126953
+        },
+        "passflag1_request1": {
+          "UE_bad_fraction": 0.14558307826519012,
+          "BS_bad_fraction": 0.14570820331573486,
+          "BS_minus_UE_bad": {
+            "mean": 0.0001251251233043149,
+            "CI95": [
+              -0.0036911911911911913,
+              0.004224537037037028
+            ]
+          },
+          "expected_UE_retries": 184.1906280517578,
+          "expected_BS_retries": 181.35691833496094
+        },
+        "passflag1_request4": {
+          "UE_bad_fraction": 0.14558307826519012,
+          "BS_bad_fraction": 0.146646648645401,
+          "BS_minus_UE_bad": {
+            "mean": 0.0010635635117068887,
+            "CI95": [
+              -0.0030655655655655654,
+              0.005788601101101093
+            ]
+          },
+          "expected_UE_retries": 184.1906280517578,
+          "expected_BS_retries": 173.3558807373047
+        }
+      },
+      "BS_quality_worst_minus_UE_quality_worst_bad": {
+        "mean": -0.0006256256019696593,
+        "CI95": [
+          -0.005317817817817818,
+          0.004066566566566567
+        ]
+      },
+      "BS_quality_worst_minus_UE_quality_worst_gain": {
+        "mean": 0.005307211074978113,
+        "CI95": [
+          0.0003661138756019814,
+          0.010486828326224305
+        ]
+      }
+    },
+    {
+      "seed": 0,
+      "snr": 20.0,
+      "UE_quality_worst_gain_db": 0.0024058979470282793,
+      "UE_quality_worst_bad_fraction": 0.16417165100574493,
+      "BS_quality_worst_bad_fraction": 0.1629241555929184,
+      "random_bad_fraction": 0.16488038003444672,
+      "abstract_control_cost_sensitivity": {
+        "passflag0_request1": {
+          "UE_bad_fraction": 0.16417165100574493,
+          "BS_bad_fraction": 0.16342315077781677,
+          "BS_minus_UE_bad": {
+            "mean": -0.0007485030218958855,
+            "CI95": [
+              -0.005426646706586827,
+              0.0021207584830339322
+            ]
+          },
+          "expected_UE_retries": 200.40000915527344,
+          "expected_BS_retries": 197.31692504882812
+        },
+        "passflag1_request1": {
+          "UE_bad_fraction": 0.16417165100574493,
+          "BS_bad_fraction": 0.16435877978801727,
+          "BS_minus_UE_bad": {
+            "mean": 0.00018712575547397137,
+            "CI95": [
+              -0.0024326347305389222,
+              0.0021207584830339322
+            ]
+          },
+          "expected_UE_retries": 184.74375915527344,
+          "expected_BS_retries": 181.9015350341797
+        },
+        "passflag1_request4": {
+          "UE_bad_fraction": 0.16417165100574493,
+          "BS_bad_fraction": 0.16417165100574493,
+          "BS_minus_UE_bad": {
+            "mean": 0.0,
+            "CI95": [
+              -0.00249500998003992,
+              0.0017792539920159596
+            ]
+          },
+          "expected_UE_retries": 184.74375915527344,
+          "expected_BS_retries": 173.87646484375
+        }
+      },
+      "BS_quality_worst_minus_UE_quality_worst_bad": {
+        "mean": -0.001247504958882928,
+        "CI95": [
+          -0.0054890219560878245,
+          0.001434630738522954
+        ]
+      },
+      "BS_quality_worst_minus_UE_quality_worst_gain": {
+        "mean": 0.0007145157433114946,
+        "CI95": [
+          -0.0004372071839140323,
+          0.0018998054657391678
+        ]
+      }
+    },
+    {
+      "seed": 1,
+      "snr": 0.0,
+      "UE_quality_worst_gain_db": 0.08590558171272278,
+      "UE_quality_worst_bad_fraction": 0.08109662681818008,
+      "BS_quality_worst_bad_fraction": 0.10052403062582016,
+      "random_bad_fraction": 0.11520671844482422,
+      "abstract_control_cost_sensitivity": {
+        "passflag0_request1": {
+          "UE_bad_fraction": 0.08109662681818008,
+          "BS_bad_fraction": 0.10052403062582016,
+          "BS_minus_UE_bad": {
+            "mean": 0.019427401944994926,
+            "CI95": [
+              0.005368098159509203,
+              0.035279268916155404
+            ]
+          },
+          "expected_UE_retries": 195.60000610351562,
+          "expected_BS_retries": 192.59075927734375
+        },
+        "passflag1_request1": {
+          "UE_bad_fraction": 0.08154396712779999,
+          "BS_bad_fraction": 0.10244120657444,
+          "BS_minus_UE_bad": {
+            "mean": 0.020897239446640015,
+            "CI95": [
+              0.006515209611451943,
+              0.03754633179959099
+            ]
+          },
+          "expected_UE_retries": 180.31875610351562,
+          "expected_BS_retries": 177.54461669921875
+        },
+        "passflag1_request4": {
+          "UE_bad_fraction": 0.08154396712779999,
+          "BS_bad_fraction": 0.10264383256435394,
+          "BS_minus_UE_bad": {
+            "mean": 0.021099859848618507,
+            "CI95": [
+              0.006790108514039306,
+              0.037918020001705924
+            ]
+          },
+          "expected_UE_retries": 180.31875610351562,
+          "expected_BS_retries": 169.71176147460938
+        }
+      },
+      "BS_quality_worst_minus_UE_quality_worst_bad": {
+        "mean": 0.019427401944994926,
+        "CI95": [
+          0.005717983128834356,
+          0.03454275306748465
+        ]
+      },
+      "BS_quality_worst_minus_UE_quality_worst_gain": {
+        "mean": 0.02868034318089485,
+        "CI95": [
+          0.002169680789661554,
+          0.05485548289885062
+        ]
+      }
+    },
+    {
+      "seed": 1,
+      "snr": 10.0,
+      "UE_quality_worst_gain_db": 0.01612573303282261,
+      "UE_quality_worst_bad_fraction": 0.13278034329414368,
+      "BS_quality_worst_bad_fraction": 0.13374485075473785,
+      "random_bad_fraction": 0.13668619096279144,
+      "abstract_control_cost_sensitivity": {
+        "passflag0_request1": {
+          "UE_bad_fraction": 0.13312757015228271,
+          "BS_bad_fraction": 0.1336805522441864,
+          "BS_minus_UE_bad": {
+            "mean": 0.0005529834888875484,
+            "CI95": [
+              -0.0035500257072870623,
+              0.004629629629629629
+            ]
+          },
+          "expected_UE_retries": 194.40000915527344,
+          "expected_BS_retries": 191.40924072265625
+        },
+        "passflag1_request1": {
+          "UE_bad_fraction": 0.1353282481431961,
+          "BS_bad_fraction": 0.1336805522441864,
+          "BS_minus_UE_bad": {
+            "mean": -0.0016476979944854975,
+            "CI95": [
+              -0.007018389894699854,
+              0.003092648890520982
+            ]
+          },
+          "expected_UE_retries": 179.21250915527344,
+          "expected_BS_retries": 176.45538330078125
+        },
+        "passflag1_request4": {
+          "UE_bad_fraction": 0.1353282481431961,
+          "BS_bad_fraction": 0.1336805522441864,
+          "BS_minus_UE_bad": {
+            "mean": -0.0016476979944854975,
+            "CI95": [
+              -0.007018389894699854,
+              0.003092648890520982
+            ]
+          },
+          "expected_UE_retries": 179.21250915527344,
+          "expected_BS_retries": 168.67059326171875
+        }
+      },
+      "BS_quality_worst_minus_UE_quality_worst_bad": {
+        "mean": 0.0009645061800256371,
+        "CI95": [
+          -0.0032150205761316874,
+          0.0051440329218107
+        ]
+      },
+      "BS_quality_worst_minus_UE_quality_worst_gain": {
+        "mean": 0.005519464612007141,
+        "CI95": [
+          -0.000374561825713503,
+          0.011577056892553473
+        ]
+      }
+    },
+    {
+      "seed": 1,
+      "snr": 20.0,
+      "UE_quality_worst_gain_db": 0.0009993052808567882,
+      "UE_quality_worst_bad_fraction": 0.1435113549232483,
+      "BS_quality_worst_bad_fraction": 0.14247936010360718,
+      "random_bad_fraction": 0.14420628547668457,
+      "abstract_control_cost_sensitivity": {
+        "passflag0_request1": {
+          "UE_bad_fraction": 0.1435113549232483,
+          "BS_bad_fraction": 0.14247936010360718,
+          "BS_minus_UE_bad": {
+            "mean": -0.0010319917928427458,
+            "CI95": [
+              -0.0027089783281733747,
+              0.0
+            ]
+          },
+          "expected_UE_retries": 193.8000030517578,
+          "expected_BS_retries": 190.81846618652344
+        },
+        "passflag1_request1": {
+          "UE_bad_fraction": 0.1435113549232483,
+          "BS_bad_fraction": 0.1424148678779602,
+          "BS_minus_UE_bad": {
+            "mean": -0.0010964912362396717,
+            "CI95": [
+              -0.0027089783281733747,
+              -6.449948400412796e-05
+            ]
+          },
+          "expected_UE_retries": 178.65936279296875,
+          "expected_BS_retries": 175.9107666015625
+        },
+        "passflag1_request4": {
+          "UE_bad_fraction": 0.1435113549232483,
+          "BS_bad_fraction": 0.1424148678779602,
+          "BS_minus_UE_bad": {
+            "mean": -0.0010964912362396717,
+            "CI95": [
+              -0.0027089783281733747,
+              -6.449948400412796e-05
+            ]
+          },
+          "expected_UE_retries": 178.65936279296875,
+          "expected_BS_retries": 168.14999389648438
+        }
+      },
+      "BS_quality_worst_minus_UE_quality_worst_bad": {
+        "mean": -0.0010319917928427458,
+        "CI95": [
+          -0.0026444788441692467,
+          0.0
+        ]
+      },
+      "BS_quality_worst_minus_UE_quality_worst_gain": {
+        "mean": 0.0011211674427613616,
+        "CI95": [
+          -0.00031568027871312,
+          0.002670181335802538
+        ]
+      }
+    },
+    {
+      "seed": 2,
+      "snr": 0.0,
+      "UE_quality_worst_gain_db": 0.09267362952232361,
+      "UE_quality_worst_bad_fraction": 0.11131840944290161,
+      "BS_quality_worst_bad_fraction": 0.12238805741071701,
+      "random_bad_fraction": 0.13554725050926208,
+      "abstract_control_cost_sensitivity": {
+        "passflag0_request1": {
+          "UE_bad_fraction": 0.11131840944290161,
+          "BS_bad_fraction": 0.12238805741071701,
+          "BS_minus_UE_bad": {
+            "mean": 0.011069651693105698,
+            "CI95": [
+              -0.0026119402985074628,
+              0.024692164179104463
+            ]
+          },
+          "expected_UE_retries": 201.0,
+          "expected_BS_retries": 197.90768432617188
+        },
+        "passflag1_request1": {
+          "UE_bad_fraction": 0.11164295673370361,
+          "BS_bad_fraction": 0.125,
+          "BS_minus_UE_bad": {
+            "mean": 0.013357043266296387,
+            "CI95": [
+              2.9539800995024963e-05,
+              0.026797020755597013
+            ]
+          },
+          "expected_UE_retries": 185.296875,
+          "expected_BS_retries": 182.44615173339844
+        },
+        "passflag1_request4": {
+          "UE_bad_fraction": 0.11164295673370361,
+          "BS_bad_fraction": 0.125497505068779,
+          "BS_minus_UE_bad": {
+            "mean": 0.013854555785655975,
+            "CI95": [
+              0.0005892412935323384,
+              0.027227631374378097
+            ]
+          },
+          "expected_UE_retries": 185.296875,
+          "expected_BS_retries": 174.39706420898438
+        }
+      },
+      "BS_quality_worst_minus_UE_quality_worst_bad": {
+        "mean": 0.011069651693105698,
+        "CI95": [
+          -0.00230410447761194,
+          0.02553016169154228
+        ]
+      },
+      "BS_quality_worst_minus_UE_quality_worst_gain": {
+        "mean": 0.025476565584540367,
+        "CI95": [
+          -0.0004271834910805542,
+          0.05036779568118242
+        ]
+      }
+    },
+    {
+      "seed": 2,
+      "snr": 10.0,
+      "UE_quality_worst_gain_db": 0.021108873188495636,
+      "UE_quality_worst_bad_fraction": 0.1345202773809433,
+      "BS_quality_worst_bad_fraction": 0.13668397068977356,
+      "random_bad_fraction": 0.14128322899341583,
+      "abstract_control_cost_sensitivity": {
+        "passflag0_request1": {
+          "UE_bad_fraction": 0.13405044376850128,
+          "BS_bad_fraction": 0.13668397068977356,
+          "BS_minus_UE_bad": {
+            "mean": 0.0026335311122238636,
+            "CI95": [
+              -0.002207900593646836,
+              0.009192940157503772
+            ]
+          },
+          "expected_UE_retries": 202.19998168945312,
+          "expected_BS_retries": 199.0892333984375
+        },
+        "passflag1_request1": {
+          "UE_bad_fraction": 0.13489119708538055,
+          "BS_bad_fraction": 0.13748763501644135,
+          "BS_minus_UE_bad": {
+            "mean": 0.0025964390952140093,
+            "CI95": [
+              -0.002257974777448071,
+              0.008716617210682493
+            ]
+          },
+          "expected_UE_retries": 186.4031219482422,
+          "expected_BS_retries": 183.53538513183594
+        },
+        "passflag1_request4": {
+          "UE_bad_fraction": 0.13489119708538055,
+          "BS_bad_fraction": 0.13748763501644135,
+          "BS_minus_UE_bad": {
+            "mean": 0.0025964390952140093,
+            "CI95": [
+              -0.002257974777448071,
+              0.008716617210682493
+            ]
+          },
+          "expected_UE_retries": 186.4031219482422,
+          "expected_BS_retries": 175.438232421875
+        }
+      },
+      "BS_quality_worst_minus_UE_quality_worst_bad": {
+        "mean": 0.0021636993624269962,
+        "CI95": [
+          -0.0028761745796241343,
+          0.008563612759643909
+        ]
+      },
+      "BS_quality_worst_minus_UE_quality_worst_gain": {
+        "mean": 0.0015426717000082135,
+        "CI95": [
+          -0.004350775829585441,
+          0.00703894316737422
+        ]
+      }
+    },
+    {
+      "seed": 2,
+      "snr": 20.0,
+      "UE_quality_worst_gain_db": 0.0017415416659787297,
+      "UE_quality_worst_bad_fraction": 0.1513643115758896,
+      "BS_quality_worst_bad_fraction": 0.15179449319839478,
+      "random_bad_fraction": 0.1511792093515396,
+      "abstract_control_cost_sensitivity": {
+        "passflag0_request1": {
+          "UE_bad_fraction": 0.1513643115758896,
+          "BS_bad_fraction": 0.15179449319839478,
+          "BS_minus_UE_bad": {
+            "mean": 0.00043018683209083974,
+            "CI95": [
+              -0.0007374631268436578,
+              0.0019051130776794494
+            ]
+          },
+          "expected_UE_retries": 203.39999389648438,
+          "expected_BS_retries": 200.27076721191406
+        },
+        "passflag1_request1": {
+          "UE_bad_fraction": 0.15124139189720154,
+          "BS_bad_fraction": 0.15179449319839478,
+          "BS_minus_UE_bad": {
+            "mean": 0.0005530973430722952,
+            "CI95": [
+              -0.000676007866273353,
+              0.002028023598820059
+            ]
+          },
+          "expected_UE_retries": 187.50936889648438,
+          "expected_BS_retries": 184.62461853027344
+        },
+        "passflag1_request4": {
+          "UE_bad_fraction": 0.15124139189720154,
+          "BS_bad_fraction": 0.15179449319839478,
+          "BS_minus_UE_bad": {
+            "mean": 0.0005530973430722952,
+            "CI95": [
+              -0.000676007866273353,
+              0.002028023598820059
+            ]
+          },
+          "expected_UE_retries": 187.50936889648438,
+          "expected_BS_retries": 176.4794158935547
+        }
+      },
+      "BS_quality_worst_minus_UE_quality_worst_bad": {
+        "mean": 0.00043018683209083974,
+        "CI95": [
+          -0.0008311823992133726,
+          0.0019051130776794494
+        ]
+      },
+      "BS_quality_worst_minus_UE_quality_worst_gain": {
+        "mean": -0.0003905903431586921,
+        "CI95": [
+          -0.001390869307424232,
+          0.0006425346596754406
+        ]
+      }
+    }
+  ],
+  "audit": "Unique-H ranking, noise-invariant decision and exact matched counts independently checked"
+}

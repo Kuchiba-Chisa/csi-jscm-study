@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "checked_cells": 51,
+  "caveat": "one training seed; replay of saved arrays checks arithmetic, not population generalization"
+}

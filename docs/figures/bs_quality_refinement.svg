@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="700" viewBox="0 0 1800 700" role="img" aria-labelledby="title desc">
+<title id="title">BS 质量监测与共享残差精修网络框图</title><desc id="desc">共享解码器输出基础重建和中间特征，特征与 SNR 用于预测质量；门控按需调用共享精修器，最终输出为基础重建加门控残差。</desc>
+<defs><marker id="a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 Z" fill="#25435e"/></marker><marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 Z" fill="#247f79"/></marker><marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 Z" fill="#bb733c"/></marker><marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 Z" fill="#6b7d8d"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<text x="45" y="48" text-anchor="start" fill="#25435e" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="30" font-weight="600">BS 接收端：质量监测与按需精修</text>
+<rect x="210" y="240" width="260" height="120" rx="5" fill="#f1f6fa" stroke="#275d85" stroke-width="2"/>
+<text x="340.0" y="291.0" text-anchor="middle" fill="#275d85" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="25" font-weight="600">共享解码器</text>
+<text x="340.0" y="325.0" text-anchor="middle" fill="#275d85" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="21" font-weight="400">基础重建 + 中间特征</text>
+<text x="65" y="310" text-anchor="middle" fill="#25435e" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="37" font-weight="600">y</text>
+<polyline points="95,300 210,300" fill="none" stroke="#25435e" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#a0)"/>
+<rect x="650" y="115" width="270" height="100" rx="5" fill="#eff7f4" stroke="#247f79" stroke-width="2"/>
+<text x="785.0" y="156.0" text-anchor="middle" fill="#247f79" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="25" font-weight="600">质量预测头</text>
+<text x="785.0" y="190.0" text-anchor="middle" fill="#247f79" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="21" font-weight="400">池化特征 f + SNR</text>
+<rect x="980" y="115" width="240" height="100" rx="5" fill="#fff7ef" stroke="#bb733c" stroke-width="2"/>
+<text x="1100.0" y="156.0" text-anchor="middle" fill="#bb733c" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="25" font-weight="600">门控模块</text>
+<text x="1100.0" y="190.0" text-anchor="middle" fill="#bb733c" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="21" font-weight="400">g = 1[q̂ &gt; τ]</text>
+<polyline points="340,240 340,165 650,165" fill="none" stroke="#247f79" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#a1)"/>
+<text x="460" y="148" text-anchor="middle" fill="#247f79" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="22" font-weight="400">中间特征 f</text>
+<circle cx="550" cy="165" r="4" fill="#247f79"/>
+<polyline points="920,165 980,165" fill="none" stroke="#247f79" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#a1)"/>
+<text x="950" y="145" text-anchor="middle" fill="#247f79" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="24" font-weight="400">q̂</text>
+<polyline points="1220,165 1290,165 1290,476" fill="none" stroke="#bb733c" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="8 6" marker-end="url(#a2)"/>
+<text x="1320" y="220" text-anchor="start" fill="#bb733c" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="22" font-weight="400">门控 g</text>
+<rect x="660" y="430" width="420" height="140" rx="5" fill="#eff7f4" stroke="#247f79" stroke-width="2"/>
+<text x="870.0" y="474.0" text-anchor="middle" fill="#247f79" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="25" font-weight="600">共享残差精修器</text>
+<text x="870.0" y="508.0" text-anchor="middle" fill="#247f79" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="21" font-weight="400">y 投影 + 特征拼接</text>
+<text x="870.0" y="542.0" text-anchor="middle" fill="#247f79" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="21" font-weight="400">3 层 CNN 输出 ΔH</text>
+<polyline points="470,300 1436,300" fill="none" stroke="#25435e" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#a0)"/>
+<text x="1050" y="285" text-anchor="middle" fill="#275d85" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="24" font-weight="400">基础重建 Ĥ</text>
+<circle cx="585" cy="300" r="4" fill="#25435e"/>
+<polyline points="585,300 585,500 660,500" fill="none" stroke="#25435e" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#a0)"/>
+<text x="615" y="485" text-anchor="middle" fill="#275d85" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="22" font-weight="400">Ĥ</text>
+<polyline points="550,165 550,450 660,450" fill="none" stroke="#247f79" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#a1)"/>
+<text x="615" y="436" text-anchor="middle" fill="#247f79" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="23" font-weight="400">f</text>
+<circle cx="145" cy="300" r="4" fill="#25435e"/>
+<polyline points="145,300 145,610 810,610 810,570" fill="none" stroke="#25435e" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#a0)"/>
+<text x="460" y="596" text-anchor="middle" fill="#275d85" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="22" font-weight="400">接收观测 y</text>
+<polyline points="1080,500 1266,500" fill="none" stroke="#247f79" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#a1)"/>
+<text x="1170" y="483" text-anchor="middle" fill="#247f79" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="23" font-weight="400">修正量 ΔH</text>
+<circle cx="1290" cy="500" r="24" fill="white" stroke="#25435e" stroke-width="2.4"/>
+<text x="1290" y="509" text-anchor="middle" fill="#25435e" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="30" font-weight="400">×</text>
+<polyline points="1314,500 1460,500 1460,324" fill="none" stroke="#25435e" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#a0)"/>
+<circle cx="1460" cy="300" r="24" fill="white" stroke="#25435e" stroke-width="2.4"/>
+<text x="1460" y="309" text-anchor="middle" fill="#25435e" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="30" font-weight="400">+</text>
+<polyline points="1484,300 1655,300" fill="none" stroke="#25435e" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#a0)"/>
+<text x="1720" y="310" text-anchor="middle" fill="#25435e" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="36" font-weight="600">Ĥout</text>
+<text x="1720" y="350" text-anchor="middle" fill="#6b7d8d" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="22" font-weight="400">最终重建</text>
+<text x="1450" y="550" text-anchor="middle" fill="#247f79" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="24" font-weight="400">g · ΔH</text>
+<text x="900" y="664" text-anchor="middle" fill="#6b7d8d" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="25" font-weight="400">Ĥout = Ĥ + g · ΔH。门限由验证集固定，仅 g = 1 时调用精修器。</text>
+</svg>

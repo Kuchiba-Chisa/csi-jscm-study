@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-13",
+  "args": {
+    "seeds": [
+      1,
+      2
+    ],
+    "epochs": 15,
+    "ntrain": 1200,
+    "width": 8,
+    "threads": 4
+  },
+  "script_sha256": "b6a753aa9da72f349fbc47c5da4fe90378f4382e53dd69f7497c2c723883b77b",
+  "scope": "single small residual CNN feasibility, not diffusion or official RD-JSCC reproduction",
+  "frozen_link": "existing RD-AE,finite16QAM,AWGN,Ns64,SNR0/10/20",
+  "refiner": "20->8->2 conv3x3,SiLU,noBN,zero output initialization; same weights for all SNRs",
+  "inputs": "Hhat0(2ch),last-block af2 feature(16ch),broadcast SNR/20 and Ns/64; no true H at inference",
+  "splits": "refiner train first1200 trainH,earlystop valH0:250;gate threshold valH250:500;test600H*3noise",
+  "prior_validation_reuse": "Existing quality head was previously selected using full500 validation H; not new independent calibration data.",
+  "policies": "all,validation-fixed worst-quality gates20/50%,random/SNR-only same realized calls,random same conv-linear MAC budget,privileged hindsight",
+  "budget": "No fixed top-k test gate; actual test invocation rate reported. Random controls matched actual invocation rates for diagnostic comparison.",
+  "primary": "20% validation gate,paired per-SNR mean NMSE_dB improvement vs same-compute random; also SGCS and harm fraction",
+  "stop": "If seed0 selected epoch0(no val improvement), stop before test and other seeds.",
+  "previous_runs": [
+    {
+      "seeds": [
+        0
+      ],
+      "epochs": 15,
+      "ntrain": 1200,
+      "width": 8,
+      "threads": 4
+    },
+    {
+      "seeds": [
+        1,
+        2
+      ],
+      "epochs": 15,
+      "ntrain": 1200,
+      "width": 8,
+      "threads": 4
+    }
+  ]
+}

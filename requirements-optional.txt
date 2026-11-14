@@ -1,0 +1,2 @@
+# Only for legacy .mat / COST2100 conversion utilities.
+scipy>=1.11,<2

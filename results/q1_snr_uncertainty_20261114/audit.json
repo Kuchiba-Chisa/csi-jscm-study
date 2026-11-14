@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "seed": 0,
+      "validation_minimax_selection_recomputed": true,
+      "all_saved_mean_metrics_recomputed": true,
+      "replayed_forward_cases": 72,
+      "max_forward_replay_error": 0.0,
+      "only_decoder_BN_moments_changed": true,
+      "independent_second_moment_formula": true
+    },
+    {
+      "seed": 1,
+      "validation_minimax_selection_recomputed": true,
+      "all_saved_mean_metrics_recomputed": true,
+      "replayed_forward_cases": 72,
+      "max_forward_replay_error": 0.0,
+      "only_decoder_BN_moments_changed": true,
+      "independent_second_moment_formula": true
+    },
+    {
+      "seed": 2,
+      "validation_minimax_selection_recomputed": true,
+      "all_saved_mean_metrics_recomputed": true,
+      "replayed_forward_cases": 72,
+      "max_forward_replay_error": 0.0,
+      "only_decoder_BN_moments_changed": true,
+      "independent_second_moment_formula": true
+    }
+  ],
+  "scope": "All selection/mean metrics and source identities; representative first128-H forward replay for all lengths, both modes, unseen5/15dB and extreme signed biases. Does not certify external validity.",
+  "partial_files": [
+    "audit_partial01.json",
+    "audit_partial2.json"
+  ]
+}

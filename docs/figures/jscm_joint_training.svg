@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="660" viewBox="0 0 1800 660" role="img" aria-labelledby="title desc">
+<title id="title">CSI JSCM 联合训练网络框图</title><desc id="desc">UE 编码器、前缀与功率归一化、固定 QAM、AWGN、补零与 BS 解码器；重建损失联合训练两端网络。</desc>
+<defs><marker id="a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 Z" fill="#25435e"/></marker><marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 Z" fill="#247f79"/></marker><marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 Z" fill="#bb733c"/></marker><marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 Z" fill="#6b7d8d"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<text x="45" y="48" text-anchor="start" fill="#25435e" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="30" font-weight="600">CSI JSCM 联合训练网络</text>
+<rect x="155" y="100" width="1500" height="325" rx="8" fill="none" stroke="#bb733c" stroke-width="2" stroke-dasharray="10 7"/>
+<rect x="715" y="84" width="380" height="32" fill="white"/>
+<text x="905" y="108" text-anchor="middle" fill="#bb733c" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="25" font-weight="600">端到端联合训练范围</text>
+<rect x="180" y="145" width="640" height="240" rx="5" fill="#fbfdfe" stroke="#c4d4df" stroke-width="2"/>
+<rect x="850" y="145" width="200" height="240" rx="5" fill="#fafbfc" stroke="#d6dde3" stroke-width="2"/>
+<rect x="1080" y="145" width="550" height="240" rx="5" fill="#fbfdfc" stroke="#c5d9d3" stroke-width="2"/>
+<text x="205" y="180" text-anchor="start" fill="#275d85" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="25" font-weight="600">UE 发送端</text>
+<text x="950" y="180" text-anchor="middle" fill="#6b7d8d" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="25" font-weight="600">反馈信道</text>
+<text x="1105" y="180" text-anchor="start" fill="#247f79" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="25" font-weight="600">BS 接收端</text>
+<rect x="205" y="215" width="190" height="95" rx="5" fill="#f1f6fa" stroke="#275d85" stroke-width="2"/>
+<text x="300.0" y="253.5" text-anchor="middle" fill="#275d85" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="25" font-weight="600">编码器</text>
+<text x="300.0" y="287.5" text-anchor="middle" fill="#275d85" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="21" font-weight="400">CNN + AF</text>
+<rect x="425" y="215" width="170" height="95" rx="5" fill="#f1f6fa" stroke="#275d85" stroke-width="2"/>
+<text x="510.0" y="253.5" text-anchor="middle" fill="#275d85" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="25" font-weight="600">前缀选择</text>
+<text x="510.0" y="287.5" text-anchor="middle" fill="#275d85" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="21" font-weight="400">功率归一化</text>
+<rect x="625" y="215" width="170" height="95" rx="5" fill="#f1f6fa" stroke="#275d85" stroke-width="2"/>
+<text x="710.0" y="253.5" text-anchor="middle" fill="#275d85" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="25" font-weight="600">固定 16-QAM</text>
+<text x="710.0" y="287.5" text-anchor="middle" fill="#275d85" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="21" font-weight="400">STE 近似梯度</text>
+<rect x="875" y="215" width="150" height="95" rx="5" fill="#f3f5f7" stroke="#6b7d8d" stroke-width="2"/>
+<text x="950.0" y="253.5" text-anchor="middle" fill="#6b7d8d" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="25" font-weight="600">AWGN</text>
+<text x="950.0" y="287.5" text-anchor="middle" fill="#6b7d8d" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="21" font-weight="400">实际功率定噪</text>
+<rect x="1105" y="215" width="145" height="95" rx="5" fill="#eff7f4" stroke="#247f79" stroke-width="2"/>
+<text x="1177.5" y="253.5" text-anchor="middle" fill="#247f79" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="25" font-weight="600">接收补零</text>
+<text x="1177.5" y="287.5" text-anchor="middle" fill="#247f79" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="21" font-weight="400">128 实维</text>
+<rect x="1285" y="215" width="320" height="95" rx="5" fill="#eff7f4" stroke="#247f79" stroke-width="2"/>
+<text x="1445.0" y="253.5" text-anchor="middle" fill="#247f79" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="25" font-weight="600">解码器</text>
+<text x="1445.0" y="287.5" text-anchor="middle" fill="#247f79" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="21" font-weight="400">FC + AF + 5 个残差块</text>
+<polyline points="130,262 205,262" fill="none" stroke="#25435e" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#a0)"/>
+<polyline points="395,262 425,262" fill="none" stroke="#25435e" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#a0)"/>
+<polyline points="595,262 625,262" fill="none" stroke="#25435e" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#a0)"/>
+<polyline points="795,262 875,262" fill="none" stroke="#25435e" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#a0)"/>
+<polyline points="1025,262 1105,262" fill="none" stroke="#25435e" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#a0)"/>
+<polyline points="1250,262 1285,262" fill="none" stroke="#25435e" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#a0)"/>
+<polyline points="1605,262 1685,262" fill="none" stroke="#25435e" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#a0)"/>
+<text x="78" y="273" text-anchor="middle" fill="#25435e" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="40" font-weight="600">H</text>
+<text x="78" y="313" text-anchor="middle" fill="#6b7d8d" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="19" font-weight="400">2 × 32 × 32</text>
+<text x="1730" y="273" text-anchor="middle" fill="#25435e" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="40" font-weight="600">Ĥ</text>
+<text x="1730" y="313" text-anchor="middle" fill="#6b7d8d" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="21" font-weight="400">重建 CSI</text>
+<text x="500" y="355" text-anchor="middle" fill="#275d85" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="22" font-weight="400">SNR 条件输入 AF；Ns ∈ {16, 32, 64}</text>
+<text x="1355" y="355" text-anchor="middle" fill="#247f79" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="22" font-weight="400">SNR 条件输入 AF</text>
+<rect x="775" y="480" width="250" height="85" rx="5" fill="#fff7ef" stroke="#bb733c" stroke-width="2"/>
+<text x="900.0" y="513.5" text-anchor="middle" fill="#bb733c" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="25" font-weight="600">重建损失</text>
+<text x="900.0" y="547.5" text-anchor="middle" fill="#bb733c" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="21" font-weight="400">L(Ĥ, H)</text>
+<polyline points="78,332 78,522 775,522" fill="none" stroke="#25435e" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#a0)"/>
+<polyline points="1730,332 1730,522 1025,522" fill="none" stroke="#25435e" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#a0)"/>
+<text x="395" y="505" text-anchor="middle" fill="#6b7d8d" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="22" font-weight="400">训练参考 H</text>
+<text x="1375" y="505" text-anchor="middle" fill="#6b7d8d" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="22" font-weight="400">重建 Ĥ</text>
+<polyline points="900,480 900,426" fill="none" stroke="#bb733c" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="8 6" marker-end="url(#a2)"/>
+<text x="930" y="459" text-anchor="start" fill="#bb733c" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="21" font-weight="400">反向传播</text>
+<text x="900" y="618" text-anchor="middle" fill="#6b7d8d" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="24" font-weight="400">重建损失共同更新编码器与解码器；固定星座和信道无可训练参数。</text>
+</svg>

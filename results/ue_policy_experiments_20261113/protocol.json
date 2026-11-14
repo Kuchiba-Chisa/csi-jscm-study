@@ -1,0 +1,17 @@
+{
+  "args": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "epochs": 65,
+    "fraction": 0.2
+  },
+  "script_sha256": "6fc3bb8d44626e7b92a1c88b975a50de68a154f4522036fee91372b3a6c01df4",
+  "existing_proxy": "frozen Guo-inspired single-pass proxy; no additional proxy training",
+  "main_comparison": "same initial/repeat symbols, same current/future observations; no quality hint symbol for UE-only",
+  "timing": "UE chooses before actual noise; BS chooses after observing current received y",
+  "budget": "exact top20% is offline pool selection; validation-fixed thresholds separately report actual use",
+  "scope": "Ns64, synthetic CSI, finite16QAM AWGN, frozen RD-AE adaptation; not official Guo/RD-JSCC reproduction"
+}

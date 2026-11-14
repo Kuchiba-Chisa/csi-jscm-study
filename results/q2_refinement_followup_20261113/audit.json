@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "seed": 0,
+      "variant": "uniform",
+      "max_loss_replay_error": 0.0,
+      "gate_and_budget_replayed": true
+    },
+    {
+      "seed": 0,
+      "variant": "tail_weighted",
+      "max_loss_replay_error": 0.0,
+      "gate_and_budget_replayed": true
+    },
+    {
+      "seed": 1,
+      "variant": "uniform",
+      "max_loss_replay_error": 0.0,
+      "gate_and_budget_replayed": true
+    },
+    {
+      "seed": 1,
+      "variant": "tail_weighted",
+      "max_loss_replay_error": 0.0,
+      "gate_and_budget_replayed": true
+    },
+    {
+      "seed": 2,
+      "variant": "uniform",
+      "max_loss_replay_error": 0.0,
+      "gate_and_budget_replayed": true
+    },
+    {
+      "seed": 2,
+      "variant": "tail_weighted",
+      "max_loss_replay_error": 0.0,
+      "gate_and_budget_replayed": true
+    }
+  ],
+  "scope": "Fresh-noise forward, gates, same-MAC expectation, parameters and source identities replayed. Does not establish external validity or audit all historical test use."
+}

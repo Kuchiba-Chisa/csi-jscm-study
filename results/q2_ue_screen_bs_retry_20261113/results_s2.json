@@ -1,0 +1,4244 @@
+{
+  "seed": 2,
+  "source": {
+    "checkpoint": "simulation\\ckpt_rdae\\rdae_sample_s2.pt",
+    "sha256": "7d81d5f4f8bd236fc601813bd53474655f5f35e1462533fe4549ab0081f80dda",
+    "p_cal": "{16: 0.8256249389648438, 32: 0.7898874816894531, 64: 0.7361187286376953}",
+    "p_cal_mode": "ns_only",
+    "source_model_sha256": "5cf3842fe7f863e4b8adae8ab6d44c030d3149345225d81a466b9b42d83aac1b"
+  },
+  "eligibility_thresholds": {
+    "0.0": -1.3586540222167969,
+    "10.0": -2.388841390609741,
+    "20.0": -2.528718948364258
+  },
+  "action_thresholds": {
+    "ue_gain": {
+      "0.0": 0.848958432674408,
+      "10.0": 0.16188792884349823,
+      "20.0": 0.013329833745956421
+    },
+    "ue_quality_best": {
+      "0.0": 3.172659158706665,
+      "10.0": 5.486131191253662,
+      "20.0": 5.897191047668457
+    },
+    "bs_unconditional_gain": {
+      "0.0": 0.7536332011222839,
+      "10.0": 0.21663229167461395,
+      "20.0": 0.038391903042793274
+    },
+    "bs_conditional_gain": {
+      "0.0": 0.781046450138092,
+      "10.0": 0.22493167221546173,
+      "20.0": 0.03508249297738075
+    },
+    "bs_conditional_quality_worst": {
+      "0.0": -1.9970200061798096,
+      "10.0": -3.2432141304016113,
+      "20.0": -3.7448854446411133
+    }
+  },
+  "bad_thresholds": {
+    "0.0": -1.5350234508514404,
+    "10.0": -2.950441598892212,
+    "20.0": -3.1717894077301025
+  },
+  "training": {
+    "bs_unconditional_gain": {
+      "parameters": 25081,
+      "selected_epoch": 5,
+      "val_mse_db2": 0.06090472469126951,
+      "trace_val_mse_db2": [
+        0.07756494019167626,
+        0.06460485972784769,
+        0.06526824230489447,
+        0.06317727350081581,
+        0.06090472469126951,
+        0.06308741087933978,
+        0.07139652288384113,
+        0.06581647607977192,
+        0.07220970554217931,
+        0.07212593832592784,
+        0.07733195380409352,
+        0.07761823453116179,
+        0.07521032955154716,
+        0.074899277164036
+      ],
+      "train_observations": 18000,
+      "val_observations": 1500,
+      "seconds": 1.1983839000022272
+    },
+    "bs_conditional_gain": {
+      "parameters": 25081,
+      "selected_epoch": 6,
+      "val_mse_db2": 0.06814945292962227,
+      "trace_val_mse_db2": [
+        0.09558344463882662,
+        0.08080594894728499,
+        0.0700158681897265,
+        0.07049662372128918,
+        0.0705590853651974,
+        0.06814945292962227,
+        0.07544435495921409,
+        0.0724885848257193,
+        0.07717236125887794,
+        0.07691888005185898,
+        0.07768046807826412,
+        0.07746927493767419,
+        0.08186307736606846,
+        0.08345895520184321,
+        0.08739539832161469
+      ],
+      "train_observations": 15432,
+      "val_observations": 1200,
+      "seconds": 1.173687599999539
+    },
+    "bs_conditional_quality": {
+      "parameters": 25081,
+      "selected_epoch": 4,
+      "val_mse_db2": 1.3524512153660453,
+      "trace_val_mse_db2": [
+        1.67078598791295,
+        1.4380469777377698,
+        1.3968174489123726,
+        1.3524512153660453,
+        1.4267368136016216,
+        1.3791186723044007,
+        1.4503792131999376,
+        1.3968880285464707,
+        1.4119353576407434,
+        1.4187006911318463,
+        1.4089580348895083,
+        1.439499993731431,
+        1.4218847748766734
+      ],
+      "train_observations": 15432,
+      "val_observations": 1200,
+      "seconds": 1.0018411000019114
+    },
+    "ue_gain": {
+      "parameters": 24956,
+      "selected_epoch": 27,
+      "val_mse_db2": 0.022734454803026605,
+      "trace_val_mse_db2": [
+        0.047486075457923604,
+        0.03405255439607391,
+        0.026942575791562895,
+        0.024730036945631806,
+        0.023948723809030792,
+        0.023484310791806795,
+        0.02313370126287051,
+        0.023500780805065347,
+        0.02296839195775524,
+        0.022921785601946798,
+        0.02315207331023572,
+        0.02303878584883101,
+        0.022862792738033377,
+        0.022851115999756644,
+        0.023686114561319194,
+        0.023939681229644183,
+        0.0231598696008688,
+        0.023181432818091707,
+        0.023818860148330234,
+        0.02325917217487028,
+        0.02293180807353723,
+        0.02275309510985446,
+        0.022790580643933023,
+        0.022753890573677715,
+        0.02283337361696347,
+        0.02300246090951097,
+        0.022734454803026605,
+        0.02409375903267419,
+        0.02361696882190989,
+        0.023275509921310444,
+        0.022801879210883946,
+        0.02299983233935965,
+        0.022884478907509997,
+        0.02310150826444035,
+        0.023616322391121436,
+        0.02286198237090664
+      ]
+    }
+  },
+  "input_hashes": {
+    "experiments\\two_sided_experiments_20261113\\cache_s2_train.pt": "076e87a377c95315331f64fb26378fb603784b52ac49ee877d6f18ea32e686de",
+    "experiments\\two_sided_experiments_20261113\\cache_s2_val.pt": "b0af7a787d7facd50b70574dc8027143a98382afc23ce74c27ea951227b8fa13",
+    "experiments\\two_sided_experiments_20261113\\cache_s2_test.pt": "c52d80551fe90cea56f9b5213781984ae3644291b18d53a35cfdc73752865a6b",
+    "experiments\\two_sided_experiments_20261113\\future_s2_train.pt": "268d2776f48e6e3273932a89d08324c44166d94aa2ecb7f2026bc4b4e27b58f6",
+    "experiments\\two_sided_experiments_20261113\\future_s2_val.pt": "a7fc1aecdafe81ae72fabda6e2d693693c6cb00fa93bc2f0d706ac07323ef856",
+    "experiments\\two_sided_experiments_20261113\\future_s2_test.pt": "251ad185fd8f6f6ca7ba26a87de13a0b4898b0541552f6bced104435c8a00b72",
+    "experiments\\guo_proxy_experiments_20261113\\ue_scores_s2.pt": "376fde25fa32d4a5d95cdd780e52a9f77852134ca819d602952e6565a0d9d74c",
+    "experiments\\guo_proxy_experiments_20261113\\proxy_s2.pt": "ca597e1d6acc45da936bce0478ff7fb22049659c158a861aec99227f3f1dd8db",
+    "experiments\\guo_proxy_experiments_20261113\\single_pass_s2.json": "e33f0ff3a8cdb6bf37dacafa4c57477fed4ae1ef92acd4e43387bf0a8b780abd"
+  },
+  "cached_retrospective": {
+    "0": {
+      "original_observations": 1800,
+      "passed_observations": 1473,
+      "passed_unique_H": 491,
+      "pass_fraction": 0.8183333277702332,
+      "base_passed_nmse_db": -2.56195068359375,
+      "base_passed_bad_fraction": 0.156143918633461,
+      "matched_retry_count": 294,
+      "policies": {
+        "ue_gain": {
+          "retry_rate": 0.19959266483783722,
+          "expected_retries": 294.0,
+          "gain_db": 0.21803595125675201,
+          "final_nmse_db": -2.779986619949341,
+          "sgcs_gain": 0.01854114420711994,
+          "final_sgcs": 0.47627925872802734,
+          "bad_fraction": 0.15308892726898193,
+          "symbols_per_passed_observation": 76.77393054962158,
+          "total_actual_tx_energy": 81719.9921875,
+          "selected_negative_expected_gain_fraction": 0.0
+        },
+        "ue_quality_best": {
+          "retry_rate": 0.19959266483783722,
+          "expected_retries": 294.0,
+          "gain_db": 0.21803595125675201,
+          "final_nmse_db": -2.779986619949341,
+          "sgcs_gain": 0.01854114420711994,
+          "final_sgcs": 0.47627925872802734,
+          "bad_fraction": 0.15308892726898193,
+          "symbols_per_passed_observation": 76.77393054962158,
+          "total_actual_tx_energy": 81719.9921875,
+          "selected_negative_expected_gain_fraction": 0.0
+        },
+        "bs_unconditional_gain": {
+          "retry_rate": 0.19959266483783722,
+          "expected_retries": 294.0,
+          "gain_db": 0.16254082322120667,
+          "final_nmse_db": -2.724491596221924,
+          "sgcs_gain": 0.01831197552382946,
+          "final_sgcs": 0.47605007886886597,
+          "bad_fraction": 0.13972336053848267,
+          "symbols_per_passed_observation": 76.77393054962158,
+          "total_actual_tx_energy": 82478.3984375,
+          "selected_negative_expected_gain_fraction": 0.003401360474526882
+        },
+        "bs_conditional_gain": {
+          "retry_rate": 0.19959266483783722,
+          "expected_retries": 294.0,
+          "gain_db": 0.1595587134361267,
+          "final_nmse_db": -2.7215094566345215,
+          "sgcs_gain": 0.017942385748028755,
+          "final_sgcs": 0.47568050026893616,
+          "bad_fraction": 0.13980820775032043,
+          "symbols_per_passed_observation": 76.77393054962158,
+          "total_actual_tx_energy": 82373.59375,
+          "selected_negative_expected_gain_fraction": 0.003401360474526882
+        },
+        "bs_conditional_quality_worst": {
+          "retry_rate": 0.19959266483783722,
+          "expected_retries": 294.0,
+          "gain_db": 0.11575168371200562,
+          "final_nmse_db": -2.6777024269104004,
+          "sgcs_gain": 0.017130320891737938,
+          "final_sgcs": 0.47486841678619385,
+          "bad_fraction": 0.11528343707323074,
+          "symbols_per_passed_observation": 76.77393054962158,
+          "total_actual_tx_energy": 83267.9921875,
+          "selected_negative_expected_gain_fraction": 0.003401360474526882
+        },
+        "random": {
+          "retry_rate": 0.19959264993667603,
+          "expected_retries": 293.9999694824219,
+          "gain_db": 0.14192838966846466,
+          "final_nmse_db": -2.7038791179656982,
+          "sgcs_gain": 0.016841452568769455,
+          "final_sgcs": 0.4745795428752899,
+          "bad_fraction": 0.13501426577568054,
+          "symbols_per_passed_observation": 76.77392959594727,
+          "total_actual_tx_energy": 82806.4453125,
+          "selected_negative_expected_gain_fraction": 0.006109980400651693
+        }
+      },
+      "paired": {
+        "ue_gain_minus_random": {
+          "nmse_gain": {
+            "mean": 0.07610757648944855,
+            "CI95": [
+              0.037794456560177256,
+              0.11397878771504222
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.001699689426459372,
+            "CI95": [
+              -0.0016630832760148092,
+              0.005033123457497437
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.01807466521859169,
+            "CI95": [
+              0.013331423982903892,
+              0.022427003231808126
+            ]
+          }
+        },
+        "ue_gain_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "ue_gain_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": 0.05549512803554535,
+            "CI95": [
+              0.015453529165702374,
+              0.09742886577932022
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.00022916779562365264,
+            "CI95": [
+              -0.003844911652918746,
+              0.003945130030880635
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.013365580700337887,
+            "CI95": [
+              0.006958587915818058,
+              0.01960285132382892
+            ]
+          }
+        },
+        "ue_quality_best_minus_random": {
+          "nmse_gain": {
+            "mean": 0.07610757648944855,
+            "CI95": [
+              0.037794456560177256,
+              0.11397878771504222
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.001699689426459372,
+            "CI95": [
+              -0.0016630832760148092,
+              0.005033123457497437
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.01807466521859169,
+            "CI95": [
+              0.013331423982903892,
+              0.022427003231808126
+            ]
+          }
+        },
+        "ue_quality_best_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "ue_quality_best_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": 0.05549512803554535,
+            "CI95": [
+              0.015453529165702374,
+              0.09742886577932022
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.00022916779562365264,
+            "CI95": [
+              -0.003844911652918746,
+              0.003945130030880635
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.013365580700337887,
+            "CI95": [
+              0.006958587915818058,
+              0.01960285132382892
+            ]
+          }
+        },
+        "bs_unconditional_gain_minus_random": {
+          "nmse_gain": {
+            "mean": 0.020612439140677452,
+            "CI95": [
+              0.0006852725384991176,
+              0.041037788340668374
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.001470521790906787,
+            "CI95": [
+              -0.0008235458662660014,
+              0.003944162316605726
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.004709084052592516,
+            "CI95": [
+              -0.001005687659197896,
+              0.010238553539458444
+            ]
+          }
+        },
+        "bs_unconditional_gain_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": -0.05549512803554535,
+            "CI95": [
+              -0.09742886577932024,
+              -0.015453529165702395
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.00022916779562365264,
+            "CI95": [
+              -0.003945130030880635,
+              0.0038449116529187407
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.013365580700337887,
+            "CI95": [
+              -0.01960285132382892,
+              -0.006958587915818058
+            ]
+          }
+        },
+        "bs_unconditional_gain_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": -0.05549512803554535,
+            "CI95": [
+              -0.09742886577932024,
+              -0.015453529165702395
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.00022916779562365264,
+            "CI95": [
+              -0.003945130030880635,
+              0.0038449116529187407
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.013365580700337887,
+            "CI95": [
+              -0.01960285132382892,
+              -0.006958587915818058
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_random": {
+          "nmse_gain": {
+            "mean": 0.017630331218242645,
+            "CI95": [
+              -0.00450846254441789,
+              0.03973409985554977
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.00110093061812222,
+            "CI95": [
+              -0.0011971223912771568,
+              0.003610059414197626
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.004793944768607616,
+            "CI95": [
+              -0.0008884639405403273,
+              0.010536696369812198
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": -0.058477241545915604,
+            "CI95": [
+              -0.09942443763327614,
+              -0.019063996711274296
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.0005987589247524738,
+            "CI95": [
+              -0.004255300404178959,
+              0.0032030110365666234
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.013280719518661499,
+            "CI95": [
+              -0.020136413781398507,
+              -0.00653428377460964
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": -0.058477241545915604,
+            "CI95": [
+              -0.09942443763327614,
+              -0.019063996711274296
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.0005987589247524738,
+            "CI95": [
+              -0.004255300404178959,
+              0.0032030110365666234
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.013280719518661499,
+            "CI95": [
+              -0.020136413781398507,
+              -0.00653428377460964
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": -0.002982110483571887,
+            "CI95": [
+              -0.021213031194481976,
+              0.01667876735845554
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.00036959105636924505,
+            "CI95": [
+              -0.0022959329736673825,
+              0.0015896823229388302
+            ]
+          },
+          "bad_fraction": {
+            "mean": 8.486082515446469e-05,
+            "CI95": [
+              -0.005263492871690428,
+              0.005198786490156138
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_random": {
+          "nmse_gain": {
+            "mean": -0.0261766966432333,
+            "CI95": [
+              -0.04389287803875958,
+              -0.0067243799028792175
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0002888664021156728,
+            "CI95": [
+              -0.002108977235677251,
+              0.0026616432118146452
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.019730834290385246,
+            "CI95": [
+              -0.028216906777821425,
+              -0.011461163989839809
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": -0.102284274995327,
+            "CI95": [
+              -0.15072650258345258,
+              -0.05489690161771057
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.001410823198966682,
+            "CI95": [
+              -0.006280959167031512,
+              0.0033018784407837227
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.03780549764633179,
+            "CI95": [
+              -0.049221401900882554,
+              -0.027345341140529538
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": -0.102284274995327,
+            "CI95": [
+              -0.15072650258345258,
+              -0.05489690161771057
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.001410823198966682,
+            "CI95": [
+              -0.006280959167031512,
+              0.0033018784407837227
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.03780549764633179,
+            "CI95": [
+              -0.049221401900882554,
+              -0.027345341140529538
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": -0.04678913578391075,
+            "CI95": [
+              -0.0756046980184434,
+              -0.017876752550939488
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.001181655446998775,
+            "CI95": [
+              -0.004629581378619847,
+              0.002187066874229733
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.024439917877316475,
+            "CI95": [
+              -0.035239519687712155,
+              -0.01389277834351665
+            ]
+          }
+        }
+      },
+      "fixed_threshold": {
+        "ue_gain": {
+          "retry_rate": 0.23217922606924643,
+          "gain_db": 0.24643570184707642,
+          "random_same_usage_gain_db": 0.1651003658771515,
+          "UE_same_expected_usage_gain_db": 0.24643570184707642,
+          "minus_UE_matched_usage": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "ue_quality_best": {
+          "retry_rate": 0.23217922606924643,
+          "gain_db": 0.24643570184707642,
+          "random_same_usage_gain_db": 0.1651003658771515,
+          "UE_same_expected_usage_gain_db": 0.24643570184707642,
+          "minus_UE_matched_usage": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "bs_unconditional_gain": {
+          "retry_rate": 0.23353699932111338,
+          "gain_db": 0.18934676051139832,
+          "random_same_usage_gain_db": 0.16606585681438446,
+          "UE_same_expected_usage_gain_db": 0.24747110903263092,
+          "minus_UE_matched_usage": {
+            "mean": -0.05812431126832962,
+            "CI95": [
+              -0.10199121633760798,
+              -0.017133577112348766
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "bs_conditional_gain": {
+          "retry_rate": 0.23217922606924643,
+          "gain_db": 0.18403968214988708,
+          "random_same_usage_gain_db": 0.1651003658771515,
+          "UE_same_expected_usage_gain_db": 0.24643570184707642,
+          "minus_UE_matched_usage": {
+            "mean": -0.06239601597189903,
+            "CI95": [
+              -0.10480982291095531,
+              -0.02014571175393977
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "bs_conditional_quality_worst": {
+          "retry_rate": 0.17651052274270196,
+          "gain_db": 0.10237766802310944,
+          "random_same_usage_gain_db": 0.1255148947238922,
+          "UE_same_expected_usage_gain_db": 0.19835969805717468,
+          "minus_UE_matched_usage": {
+            "mean": -0.09598203003406525,
+            "CI95": [
+              -0.14523900983563023,
+              -0.05149592133359044
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        }
+      },
+      "control_cost_sensitivity": {
+        "passflag0_request1": {
+          "ue_gain": {
+            "gain_db": 0.21835289895534515,
+            "retry_rate": 0.19999998807907104,
+            "overhead_equivalent_symbols_per_observation": 0.0,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "ue_quality_best": {
+            "gain_db": 0.21835289895534515,
+            "retry_rate": 0.19999998807907104,
+            "overhead_equivalent_symbols_per_observation": 0.0,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "bs_unconditional_gain": {
+            "gain_db": 0.16071008145809174,
+            "retry_rate": 0.19692307710647583,
+            "overhead_equivalent_symbols_per_observation": 0.19692307710647583,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_gain": {
+            "gain_db": 0.15793216228485107,
+            "retry_rate": 0.19692307710647583,
+            "overhead_equivalent_symbols_per_observation": 0.19692307710647583,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_quality_worst": {
+            "gain_db": 0.11489366739988327,
+            "retry_rate": 0.19692307710647583,
+            "overhead_equivalent_symbols_per_observation": 0.19692307710647583,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_minus_ue_gain": {
+            "mean": -0.06042074039578438,
+            "CI95": [
+              -0.09903403977934304,
+              -0.019968168865901963
+            ]
+          }
+        },
+        "passflag1_request1": {
+          "ue_gain": {
+            "gain_db": 0.20506983995437622,
+            "retry_rate": 0.18437500298023224,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "ue_quality_best": {
+            "gain_db": 0.20506983995437622,
+            "retry_rate": 0.18437500298023224,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_unconditional_gain": {
+            "gain_db": 0.14661003649234772,
+            "retry_rate": 0.18153846263885498,
+            "overhead_equivalent_symbols_per_observation": 1.181538462638855,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_gain": {
+            "gain_db": 0.14361964166164398,
+            "retry_rate": 0.18153846263885498,
+            "overhead_equivalent_symbols_per_observation": 1.181538462638855,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_quality_worst": {
+            "gain_db": 0.1053907498717308,
+            "retry_rate": 0.18153846263885498,
+            "overhead_equivalent_symbols_per_observation": 1.181538462638855,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_minus_ue_gain": {
+            "mean": -0.061450205743312836,
+            "CI95": [
+              -0.10011889371370994,
+              -0.0226482836272914
+            ]
+          }
+        },
+        "passflag1_request4": {
+          "ue_gain": {
+            "gain_db": 0.20506983995437622,
+            "retry_rate": 0.18437500298023224,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "ue_quality_best": {
+            "gain_db": 0.20506983995437622,
+            "retry_rate": 0.18437500298023224,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_unconditional_gain": {
+            "gain_db": 0.14108972251415253,
+            "retry_rate": 0.17352941632270813,
+            "overhead_equivalent_symbols_per_observation": 1.6941176652908325,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_gain": {
+            "gain_db": 0.13629764318466187,
+            "retry_rate": 0.17352941632270813,
+            "overhead_equivalent_symbols_per_observation": 1.6941176652908325,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_quality_worst": {
+            "gain_db": 0.10060015320777893,
+            "retry_rate": 0.17352941632270813,
+            "overhead_equivalent_symbols_per_observation": 1.6941176652908325,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_minus_ue_gain": {
+            "mean": -0.06877221912145615,
+            "CI95": [
+              -0.10775538878964269,
+              -0.030659963068402553
+            ]
+          }
+        }
+      },
+      "diagnostics": {
+        "all_passed_repeat_gain_db": 0.7110901474952698,
+        "within_H_BS_gain_score_vs_actual_repeat_gain_spearman": 0.07867285892266107
+      }
+    },
+    "10": {
+      "original_observations": 1800,
+      "passed_observations": 1506,
+      "passed_unique_H": 502,
+      "pass_fraction": 0.8366666436195374,
+      "base_passed_nmse_db": -4.442676544189453,
+      "base_passed_bad_fraction": 0.15537849068641663,
+      "matched_retry_count": 300,
+      "policies": {
+        "ue_gain": {
+          "retry_rate": 0.19920319318771362,
+          "expected_retries": 300.0,
+          "gain_db": 0.044186029583215714,
+          "final_nmse_db": -4.486862659454346,
+          "sgcs_gain": 0.0019524325616657734,
+          "final_sgcs": 0.6372280120849609,
+          "bad_fraction": 0.15537849068641663,
+          "symbols_per_passed_observation": 76.74900436401367,
+          "total_actual_tx_energy": 83971.203125,
+          "selected_negative_expected_gain_fraction": 0.0533333346247673
+        },
+        "ue_quality_best": {
+          "retry_rate": 0.19920319318771362,
+          "expected_retries": 300.0,
+          "gain_db": 0.044186029583215714,
+          "final_nmse_db": -4.486862659454346,
+          "sgcs_gain": 0.0019524325616657734,
+          "final_sgcs": 0.6372280120849609,
+          "bad_fraction": 0.15537849068641663,
+          "symbols_per_passed_observation": 76.74900436401367,
+          "total_actual_tx_energy": 83971.203125,
+          "selected_negative_expected_gain_fraction": 0.0533333346247673
+        },
+        "bs_unconditional_gain": {
+          "retry_rate": 0.19920319318771362,
+          "expected_retries": 300.0,
+          "gain_db": 0.029148047789931297,
+          "final_nmse_db": -4.471824645996094,
+          "sgcs_gain": 0.0022538420744240284,
+          "final_sgcs": 0.6375294327735901,
+          "bad_fraction": 0.15143592655658722,
+          "symbols_per_passed_observation": 76.74900436401367,
+          "total_actual_tx_energy": 84765.59375,
+          "selected_negative_expected_gain_fraction": 0.10000000149011612
+        },
+        "bs_conditional_gain": {
+          "retry_rate": 0.19920319318771362,
+          "expected_retries": 300.0,
+          "gain_db": 0.031608179211616516,
+          "final_nmse_db": -4.474284648895264,
+          "sgcs_gain": 0.0025161965750157833,
+          "final_sgcs": 0.6377918124198914,
+          "bad_fraction": 0.15114541351795197,
+          "symbols_per_passed_observation": 76.74900436401367,
+          "total_actual_tx_energy": 84770.3984375,
+          "selected_negative_expected_gain_fraction": 0.07999999821186066
+        },
+        "bs_conditional_quality_worst": {
+          "retry_rate": 0.19920319318771362,
+          "expected_retries": 300.0,
+          "gain_db": 0.02356131374835968,
+          "final_nmse_db": -4.466238021850586,
+          "sgcs_gain": 0.0025475267320871353,
+          "final_sgcs": 0.6378231048583984,
+          "bad_fraction": 0.14765936136245728,
+          "symbols_per_passed_observation": 76.74900436401367,
+          "total_actual_tx_energy": 85565.59375,
+          "selected_negative_expected_gain_fraction": 0.10333333164453506
+        },
+        "random": {
+          "retry_rate": 0.199203222990036,
+          "expected_retries": 300.00006103515625,
+          "gain_db": 0.02901686169207096,
+          "final_nmse_db": -4.471693515777588,
+          "sgcs_gain": 0.002174978842958808,
+          "final_sgcs": 0.6374505758285522,
+          "bad_fraction": 0.15199726819992065,
+          "symbols_per_passed_observation": 76.7490062713623,
+          "total_actual_tx_energy": 85041.7421875,
+          "selected_negative_expected_gain_fraction": 0.08698537200689316
+        }
+      },
+      "paired": {
+        "ue_gain_minus_random": {
+          "nmse_gain": {
+            "mean": 0.01516916137188673,
+            "CI95": [
+              0.007598226731314237,
+              0.023267120155589023
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.0002225463540526107,
+            "CI95": [
+              -0.0005995819514714617,
+              0.00017952847605002704
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0033812294714152813,
+            "CI95": [
+              0.0021163685638135965,
+              0.004824038957533825
+            ]
+          }
+        },
+        "ue_gain_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "ue_gain_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": 0.015037973411381245,
+            "CI95": [
+              0.004901177597394186,
+              0.02545206511954704
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.0003014094545505941,
+            "CI95": [
+              -0.0008963107201920088,
+              0.0002774114622814868
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.003942563198506832,
+            "CI95": [
+              0.0013062333997343957,
+              0.007179614873837981
+            ]
+          }
+        },
+        "ue_quality_best_minus_random": {
+          "nmse_gain": {
+            "mean": 0.01516916137188673,
+            "CI95": [
+              0.007598226731314237,
+              0.023267120155589023
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.0002225463540526107,
+            "CI95": [
+              -0.0005995819514714617,
+              0.00017952847605002704
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0033812294714152813,
+            "CI95": [
+              0.0021163685638135965,
+              0.004824038957533825
+            ]
+          }
+        },
+        "ue_quality_best_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "ue_quality_best_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": 0.015037973411381245,
+            "CI95": [
+              0.004901177597394186,
+              0.02545206511954704
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.0003014094545505941,
+            "CI95": [
+              -0.0008963107201920088,
+              0.0002774114622814868
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.003942563198506832,
+            "CI95": [
+              0.0013062333997343957,
+              0.007179614873837981
+            ]
+          }
+        },
+        "bs_unconditional_gain_minus_random": {
+          "nmse_gain": {
+            "mean": 0.0001311878440901637,
+            "CI95": [
+              -0.005124487216675609,
+              0.005390476687080441
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 7.88631004979834e-05,
+            "CI95": [
+              -0.00035464214688781605,
+              0.0005129678214352103
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.0005613334942609072,
+            "CI95": [
+              -0.0034787434887309197,
+              0.0018526285818121198
+            ]
+          }
+        },
+        "bs_unconditional_gain_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": -0.015037973411381245,
+            "CI95": [
+              -0.02545206511954704,
+              -0.004901177597394208
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0003014094545505941,
+            "CI95": [
+              -0.000277411462281488,
+              0.0008963107201920086
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.003942563198506832,
+            "CI95": [
+              -0.007179614873837981,
+              -0.0013062333997344014
+            ]
+          }
+        },
+        "bs_unconditional_gain_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": -0.015037973411381245,
+            "CI95": [
+              -0.02545206511954704,
+              -0.004901177597394208
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0003014094545505941,
+            "CI95": [
+              -0.000277411462281488,
+              0.0008963107201920086
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.003942563198506832,
+            "CI95": [
+              -0.007179614873837981,
+              -0.0013062333997344014
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_random": {
+          "nmse_gain": {
+            "mean": 0.0025913144927471876,
+            "CI95": [
+              -0.0032430204682396104,
+              0.008595901335129538
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.00034121767384931445,
+            "CI95": [
+              -9.824021821747407e-05,
+              0.0007954975656391004
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.0008518382092006505,
+            "CI95": [
+              -0.003662495557367208,
+              0.0015052382351897341
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": -0.012577847577631474,
+            "CI95": [
+              -0.022743740198938336,
+              -0.0022009438252544125
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0005637640133500099,
+            "CI95": [
+              -6.883379175843467e-06,
+              0.0011442766642348846
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.0042330678552389145,
+            "CI95": [
+              -0.007553120849933599,
+              -0.00149402390438247
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": -0.012577847577631474,
+            "CI95": [
+              -0.022743740198938336,
+              -0.0022009438252544125
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0005637640133500099,
+            "CI95": [
+              -6.883379175843467e-06,
+              0.0011442766642348846
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.0042330678552389145,
+            "CI95": [
+              -0.007553120849933599,
+              -0.00149402390438247
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": 0.002460126532241702,
+            "CI95": [
+              -0.0023320130459657546,
+              0.007502158304767937
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0002623545587994158,
+            "CI95": [
+              -9.87508055935818e-05,
+              0.0006191253122857524
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.00029050465673208237,
+            "CI95": [
+              -0.0023655378486055778,
+              0.0018478170650730356
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_random": {
+          "nmse_gain": {
+            "mean": -0.0054555488750338554,
+            "CI95": [
+              -0.01037050788760979,
+              -0.0006730818983295034
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.00037254783092066646,
+            "CI95": [
+              -0.00012823045912030648,
+              0.0008505165194817193
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.004337893798947334,
+            "CI95": [
+              -0.008489295463652843,
+              -0.0006194015021174973
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": -0.020624710246920586,
+            "CI95": [
+              -0.031911649075083204,
+              -0.010265762460817571
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0005950941704213619,
+            "CI95": [
+              -0.00012506945491589082,
+              0.0013106407807919763
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.007719123736023903,
+            "CI95": [
+              -0.012845493027888446,
+              -0.0031322626162018645
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": -0.020624710246920586,
+            "CI95": [
+              -0.031911649075083204,
+              -0.010265762460817571
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0005950941704213619,
+            "CI95": [
+              -0.00012506945491589082,
+              0.0013106407807919763
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.007719123736023903,
+            "CI95": [
+              -0.012845493027888446,
+              -0.0031322626162018645
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": -0.005586738232523203,
+            "CI95": [
+              -0.012611498872676536,
+              0.001494456669328063
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.00029368471587076783,
+            "CI95": [
+              -0.000382448344492659,
+              0.0009819928915357366
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.0037765605375170708,
+            "CI95": [
+              -0.008839641434262949,
+              0.0014328104249667938
+            ]
+          }
+        }
+      },
+      "fixed_threshold": {
+        "ue_gain": {
+          "retry_rate": 0.23705179282868527,
+          "gain_db": 0.05074602738022804,
+          "random_same_usage_gain_db": 0.03453006595373154,
+          "UE_same_expected_usage_gain_db": 0.05074602738022804,
+          "minus_UE_matched_usage": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "ue_quality_best": {
+          "retry_rate": 0.2410358565737052,
+          "gain_db": 0.05158674344420433,
+          "random_same_usage_gain_db": 0.03511040285229683,
+          "UE_same_expected_usage_gain_db": 0.05158674344420433,
+          "minus_UE_matched_usage": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "bs_unconditional_gain": {
+          "retry_rate": 0.2197875166002656,
+          "gain_db": 0.03203180432319641,
+          "random_same_usage_gain_db": 0.03201527148485184,
+          "UE_same_expected_usage_gain_db": 0.047482237219810486,
+          "minus_UE_matched_usage": {
+            "mean": -0.015450429171323776,
+            "CI95": [
+              -0.02533048136830132,
+              -0.005516747556933533
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "bs_conditional_gain": {
+          "retry_rate": 0.19853917662682602,
+          "gain_db": 0.0314907431602478,
+          "random_same_usage_gain_db": 0.028920140117406845,
+          "UE_same_expected_usage_gain_db": 0.044028494507074356,
+          "minus_UE_matched_usage": {
+            "mean": -0.012537749484181404,
+            "CI95": [
+              -0.022426122495877356,
+              -0.002786869927560532
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "bs_conditional_quality_worst": {
+          "retry_rate": 0.19322709163346613,
+          "gain_db": 0.023095641285181046,
+          "random_same_usage_gain_db": 0.028146356344223022,
+          "UE_same_expected_usage_gain_db": 0.04309822618961334,
+          "minus_UE_matched_usage": {
+            "mean": -0.020002590492367744,
+            "CI95": [
+              -0.030393554375149498,
+              -0.009998200839734173
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        }
+      },
+      "control_cost_sensitivity": {
+        "passflag0_request1": {
+          "ue_gain": {
+            "gain_db": 0.044423751533031464,
+            "retry_rate": 0.19999998807907104,
+            "overhead_equivalent_symbols_per_observation": 0.0,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "ue_quality_best": {
+            "gain_db": 0.044423751533031464,
+            "retry_rate": 0.19999998807907104,
+            "overhead_equivalent_symbols_per_observation": 0.0,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "bs_unconditional_gain": {
+            "gain_db": 0.028706690296530724,
+            "retry_rate": 0.19692307710647583,
+            "overhead_equivalent_symbols_per_observation": 0.19692307710647583,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_gain": {
+            "gain_db": 0.03138754889369011,
+            "retry_rate": 0.19692307710647583,
+            "overhead_equivalent_symbols_per_observation": 0.19692307710647583,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_quality_worst": {
+            "gain_db": 0.023394104093313217,
+            "retry_rate": 0.19692307710647583,
+            "overhead_equivalent_symbols_per_observation": 0.19692307710647583,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_minus_ue_gain": {
+            "mean": -0.013036200776696205,
+            "CI95": [
+              -0.022385064356652388,
+              -0.0030848477678905445
+            ]
+          }
+        },
+        "passflag1_request1": {
+          "ue_gain": {
+            "gain_db": 0.04147758334875107,
+            "retry_rate": 0.18437498807907104,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "ue_quality_best": {
+            "gain_db": 0.04147758334875107,
+            "retry_rate": 0.18437498807907104,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "bs_unconditional_gain": {
+            "gain_db": 0.027207644656300545,
+            "retry_rate": 0.1815384477376938,
+            "overhead_equivalent_symbols_per_observation": 1.181538462638855,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "bs_conditional_gain": {
+            "gain_db": 0.02870599739253521,
+            "retry_rate": 0.1815384477376938,
+            "overhead_equivalent_symbols_per_observation": 1.181538462638855,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "bs_conditional_quality_worst": {
+            "gain_db": 0.021985817700624466,
+            "retry_rate": 0.1815384477376938,
+            "overhead_equivalent_symbols_per_observation": 1.181538462638855,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "bs_conditional_minus_ue_gain": {
+            "mean": -0.012771585956215858,
+            "CI95": [
+              -0.022118764836031937,
+              -0.0030289212605006293
+            ]
+          }
+        },
+        "passflag1_request4": {
+          "ue_gain": {
+            "gain_db": 0.04147758334875107,
+            "retry_rate": 0.18437498807907104,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "ue_quality_best": {
+            "gain_db": 0.04147758334875107,
+            "retry_rate": 0.18437498807907104,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "bs_unconditional_gain": {
+            "gain_db": 0.02632082812488079,
+            "retry_rate": 0.17352941632270813,
+            "overhead_equivalent_symbols_per_observation": 1.6941176652908325,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_gain": {
+            "gain_db": 0.02751041203737259,
+            "retry_rate": 0.17352941632270813,
+            "overhead_equivalent_symbols_per_observation": 1.6941176652908325,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_quality_worst": {
+            "gain_db": 0.021296879276633263,
+            "retry_rate": 0.17352941632270813,
+            "overhead_equivalent_symbols_per_observation": 1.6941176652908325,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_minus_ue_gain": {
+            "mean": -0.013967173174023628,
+            "CI95": [
+              -0.023429942024428926,
+              -0.004375323764039883
+            ]
+          }
+        }
+      },
+      "diagnostics": {
+        "all_passed_repeat_gain_db": 0.14566464722156525,
+        "within_H_BS_gain_score_vs_actual_repeat_gain_spearman": -0.010345942712511932
+      }
+    },
+    "20": {
+      "original_observations": 1800,
+      "passed_observations": 1518,
+      "passed_unique_H": 506,
+      "pass_fraction": 0.8433333039283752,
+      "base_passed_nmse_db": -4.709864616394043,
+      "base_passed_bad_fraction": 0.1660079061985016,
+      "matched_retry_count": 303,
+      "policies": {
+        "ue_gain": {
+          "retry_rate": 0.19960474967956543,
+          "expected_retries": 303.0,
+          "gain_db": 0.003998490050435066,
+          "final_nmse_db": -4.713862895965576,
+          "sgcs_gain": 0.00016994643374346197,
+          "final_sgcs": 0.6564167737960815,
+          "bad_fraction": 0.1660079061985016,
+          "symbols_per_passed_observation": 76.77470397949219,
+          "total_actual_tx_energy": 84883.203125,
+          "selected_negative_expected_gain_fraction": 0.3234323561191559
+        },
+        "ue_quality_best": {
+          "retry_rate": 0.19960474967956543,
+          "expected_retries": 303.0,
+          "gain_db": 0.004231887403875589,
+          "final_nmse_db": -4.714096546173096,
+          "sgcs_gain": 0.00018009649647865444,
+          "final_sgcs": 0.6564269661903381,
+          "bad_fraction": 0.1660079061985016,
+          "symbols_per_passed_observation": 76.77470397949219,
+          "total_actual_tx_energy": 84912.0,
+          "selected_negative_expected_gain_fraction": 0.3135313391685486
+        },
+        "bs_unconditional_gain": {
+          "retry_rate": 0.19960474967956543,
+          "expected_retries": 303.0,
+          "gain_db": 0.0032141997944563627,
+          "final_nmse_db": -4.71307897567749,
+          "sgcs_gain": 0.0002870601892936975,
+          "final_sgcs": 0.6565338969230652,
+          "bad_fraction": 0.16493742167949677,
+          "symbols_per_passed_observation": 76.77470397949219,
+          "total_actual_tx_energy": 85917.59375,
+          "selected_negative_expected_gain_fraction": 0.3135313391685486
+        },
+        "bs_conditional_gain": {
+          "retry_rate": 0.19960474967956543,
+          "expected_retries": 303.0,
+          "gain_db": 0.0028216710779815912,
+          "final_nmse_db": -4.712686061859131,
+          "sgcs_gain": 0.00023327767848968506,
+          "final_sgcs": 0.6564801335334778,
+          "bad_fraction": 0.16493742167949677,
+          "symbols_per_passed_observation": 76.77470397949219,
+          "total_actual_tx_energy": 85787.1953125,
+          "selected_negative_expected_gain_fraction": 0.31683167815208435
+        },
+        "bs_conditional_quality_worst": {
+          "retry_rate": 0.19960474967956543,
+          "expected_retries": 303.0,
+          "gain_db": 0.002312145894393325,
+          "final_nmse_db": -4.71217679977417,
+          "sgcs_gain": 0.0002577083942014724,
+          "final_sgcs": 0.6565045714378357,
+          "bad_fraction": 0.16510210931301117,
+          "symbols_per_passed_observation": 76.77470397949219,
+          "total_actual_tx_energy": 86513.59375,
+          "selected_negative_expected_gain_fraction": 0.35973596572875977
+        },
+        "random": {
+          "retry_rate": 0.19960476458072662,
+          "expected_retries": 303.0000305175781,
+          "gain_db": 0.0030516600236296654,
+          "final_nmse_db": -4.712916374206543,
+          "sgcs_gain": 0.0002228630764875561,
+          "final_sgcs": 0.6564697027206421,
+          "bad_fraction": 0.16558876633644104,
+          "symbols_per_passed_observation": 76.7747049331665,
+          "total_actual_tx_energy": 85971.34375,
+          "selected_negative_expected_gain_fraction": 0.32608693838119507
+        }
+      },
+      "paired": {
+        "ue_gain_minus_random": {
+          "nmse_gain": {
+            "mean": 0.0009468298521824181,
+            "CI95": [
+              -0.0002732712001141933,
+              0.002266567664712382
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -5.2916639106115326e-05,
+            "CI95": [
+              -0.00011305399876756646,
+              9.442782877587861e-06
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.00041913051973097026,
+            "CI95": [
+              5.7527719357582264e-05,
+              0.0008464792991187104
+            ]
+          }
+        },
+        "ue_gain_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": -0.00023339733888860792,
+            "CI95": [
+              -0.0007333525712939276,
+              0.00024108170520646698
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -1.0150066373171285e-05,
+            "CI95": [
+              -3.6865608258680864e-05,
+              1.7265584786104708e-05
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "ue_gain_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": 0.0007842906634323299,
+            "CI95": [
+              -0.0008617676627651661,
+              0.002574708085993061
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.00011711376282619312,
+            "CI95": [
+              -0.00023049181805768974,
+              -1.1754832052587697e-05
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0010704874293878675,
+            "CI95": [
+              0.0,
+              0.0025331439393939336
+            ]
+          }
+        },
+        "ue_quality_best_minus_random": {
+          "nmse_gain": {
+            "mean": 0.0011802271474152803,
+            "CI95": [
+              -3.1716836601293774e-05,
+              0.0024820164070085927
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -4.276657273294404e-05,
+            "CI95": [
+              -0.00010261220152827376,
+              2.1971689872088146e-05
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.00041913051973097026,
+            "CI95": [
+              5.7527719357582264e-05,
+              0.0008464792991187104
+            ]
+          }
+        },
+        "ue_quality_best_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": 0.00023339733888860792,
+            "CI95": [
+              -0.0002410817052064677,
+              0.0007333525712939262
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 1.0150066373171285e-05,
+            "CI95": [
+              -1.726558478610475e-05,
+              3.686560825868085e-05
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "ue_quality_best_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": 0.0010176879586651921,
+            "CI95": [
+              -0.0006376055566218531,
+              0.0027468878093601357
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.00010696369281504303,
+            "CI95": [
+              -0.0002211689998117203,
+              5.03468811904325e-08
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0010704874293878675,
+            "CI95": [
+              0.0,
+              0.0025331439393939336
+            ]
+          }
+        },
+        "bs_unconditional_gain_minus_random": {
+          "nmse_gain": {
+            "mean": 0.00016253911599051207,
+            "CI95": [
+              -0.0008393399656555526,
+              0.0011927670300221683
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 6.419712008209899e-05,
+            "CI95": [
+              -1.1962203264045015e-05,
+              0.00014918082403500736
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.0006513569387607276,
+            "CI95": [
+              -0.0017884589891208333,
+              0.00021751906835671528
+            ]
+          }
+        },
+        "bs_unconditional_gain_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": -0.0007842906634323299,
+            "CI95": [
+              -0.002574708085993062,
+              0.0008617676627651659
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.00011711376282619312,
+            "CI95": [
+              1.1754832052587679e-05,
+              0.00023049181805768972
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.0010704874293878675,
+            "CI95": [
+              -0.0025331439393939392,
+              0.0
+            ]
+          }
+        },
+        "bs_unconditional_gain_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": -0.0010176879586651921,
+            "CI95": [
+              -0.0027468878093601374,
+              0.0006376055566218517
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.00010696369281504303,
+            "CI95": [
+              -5.034688119046425e-08,
+              0.00022116899981172025
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.0010704874293878675,
+            "CI95": [
+              -0.0025331439393939392,
+              0.0
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_random": {
+          "nmse_gain": {
+            "mean": -0.00022998914937488735,
+            "CI95": [
+              -0.0011459064085476462,
+              0.0007321223141211709
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 1.0414615644549485e-05,
+            "CI95": [
+              -6.826591673590798e-05,
+              8.879803812914139e-05
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.0006513569387607276,
+            "CI95": [
+              -0.0017884589891208333,
+              0.00021751906835671528
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": -0.001176818972453475,
+            "CI95": [
+              -0.0028559620083556344,
+              0.0004438164598542867
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 6.33312520221807e-05,
+            "CI95": [
+              -3.584358541783294e-05,
+              0.00016482703839287605
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.0010704874293878675,
+            "CI95": [
+              -0.0025331439393939392,
+              0.0
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": -0.0014102163258939981,
+            "CI95": [
+              -0.0031267483302727045,
+              0.0002114358626806669
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 5.318118564900942e-05,
+            "CI95": [
+              -4.774830371573351e-05,
+              0.00015453563338054804
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.0010704874293878675,
+            "CI95": [
+              -0.0025331439393939392,
+              0.0
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": -0.0003925283963326365,
+            "CI95": [
+              -0.0012949305128831324,
+              0.0005128026597584657
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -5.378251080401242e-05,
+            "CI95": [
+              -0.0001182941609456134,
+              1.165417068403539e-05
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_random": {
+          "nmse_gain": {
+            "mean": -0.0007395143620669842,
+            "CI95": [
+              -0.001616496233180631,
+              0.00010400464779271945
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 3.484532862785272e-05,
+            "CI95": [
+              -4.914826703869919e-05,
+              0.00012459061865790065
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.00048666654038242996,
+            "CI95": [
+              -0.0015491147475299942,
+              0.00036945694416996985
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": -0.0016863441560417414,
+            "CI95": [
+              -0.003444474615519854,
+              -4.2293708629133355e-05
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 8.776196773396805e-05,
+            "CI95": [
+              -2.3572044312090114e-05,
+              0.0002053148028525439
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.0009057971183210611,
+            "CI95": [
+              -0.002182147562582345,
+              4.117259552042161e-05
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": -0.0019197415094822645,
+            "CI95": [
+              -0.0036700951507283135,
+              -0.00023672533993350723
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 7.761190499877557e-05,
+            "CI95": [
+              -3.610647311716369e-05,
+              0.00019557740396975833
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.0009057971183210611,
+            "CI95": [
+              -0.002182147562582345,
+              4.117259552042161e-05
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": -0.0009020535508170724,
+            "CI95": [
+              -0.0022092156239806116,
+              0.00042499446154268975
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -2.935179327323567e-05,
+            "CI95": [
+              -0.0001390420567926525,
+              8.897867166634749e-05
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.00016469038382638246,
+            "CI95": [
+              -0.000946969696969697,
+              0.0014410408432147563
+            ]
+          }
+        }
+      },
+      "fixed_threshold": {
+        "ue_gain": {
+          "retry_rate": 0.2015810276679842,
+          "gain_db": 0.004011369775980711,
+          "random_same_usage_gain_db": 0.0030818746890872717,
+          "UE_same_expected_usage_gain_db": 0.004011369775980711,
+          "minus_UE_matched_usage": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "ue_quality_best": {
+          "retry_rate": 0.20553359683794467,
+          "gain_db": 0.00430578226223588,
+          "random_same_usage_gain_db": 0.0031423033215105534,
+          "UE_same_expected_usage_gain_db": 0.004054982680827379,
+          "minus_UE_matched_usage": {
+            "mean": 0.0002507996978238225,
+            "CI95": [
+              -9.249440137890803e-05,
+              0.0006480036124253305
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "bs_unconditional_gain": {
+          "retry_rate": 0.22002635046113306,
+          "gain_db": 0.003451744792982936,
+          "random_same_usage_gain_db": 0.003363876137882471,
+          "UE_same_expected_usage_gain_db": 0.004380292724817991,
+          "minus_UE_matched_usage": {
+            "mean": -0.0009285482228733599,
+            "CI95": [
+              -0.0027886382426337395,
+              0.0008132423764957925
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "bs_conditional_gain": {
+          "retry_rate": 0.18379446640316205,
+          "gain_db": 0.0026056156493723392,
+          "random_same_usage_gain_db": 0.002809944562613964,
+          "UE_same_expected_usage_gain_db": 0.003896918147802353,
+          "minus_UE_matched_usage": {
+            "mean": -0.0012913023820146918,
+            "CI95": [
+              -0.0030844783457057434,
+              0.0003171150529651609
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "bs_conditional_quality_worst": {
+          "retry_rate": 0.1686429512516469,
+          "gain_db": 0.00200596428476274,
+          "random_same_usage_gain_db": 0.0025783004239201546,
+          "UE_same_expected_usage_gain_db": 0.0037254097405821085,
+          "minus_UE_matched_usage": {
+            "mean": -0.0017194452229887247,
+            "CI95": [
+              -0.0034845041030433827,
+              -7.772200674307242e-05
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        }
+      },
+      "control_cost_sensitivity": {
+        "passflag0_request1": {
+          "ue_gain": {
+            "gain_db": 0.004001066088676453,
+            "retry_rate": 0.20000000298023224,
+            "overhead_equivalent_symbols_per_observation": 0.0,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "ue_quality_best": {
+            "gain_db": 0.004234349355101585,
+            "retry_rate": 0.19999998807907104,
+            "overhead_equivalent_symbols_per_observation": 0.0,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "bs_unconditional_gain": {
+            "gain_db": 0.0031828403007239103,
+            "retry_rate": 0.19692307710647583,
+            "overhead_equivalent_symbols_per_observation": 0.19692307710647583,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_gain": {
+            "gain_db": 0.0028500983025878668,
+            "retry_rate": 0.19692307710647583,
+            "overhead_equivalent_symbols_per_observation": 0.19692307710647583,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_quality_worst": {
+            "gain_db": 0.002367113484069705,
+            "retry_rate": 0.19692307710647583,
+            "overhead_equivalent_symbols_per_observation": 0.19692307710647583,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_minus_ue_gain": {
+            "mean": -0.0011509674368426204,
+            "CI95": [
+              -0.0027284028769226937,
+              0.00048012960526268484
+            ]
+          }
+        },
+        "passflag1_request1": {
+          "ue_gain": {
+            "gain_db": 0.00388833275064826,
+            "retry_rate": 0.18437500298023224,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "ue_quality_best": {
+            "gain_db": 0.004179598763585091,
+            "retry_rate": 0.18437498807907104,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "bs_unconditional_gain": {
+            "gain_db": 0.0029927727300673723,
+            "retry_rate": 0.18153846263885498,
+            "overhead_equivalent_symbols_per_observation": 1.181538462638855,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_gain": {
+            "gain_db": 0.002573026344180107,
+            "retry_rate": 0.18153846263885498,
+            "overhead_equivalent_symbols_per_observation": 1.181538462638855,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_quality_worst": {
+            "gain_db": 0.00212482619099319,
+            "retry_rate": 0.18153846263885498,
+            "overhead_equivalent_symbols_per_observation": 1.181538462638855,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_minus_ue_gain": {
+            "mean": -0.0013153061736375093,
+            "CI95": [
+              -0.0029167559977660105,
+              0.00023104795402011203
+            ]
+          }
+        },
+        "passflag1_request4": {
+          "ue_gain": {
+            "gain_db": 0.00388833275064826,
+            "retry_rate": 0.18437500298023224,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "ue_quality_best": {
+            "gain_db": 0.004179598763585091,
+            "retry_rate": 0.18437498807907104,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "bs_unconditional_gain": {
+            "gain_db": 0.0028350914362818003,
+            "retry_rate": 0.17352941632270813,
+            "overhead_equivalent_symbols_per_observation": 1.6941176652908325,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_gain": {
+            "gain_db": 0.0024531304370611906,
+            "retry_rate": 0.17352941632270813,
+            "overhead_equivalent_symbols_per_observation": 1.6941176652908325,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_quality_worst": {
+            "gain_db": 0.002048310125246644,
+            "retry_rate": 0.17352941632270813,
+            "overhead_equivalent_symbols_per_observation": 1.6941176652908325,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_minus_ue_gain": {
+            "mean": -0.0014352020807564259,
+            "CI95": [
+              -0.0030662263861681886,
+              0.00011884303173302598
+            ]
+          }
+        }
+      },
+      "diagnostics": {
+        "all_passed_repeat_gain_db": 0.015288515016436577,
+        "within_H_BS_gain_score_vs_actual_repeat_gain_spearman": -0.0060538165077555495
+      }
+    }
+  },
+  "fresh_test": {
+    "0": {
+      "original_observations": 1200,
+      "passed_observations": 1005,
+      "passed_unique_H": 335,
+      "pass_fraction": 0.8374999761581421,
+      "base_passed_nmse_db": -2.6081180572509766,
+      "base_passed_bad_fraction": 0.15522387623786926,
+      "matched_retry_count": 201,
+      "policies": {
+        "ue_gain": {
+          "retry_rate": 0.20000000298023224,
+          "expected_retries": 201.0,
+          "gain_db": 0.213705912232399,
+          "final_nmse_db": -2.821824073791504,
+          "sgcs_gain": 0.017456701025366783,
+          "final_sgcs": 0.48168349266052246,
+          "bad_fraction": 0.15335820615291595,
+          "symbols_per_passed_observation": 76.80000019073486,
+          "total_actual_tx_energy": 56160.0,
+          "selected_negative_expected_gain_fraction": 0.009950248524546623
+        },
+        "ue_quality_best": {
+          "retry_rate": 0.20000000298023224,
+          "expected_retries": 201.0,
+          "gain_db": 0.213705912232399,
+          "final_nmse_db": -2.821824073791504,
+          "sgcs_gain": 0.017456701025366783,
+          "final_sgcs": 0.48168349266052246,
+          "bad_fraction": 0.15335820615291595,
+          "symbols_per_passed_observation": 76.80000019073486,
+          "total_actual_tx_energy": 56160.0,
+          "selected_negative_expected_gain_fraction": 0.009950248524546623
+        },
+        "bs_unconditional_gain": {
+          "retry_rate": 0.20000000298023224,
+          "expected_retries": 201.0,
+          "gain_db": 0.1540670096874237,
+          "final_nmse_db": -2.7621850967407227,
+          "sgcs_gain": 0.016921158879995346,
+          "final_sgcs": 0.4811479449272156,
+          "bad_fraction": 0.1379353255033493,
+          "symbols_per_passed_observation": 76.80000019073486,
+          "total_actual_tx_energy": 56895.1953125,
+          "selected_negative_expected_gain_fraction": 0.014925372786819935
+        },
+        "bs_conditional_gain": {
+          "retry_rate": 0.20000000298023224,
+          "expected_retries": 201.0,
+          "gain_db": 0.15280680358409882,
+          "final_nmse_db": -2.760924816131592,
+          "sgcs_gain": 0.01635078713297844,
+          "final_sgcs": 0.4805775582790375,
+          "bad_fraction": 0.1407960206270218,
+          "symbols_per_passed_observation": 76.80000019073486,
+          "total_actual_tx_energy": 56922.39453125,
+          "selected_negative_expected_gain_fraction": 0.009950248524546623
+        },
+        "bs_conditional_quality_worst": {
+          "retry_rate": 0.20000000298023224,
+          "expected_retries": 201.0,
+          "gain_db": 0.11815019696950912,
+          "final_nmse_db": -2.7262682914733887,
+          "sgcs_gain": 0.016524042934179306,
+          "final_sgcs": 0.48075082898139954,
+          "bad_fraction": 0.12238805741071701,
+          "symbols_per_passed_observation": 76.80000019073486,
+          "total_actual_tx_energy": 57219.19921875,
+          "selected_negative_expected_gain_fraction": 0.004975124262273312
+        },
+        "random": {
+          "retry_rate": 0.20000001788139343,
+          "expected_retries": 201.00001525878906,
+          "gain_db": 0.1396445631980896,
+          "final_nmse_db": -2.747762680053711,
+          "sgcs_gain": 0.016241252422332764,
+          "final_sgcs": 0.4804680347442627,
+          "bad_fraction": 0.13554725050926208,
+          "symbols_per_passed_observation": 76.80000114440918,
+          "total_actual_tx_energy": 56937.6015625,
+          "selected_negative_expected_gain_fraction": 0.01293532270938158
+        }
+      },
+      "paired": {
+        "ue_gain_minus_random": {
+          "nmse_gain": {
+            "mean": 0.07406135648488998,
+            "CI95": [
+              0.03192971682732876,
+              0.12009948738170113
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0012154505820944905,
+            "CI95": [
+              -0.0027596169236413014,
+              0.005169547473260215
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.017810944467782974,
+            "CI95": [
+              0.012865982824792873,
+              0.02235199035242644
+            ]
+          }
+        },
+        "ue_gain_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "ue_gain_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": 0.05963890999555588,
+            "CI95": [
+              0.013262361000426373,
+              0.10864380865696042
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0005355438916012645,
+            "CI95": [
+              -0.003933337424599116,
+              0.0048937580393469664
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.015422885306179523,
+            "CI95": [
+              0.007462686567164179,
+              0.024721703980099496
+            ]
+          }
+        },
+        "ue_quality_best_minus_random": {
+          "nmse_gain": {
+            "mean": 0.07406135648488998,
+            "CI95": [
+              0.03192971682732876,
+              0.12009948738170113
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0012154505820944905,
+            "CI95": [
+              -0.0027596169236413014,
+              0.005169547473260215
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.017810944467782974,
+            "CI95": [
+              0.012865982824792873,
+              0.02235199035242644
+            ]
+          }
+        },
+        "ue_quality_best_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "ue_quality_best_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": 0.05963890999555588,
+            "CI95": [
+              0.013262361000426373,
+              0.10864380865696042
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0005355438916012645,
+            "CI95": [
+              -0.003933337424599116,
+              0.0048937580393469664
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.015422885306179523,
+            "CI95": [
+              0.007462686567164179,
+              0.024721703980099496
+            ]
+          }
+        },
+        "bs_unconditional_gain_minus_random": {
+          "nmse_gain": {
+            "mean": 0.014422444626688957,
+            "CI95": [
+              -0.009484743463589036,
+              0.04020061913267703
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0006799065740779042,
+            "CI95": [
+              -0.0022835437670936927,
+              0.0037826393684341534
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0023880600929260254,
+            "CI95": [
+              -0.005693718771802364,
+              0.010037935512552767
+            ]
+          }
+        },
+        "bs_unconditional_gain_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": -0.05963890999555588,
+            "CI95": [
+              -0.10864380865696058,
+              -0.013262361000426427
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.0005355438916012645,
+            "CI95": [
+              -0.004893758039346975,
+              0.003933337424599115
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.015422885306179523,
+            "CI95": [
+              -0.024721703980099503,
+              -0.007462686567164179
+            ]
+          }
+        },
+        "bs_unconditional_gain_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": -0.05963890999555588,
+            "CI95": [
+              -0.10864380865696058,
+              -0.013262361000426427
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.0005355438916012645,
+            "CI95": [
+              -0.004893758039346975,
+              0.003933337424599115
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.015422885306179523,
+            "CI95": [
+              -0.024721703980099503,
+              -0.007462686567164179
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_random": {
+          "nmse_gain": {
+            "mean": 0.013162229210138321,
+            "CI95": [
+              -0.010579074079139546,
+              0.037811338672989546
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.000109534477815032,
+            "CI95": [
+              -0.002395005029187027,
+              0.002778354495915374
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.005248756613582373,
+            "CI95": [
+              -0.0018656715658488708,
+              0.011530472800640654
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": -0.060899119824171066,
+            "CI95": [
+              -0.10567121470597253,
+              -0.014691339321990533
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.0011059161042794585,
+            "CI95": [
+              -0.005249530296049901,
+              0.0032035014151933767
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.012562189251184464,
+            "CI95": [
+              -0.01999533582089552,
+              -0.005659203980099502
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": -0.060899119824171066,
+            "CI95": [
+              -0.10567121470597253,
+              -0.014691339321990533
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.0011059161042794585,
+            "CI95": [
+              -0.005249530296049901,
+              0.0032035014151933767
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.012562189251184464,
+            "CI95": [
+              -0.01999533582089552,
+              -0.005659203980099502
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": -0.0012602151837199926,
+            "CI95": [
+              -0.020322323150895723,
+              0.018984272254640187
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.0005703720962628722,
+            "CI95": [
+              -0.002638140644007061,
+              0.001600446975349787
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0028606965206563473,
+            "CI95": [
+              -0.0028933457711442785,
+              0.00929881840796019
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_random": {
+          "nmse_gain": {
+            "mean": -0.021494371816515923,
+            "CI95": [
+              -0.041732636820663936,
+              0.00015956139570768972
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.00028279158868826926,
+            "CI95": [
+              -0.0022665166527858402,
+              0.003131665041075927
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.01315920427441597,
+            "CI95": [
+              -0.0231041671562736,
+              -0.004004353411236216
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": -0.09555571526288986,
+            "CI95": [
+              -0.15187826929845621,
+              -0.043161554400304114
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.0009326593135483563,
+            "CI95": [
+              -0.006330973056714926,
+              0.004235820554530438
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.030970148742198944,
+            "CI95": [
+              -0.04310634328358209,
+              -0.01974347014925374
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": -0.09555571526288986,
+            "CI95": [
+              -0.15187826929845621,
+              -0.043161554400304114
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.0009326593135483563,
+            "CI95": [
+              -0.006330973056714926,
+              0.004235820554530438
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.030970148742198944,
+            "CI95": [
+              -0.04310634328358209,
+              -0.01974347014925374
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": -0.03591681271791458,
+            "CI95": [
+              -0.07113830374099722,
+              -0.0010342232356617377
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.0003971152182202786,
+            "CI95": [
+              -0.0047262880951166155,
+              0.0038948520098752563
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.01554726343601942,
+            "CI95": [
+              -0.029664179104477613,
+              -0.002111318407960216
+            ]
+          }
+        }
+      },
+      "fixed_threshold": {
+        "ue_gain": {
+          "retry_rate": 0.22388059701492538,
+          "gain_db": 0.23181912302970886,
+          "random_same_usage_gain_db": 0.1563185304403305,
+          "UE_same_expected_usage_gain_db": 0.23181912302970886,
+          "minus_UE_matched_usage": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "ue_quality_best": {
+          "retry_rate": 0.22388059701492538,
+          "gain_db": 0.23181912302970886,
+          "random_same_usage_gain_db": 0.1563185304403305,
+          "UE_same_expected_usage_gain_db": 0.23181912302970886,
+          "minus_UE_matched_usage": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "bs_unconditional_gain": {
+          "retry_rate": 0.21393034825870647,
+          "gain_db": 0.16395440697669983,
+          "random_same_usage_gain_db": 0.14937104284763336,
+          "UE_same_expected_usage_gain_db": 0.22492098808288574,
+          "minus_UE_matched_usage": {
+            "mean": -0.06096656993031502,
+            "CI95": [
+              -0.1132183988622172,
+              -0.014439071377563287
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "bs_conditional_gain": {
+          "retry_rate": 0.2109452736318408,
+          "gain_db": 0.1621534675359726,
+          "random_same_usage_gain_db": 0.1472867876291275,
+          "UE_same_expected_usage_gain_db": 0.22275279462337494,
+          "minus_UE_matched_usage": {
+            "mean": -0.06059933081269264,
+            "CI95": [
+              -0.1094163034270652,
+              -0.015492909625913969
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "bs_conditional_quality_worst": {
+          "retry_rate": 0.19800995024875623,
+          "gain_db": 0.11710987985134125,
+          "random_same_usage_gain_db": 0.1382550597190857,
+          "UE_same_expected_usage_gain_db": 0.21176278591156006,
+          "minus_UE_matched_usage": {
+            "mean": -0.09465290606021881,
+            "CI95": [
+              -0.15299941704047854,
+              -0.042734529949835884
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        }
+      },
+      "control_cost_sensitivity": {
+        "passflag0_request1": {
+          "ue_gain": {
+            "gain_db": 0.213705912232399,
+            "retry_rate": 0.20000000298023224,
+            "overhead_equivalent_symbols_per_observation": 0.0,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "ue_quality_best": {
+            "gain_db": 0.213705912232399,
+            "retry_rate": 0.20000000298023224,
+            "overhead_equivalent_symbols_per_observation": 0.0,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_unconditional_gain": {
+            "gain_db": 0.15255875885486603,
+            "retry_rate": 0.19692306220531464,
+            "overhead_equivalent_symbols_per_observation": 0.19692306220531464,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "bs_conditional_gain": {
+            "gain_db": 0.15041962265968323,
+            "retry_rate": 0.19692306220531464,
+            "overhead_equivalent_symbols_per_observation": 0.19692306220531464,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "bs_conditional_quality_worst": {
+            "gain_db": 0.11642619222402573,
+            "retry_rate": 0.19692306220531464,
+            "overhead_equivalent_symbols_per_observation": 0.19692306220531464,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "bs_conditional_minus_ue_gain": {
+            "mean": -0.06328628212213516,
+            "CI95": [
+              -0.112754622043217,
+              -0.01754814515881876
+            ]
+          }
+        },
+        "passflag1_request1": {
+          "ue_gain": {
+            "gain_db": 0.20162475109100342,
+            "retry_rate": 0.18437500298023224,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "ue_quality_best": {
+            "gain_db": 0.20162475109100342,
+            "retry_rate": 0.18437500298023224,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_unconditional_gain": {
+            "gain_db": 0.1413295567035675,
+            "retry_rate": 0.18153846263885498,
+            "overhead_equivalent_symbols_per_observation": 1.181538462638855,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_gain": {
+            "gain_db": 0.13989846408367157,
+            "retry_rate": 0.18153846263885498,
+            "overhead_equivalent_symbols_per_observation": 1.181538462638855,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_quality_worst": {
+            "gain_db": 0.10665207356214523,
+            "retry_rate": 0.18153846263885498,
+            "overhead_equivalent_symbols_per_observation": 1.181538462638855,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_minus_ue_gain": {
+            "mean": -0.06172627583146095,
+            "CI95": [
+              -0.11202691692247319,
+              -0.015823468642300057
+            ]
+          }
+        },
+        "passflag1_request4": {
+          "ue_gain": {
+            "gain_db": 0.20162475109100342,
+            "retry_rate": 0.18437500298023224,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "ue_quality_best": {
+            "gain_db": 0.20162475109100342,
+            "retry_rate": 0.18437500298023224,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_unconditional_gain": {
+            "gain_db": 0.13638776540756226,
+            "retry_rate": 0.17352941632270813,
+            "overhead_equivalent_symbols_per_observation": 1.6941176652908325,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_gain": {
+            "gain_db": 0.13553938269615173,
+            "retry_rate": 0.17352941632270813,
+            "overhead_equivalent_symbols_per_observation": 1.6941176652908325,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_quality_worst": {
+            "gain_db": 0.10140885412693024,
+            "retry_rate": 0.17352941632270813,
+            "overhead_equivalent_symbols_per_observation": 1.6941176652908325,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_minus_ue_gain": {
+            "mean": -0.06608536094427109,
+            "CI95": [
+              -0.11672344506305841,
+              -0.02058136390438723
+            ]
+          }
+        }
+      },
+      "diagnostics": {
+        "all_passed_repeat_gain_db": 0.6982227563858032,
+        "within_H_BS_gain_score_vs_actual_repeat_gain_spearman": 0.03210042238097845,
+        "noise_excess_mean_db": 1.659461259841919,
+        "BS_gain_score_vs_noise_excess_spearman": 0.11390192471856143,
+        "noise_excess_definition": "Current NMSE_dB minus same frozen decoder on noiseless symbols at original SNR input; a controlled diagnostic, not additive source/channel mean-error decomposition."
+      }
+    },
+    "10": {
+      "original_observations": 1200,
+      "passed_observations": 1011,
+      "passed_unique_H": 337,
+      "pass_fraction": 0.8424999713897705,
+      "base_passed_nmse_db": -4.526031017303467,
+      "base_passed_bad_fraction": 0.14540059864521027,
+      "matched_retry_count": 201,
+      "policies": {
+        "ue_gain": {
+          "retry_rate": 0.1988130509853363,
+          "expected_retries": 201.0,
+          "gain_db": 0.04576267674565315,
+          "final_nmse_db": -4.571793556213379,
+          "sgcs_gain": 0.0018772989278659225,
+          "final_sgcs": 0.6433413624763489,
+          "bad_fraction": 0.14540059864521027,
+          "symbols_per_passed_observation": 76.72403526306152,
+          "total_actual_tx_energy": 56711.99609375,
+          "selected_negative_expected_gain_fraction": 0.06965173780918121
+        },
+        "ue_quality_best": {
+          "retry_rate": 0.1988130509853363,
+          "expected_retries": 201.0,
+          "gain_db": 0.04576267674565315,
+          "final_nmse_db": -4.571793556213379,
+          "sgcs_gain": 0.0018772989278659225,
+          "final_sgcs": 0.6433413624763489,
+          "bad_fraction": 0.14540059864521027,
+          "symbols_per_passed_observation": 76.72403526306152,
+          "total_actual_tx_energy": 56711.99609375,
+          "selected_negative_expected_gain_fraction": 0.06965173780918121
+        },
+        "bs_unconditional_gain": {
+          "retry_rate": 0.1988130509853363,
+          "expected_retries": 201.0,
+          "gain_db": 0.029008083045482635,
+          "final_nmse_db": -4.555038928985596,
+          "sgcs_gain": 0.002199088456109166,
+          "final_sgcs": 0.6436631679534912,
+          "bad_fraction": 0.14057862758636475,
+          "symbols_per_passed_observation": 76.72403526306152,
+          "total_actual_tx_energy": 57521.59765625,
+          "selected_negative_expected_gain_fraction": 0.10447761416435242
+        },
+        "bs_conditional_gain": {
+          "retry_rate": 0.1988130509853363,
+          "expected_retries": 201.0,
+          "gain_db": 0.02644849196076393,
+          "final_nmse_db": -4.5524797439575195,
+          "sgcs_gain": 0.0020913886837661266,
+          "final_sgcs": 0.6435554623603821,
+          "bad_fraction": 0.1394040584564209,
+          "symbols_per_passed_observation": 76.72403526306152,
+          "total_actual_tx_energy": 57460.796875,
+          "selected_negative_expected_gain_fraction": 0.13432836532592773
+        },
+        "bs_conditional_quality_worst": {
+          "retry_rate": 0.1988130509853363,
+          "expected_retries": 201.0,
+          "gain_db": 0.022651543840765953,
+          "final_nmse_db": -4.548682689666748,
+          "sgcs_gain": 0.002551184967160225,
+          "final_sgcs": 0.6440152525901794,
+          "bad_fraction": 0.13668397068977356,
+          "symbols_per_passed_observation": 76.72403526306152,
+          "total_actual_tx_energy": 57728.0,
+          "selected_negative_expected_gain_fraction": 0.1094527393579483
+        },
+        "random": {
+          "retry_rate": 0.1988130360841751,
+          "expected_retries": 200.99998474121094,
+          "gain_db": 0.027885153889656067,
+          "final_nmse_db": -4.553915977478027,
+          "sgcs_gain": 0.0020404658280313015,
+          "final_sgcs": 0.6435045003890991,
+          "bad_fraction": 0.14128322899341583,
+          "symbols_per_passed_observation": 76.7240343093872,
+          "total_actual_tx_energy": 57462.4609375,
+          "selected_negative_expected_gain_fraction": 0.10682491958141327
+        }
+      },
+      "paired": {
+        "ue_gain_minus_random": {
+          "nmse_gain": {
+            "mean": 0.017877522855997086,
+            "CI95": [
+              0.00832026598700566,
+              0.027427141575689845
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.00016316695837303996,
+            "CI95": [
+              -0.0006287446453134279,
+              0.00029430644642546483
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.004117357078939676,
+            "CI95": [
+              0.0022737644813608463,
+              0.006250086978435308
+            ]
+          }
+        },
+        "ue_gain_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "ue_gain_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": 0.016754595562815666,
+            "CI95": [
+              0.0043221373232606615,
+              0.02884336951696316
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.0003217893827240914,
+            "CI95": [
+              -0.0010702360078736653,
+              0.00039085558109891726
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.004821958485990763,
+            "CI95": [
+              -0.0003090999010880316,
+              0.010756676557863502
+            ]
+          }
+        },
+        "ue_quality_best_minus_random": {
+          "nmse_gain": {
+            "mean": 0.017877522855997086,
+            "CI95": [
+              0.00832026598700566,
+              0.027427141575689845
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.00016316695837303996,
+            "CI95": [
+              -0.0006287446453134279,
+              0.00029430644642546483
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.004117357078939676,
+            "CI95": [
+              0.0022737644813608463,
+              0.006250086978435308
+            ]
+          }
+        },
+        "ue_quality_best_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "ue_quality_best_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": 0.016754595562815666,
+            "CI95": [
+              0.0043221373232606615,
+              0.02884336951696316
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.0003217893827240914,
+            "CI95": [
+              -0.0010702360078736653,
+              0.00039085558109891726
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.004821958485990763,
+            "CI95": [
+              -0.0003090999010880316,
+              0.010756676557863502
+            ]
+          }
+        },
+        "bs_unconditional_gain_minus_random": {
+          "nmse_gain": {
+            "mean": 0.0011229250812903047,
+            "CI95": [
+              -0.005357892387243452,
+              0.007676881617672054
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.00015862238069530576,
+            "CI95": [
+              -0.00030290018509749895,
+              0.0006605494322515633
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.0007046008831821382,
+            "CI95": [
+              -0.005769349361422566,
+              0.003964861993411688
+            ]
+          }
+        },
+        "bs_unconditional_gain_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": -0.016754595562815666,
+            "CI95": [
+              -0.028843369516963185,
+              -0.004322137323260665
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0003217893827240914,
+            "CI95": [
+              -0.0003908555810989187,
+              0.001070236007873665
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.004821958485990763,
+            "CI95": [
+              -0.010756676557863502,
+              0.0003090999010880316
+            ]
+          }
+        },
+        "bs_unconditional_gain_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": -0.016754595562815666,
+            "CI95": [
+              -0.028843369516963185,
+              -0.004322137323260665
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0003217893827240914,
+            "CI95": [
+              -0.0003908555810989187,
+              0.001070236007873665
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.004821958485990763,
+            "CI95": [
+              -0.010756676557863502,
+              0.0003090999010880316
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_random": {
+          "nmse_gain": {
+            "mean": -0.0014366632094606757,
+            "CI95": [
+              -0.00745473728253133,
+              0.004939863824090034
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 5.0922655645990744e-05,
+            "CI95": [
+              -0.00044833413067895983,
+              0.000604063034382673
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.001879180665127933,
+            "CI95": [
+              -0.007593272642566869,
+              0.003185714709892142
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": -0.01931418664753437,
+            "CI95": [
+              -0.031221116087321123,
+              -0.006972539510382663
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.00021408965403679758,
+            "CI95": [
+              -0.0005110391169698019,
+              0.0010277830852834923
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.005996537860482931,
+            "CI95": [
+              -0.012829191394658754,
+              -0.0002472799208704253
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": -0.01931418664753437,
+            "CI95": [
+              -0.031221116087321123,
+              -0.006972539510382663
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.00021408965403679758,
+            "CI95": [
+              -0.0005110391169698019,
+              0.0010277830852834923
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.005996537860482931,
+            "CI95": [
+              -0.012829191394658754,
+              -0.0002472799208704253
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": -0.0025595887564122677,
+            "CI95": [
+              -0.00845641660348362,
+              0.0028591669985377753
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -0.00010769972868729383,
+            "CI95": [
+              -0.00050164097671339,
+              0.0002821318930499509
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.001174579607322812,
+            "CI95": [
+              -0.0035237388724035606,
+              0.000556379821958457
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_random": {
+          "nmse_gain": {
+            "mean": -0.005233611445873976,
+            "CI95": [
+              -0.010564362274288665,
+              0.000643802084205369
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0005107187898829579,
+            "CI95": [
+              -3.7209309438386084e-05,
+              0.0011126710284330617
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.004599259700626135,
+            "CI95": [
+              -0.01058766191395075,
+              0.0007415141459392298
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": -0.02311113476753235,
+            "CI95": [
+              -0.03590292794709154,
+              -0.01061461397790296
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0006738857482559979,
+            "CI95": [
+              -0.00011075451513190415,
+              0.00155014399398564
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.008716616779565811,
+            "CI95": [
+              -0.015949554896142432,
+              -0.0025346191889218596
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": -0.02311113476753235,
+            "CI95": [
+              -0.03590292794709154,
+              -0.01061461397790296
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0006738857482559979,
+            "CI95": [
+              -0.00011075451513190415,
+              0.00155014399398564
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.008716616779565811,
+            "CI95": [
+              -0.015949554896142432,
+              -0.0025346191889218596
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": -0.006356536876410246,
+            "CI95": [
+              -0.014929208955354436,
+              0.0024546837417591064
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 0.0003520964237395674,
+            "CI95": [
+              -0.0004316225515275044,
+              0.0011301375085416108
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.0038946587592363358,
+            "CI95": [
+              -0.010138476755687438,
+              0.00185459940652819
+            ]
+          }
+        }
+      },
+      "fixed_threshold": {
+        "ue_gain": {
+          "retry_rate": 0.2166172106824926,
+          "gain_db": 0.04876354709267616,
+          "random_same_usage_gain_db": 0.03038233518600464,
+          "UE_same_expected_usage_gain_db": 0.04876354709267616,
+          "minus_UE_matched_usage": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "ue_quality_best": {
+          "retry_rate": 0.2166172106824926,
+          "gain_db": 0.04876354709267616,
+          "random_same_usage_gain_db": 0.03038233518600464,
+          "UE_same_expected_usage_gain_db": 0.04876354709267616,
+          "minus_UE_matched_usage": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "bs_unconditional_gain": {
+          "retry_rate": 0.17012858555885263,
+          "gain_db": 0.024694548919796944,
+          "random_same_usage_gain_db": 0.023861926048994064,
+          "UE_same_expected_usage_gain_db": 0.0407649502158165,
+          "minus_UE_matched_usage": {
+            "mean": -0.016070401296019554,
+            "CI95": [
+              -0.028144578115036296,
+              -0.0037860825200934597
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "bs_conditional_gain": {
+          "retry_rate": 0.152324431256182,
+          "gain_db": 0.020253267139196396,
+          "random_same_usage_gain_db": 0.02136474847793579,
+          "UE_same_expected_usage_gain_db": 0.03796997666358948,
+          "minus_UE_matched_usage": {
+            "mean": -0.01771670952439308,
+            "CI95": [
+              -0.03034859996125043,
+              -0.005887736638954503
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "bs_conditional_quality_worst": {
+          "retry_rate": 0.2176063303659743,
+          "gain_db": 0.025422941893339157,
+          "random_same_usage_gain_db": 0.03052106872200966,
+          "UE_same_expected_usage_gain_db": 0.04889526590704918,
+          "minus_UE_matched_usage": {
+            "mean": -0.023472324013710022,
+            "CI95": [
+              -0.037910097961624464,
+              -0.010069311272010254
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        }
+      },
+      "control_cost_sensitivity": {
+        "passflag0_request1": {
+          "ue_gain": {
+            "gain_db": 0.046058766543865204,
+            "retry_rate": 0.20000000298023224,
+            "overhead_equivalent_symbols_per_observation": 0.0,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "ue_quality_best": {
+            "gain_db": 0.046058766543865204,
+            "retry_rate": 0.20000000298023224,
+            "overhead_equivalent_symbols_per_observation": 0.0,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_unconditional_gain": {
+            "gain_db": 0.028859557583928108,
+            "retry_rate": 0.19692307710647583,
+            "overhead_equivalent_symbols_per_observation": 0.19692307710647583,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_gain": {
+            "gain_db": 0.026208626106381416,
+            "retry_rate": 0.19692307710647583,
+            "overhead_equivalent_symbols_per_observation": 0.19692307710647583,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_quality_worst": {
+            "gain_db": 0.022325247526168823,
+            "retry_rate": 0.19692307710647583,
+            "overhead_equivalent_symbols_per_observation": 0.19692307710647583,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_minus_ue_gain": {
+            "mean": -0.019850140437483788,
+            "CI95": [
+              -0.03264704056955371,
+              -0.006943247204464098
+            ]
+          }
+        },
+        "passflag1_request1": {
+          "ue_gain": {
+            "gain_db": 0.04343494772911072,
+            "retry_rate": 0.18437501788139343,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.80000114440918
+          },
+          "ue_quality_best": {
+            "gain_db": 0.04343494772911072,
+            "retry_rate": 0.18437501788139343,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.80000114440918
+          },
+          "bs_unconditional_gain": {
+            "gain_db": 0.026216033846139908,
+            "retry_rate": 0.18153846263885498,
+            "overhead_equivalent_symbols_per_observation": 1.181538462638855,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_gain": {
+            "gain_db": 0.02414465695619583,
+            "retry_rate": 0.18153846263885498,
+            "overhead_equivalent_symbols_per_observation": 1.181538462638855,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_quality_worst": {
+            "gain_db": 0.021133912727236748,
+            "retry_rate": 0.18153846263885498,
+            "overhead_equivalent_symbols_per_observation": 1.181538462638855,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_minus_ue_gain": {
+            "mean": -0.019290288910269737,
+            "CI95": [
+              -0.03195267257326247,
+              -0.006686342264994035
+            ]
+          }
+        },
+        "passflag1_request4": {
+          "ue_gain": {
+            "gain_db": 0.04343494772911072,
+            "retry_rate": 0.18437501788139343,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.80000114440918
+          },
+          "ue_quality_best": {
+            "gain_db": 0.04343494772911072,
+            "retry_rate": 0.18437501788139343,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.80000114440918
+          },
+          "bs_unconditional_gain": {
+            "gain_db": 0.025064490735530853,
+            "retry_rate": 0.17352941632270813,
+            "overhead_equivalent_symbols_per_observation": 1.6941176652908325,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_gain": {
+            "gain_db": 0.02341402694582939,
+            "retry_rate": 0.17352941632270813,
+            "overhead_equivalent_symbols_per_observation": 1.6941176652908325,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_quality_worst": {
+            "gain_db": 0.020476464182138443,
+            "retry_rate": 0.17352941632270813,
+            "overhead_equivalent_symbols_per_observation": 1.6941176652908325,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_minus_ue_gain": {
+            "mean": -0.020020918920636177,
+            "CI95": [
+              -0.03275333849879481,
+              -0.0073952554854767975
+            ]
+          }
+        }
+      },
+      "diagnostics": {
+        "all_passed_repeat_gain_db": 0.14025817811489105,
+        "within_H_BS_gain_score_vs_actual_repeat_gain_spearman": -0.051313590416525307,
+        "noise_excess_mean_db": 0.2856300175189972,
+        "BS_gain_score_vs_noise_excess_spearman": 0.04191357801024013,
+        "noise_excess_definition": "Current NMSE_dB minus same frozen decoder on noiseless symbols at original SNR input; a controlled diagnostic, not additive source/channel mean-error decomposition."
+      }
+    },
+    "20": {
+      "original_observations": 1200,
+      "passed_observations": 1017,
+      "passed_unique_H": 339,
+      "pass_fraction": 0.8475000262260437,
+      "base_passed_nmse_db": -4.775175094604492,
+      "base_passed_bad_fraction": 0.15142576396465302,
+      "matched_retry_count": 204,
+      "policies": {
+        "ue_gain": {
+          "retry_rate": 0.20058996975421906,
+          "expected_retries": 204.0,
+          "gain_db": 0.005174797959625721,
+          "final_nmse_db": -4.7803497314453125,
+          "sgcs_gain": 0.00019010002142749727,
+          "final_sgcs": 0.6600571870803833,
+          "bad_fraction": 0.15142576396465302,
+          "symbols_per_passed_observation": 76.83775806427002,
+          "total_actual_tx_energy": 57328.796875,
+          "selected_negative_expected_gain_fraction": 0.30392158031463623
+        },
+        "ue_quality_best": {
+          "retry_rate": 0.20058996975421906,
+          "expected_retries": 204.0,
+          "gain_db": 0.0049144914373755455,
+          "final_nmse_db": -4.780089378356934,
+          "sgcs_gain": 0.0001740490843076259,
+          "final_sgcs": 0.6600411534309387,
+          "bad_fraction": 0.15142576396465302,
+          "symbols_per_passed_observation": 76.83775806427002,
+          "total_actual_tx_energy": 57285.6015625,
+          "selected_negative_expected_gain_fraction": 0.3137255012989044
+        },
+        "bs_unconditional_gain": {
+          "retry_rate": 0.20058996975421906,
+          "expected_retries": 204.0,
+          "gain_db": 0.0028850743547081947,
+          "final_nmse_db": -4.778059959411621,
+          "sgcs_gain": 0.00021677139739040285,
+          "final_sgcs": 0.6600838899612427,
+          "bad_fraction": 0.1492748260498047,
+          "symbols_per_passed_observation": 76.83775806427002,
+          "total_actual_tx_energy": 58275.99609375,
+          "selected_negative_expected_gain_fraction": 0.3529411852359772
+        },
+        "bs_conditional_gain": {
+          "retry_rate": 0.20058996975421906,
+          "expected_retries": 204.0,
+          "gain_db": 0.003260270692408085,
+          "final_nmse_db": -4.778435230255127,
+          "sgcs_gain": 0.00024001041310839355,
+          "final_sgcs": 0.6601071357727051,
+          "bad_fraction": 0.15087266266345978,
+          "symbols_per_passed_observation": 76.83775806427002,
+          "total_actual_tx_energy": 58158.39453125,
+          "selected_negative_expected_gain_fraction": 0.3578431308269501
+        },
+        "bs_conditional_quality_worst": {
+          "retry_rate": 0.20058996975421906,
+          "expected_retries": 204.0,
+          "gain_db": 0.0013509512646123767,
+          "final_nmse_db": -4.776525974273682,
+          "sgcs_gain": 0.00015592249110341072,
+          "final_sgcs": 0.660023033618927,
+          "bad_fraction": 0.15179449319839478,
+          "symbols_per_passed_observation": 76.83775806427002,
+          "total_actual_tx_energy": 58360.0,
+          "selected_negative_expected_gain_fraction": 0.38725489377975464
+        },
+        "random": {
+          "retry_rate": 0.20058995485305786,
+          "expected_retries": 203.99998474121094,
+          "gain_db": 0.003011526772752404,
+          "final_nmse_db": -4.778186798095703,
+          "sgcs_gain": 0.00020136804960202426,
+          "final_sgcs": 0.6600684523582458,
+          "bad_fraction": 0.1511792093515396,
+          "symbols_per_passed_observation": 76.8377571105957,
+          "total_actual_tx_energy": 58031.71484375,
+          "selected_negative_expected_gain_fraction": 0.3461160659790039
+        }
+      },
+      "paired": {
+        "ue_gain_minus_random": {
+          "nmse_gain": {
+            "mean": 0.0021632714197039604,
+            "CI95": [
+              0.0007873756472864558,
+              0.0037610596379228684
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -1.1268027265032288e-05,
+            "CI95": [
+              -8.718043310462302e-05,
+              6.648165866881e-05
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.00024654617300257087,
+            "CI95": [
+              -0.00029585542017181887,
+              0.0008382569856331808
+            ]
+          }
+        },
+        "ue_gain_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": 0.00026030666776932776,
+            "CI95": [
+              -0.00027507844810523347,
+              0.0008560362935886737
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 1.605093893886078e-05,
+            "CI95": [
+              -1.2134849263269055e-05,
+              5.261091590513757e-05
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "ue_gain_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": 0.00228972383774817,
+            "CI95": [
+              0.00026894738071670454,
+              0.004408959125698838
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -2.6671379600884393e-05,
+            "CI95": [
+              -0.0001607571753252924,
+              0.00011025443746394229
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.002150934189558029,
+            "CI95": [
+              0.0,
+              0.0051007866273352995
+            ]
+          }
+        },
+        "ue_quality_best_minus_random": {
+          "nmse_gain": {
+            "mean": 0.001902964897453785,
+            "CI95": [
+              0.0005308258826172115,
+              0.003359513007772708
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -2.7318963475408964e-05,
+            "CI95": [
+              -9.505875601824118e-05,
+              4.82700345822896e-05
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.00024654617300257087,
+            "CI95": [
+              -0.00029585542017181887,
+              0.0008382569856331808
+            ]
+          }
+        },
+        "ue_quality_best_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": -0.00026030666776932776,
+            "CI95": [
+              -0.0008560362935886739,
+              0.00027507844810523336
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -1.605093893886078e-05,
+            "CI95": [
+              -5.261091590513757e-05,
+              1.2134849263269055e-05
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "ue_quality_best_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": 0.0020294170826673508,
+            "CI95": [
+              7.417072471498625e-05,
+              0.004095086264868167
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -4.272231672075577e-05,
+            "CI95": [
+              -0.00017435858969374276,
+              9.647522601523341e-05
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.002150934189558029,
+            "CI95": [
+              0.0,
+              0.0051007866273352995
+            ]
+          }
+        },
+        "bs_unconditional_gain_minus_random": {
+          "nmse_gain": {
+            "mean": -0.00012645221431739628,
+            "CI95": [
+              -0.0013451868498423113,
+              0.0011857216212846882
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 1.540335506433621e-05,
+            "CI95": [
+              -8.619889419426361e-05,
+              0.00011958373727157457
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.001904388191178441,
+            "CI95": [
+              -0.004392637234573109,
+              -9.860939411730341e-05
+            ]
+          }
+        },
+        "bs_unconditional_gain_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": -0.00228972383774817,
+            "CI95": [
+              -0.004408959125698843,
+              -0.00026894738071670486
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 2.6671379600884393e-05,
+            "CI95": [
+              -0.0001102544374639423,
+              0.00016075717532529232
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.002150934189558029,
+            "CI95": [
+              -0.0051007866273352995,
+              0.0
+            ]
+          }
+        },
+        "bs_unconditional_gain_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": -0.0020294170826673508,
+            "CI95": [
+              -0.004095086264868167,
+              -7.417072471498948e-05
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 4.272231672075577e-05,
+            "CI95": [
+              -9.647522601523348e-05,
+              0.00017435858969374265
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.002150934189558029,
+            "CI95": [
+              -0.0051007866273352995,
+              0.0
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_random": {
+          "nmse_gain": {
+            "mean": 0.00024874406517483294,
+            "CI95": [
+              -0.0009161719583628756,
+              0.0015062646137409107
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 3.8642359868390486e-05,
+            "CI95": [
+              -5.7046517214396226e-05,
+              0.00013994006859847466
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.0003065511991735548,
+            "CI95": [
+              -0.0019902849490703936,
+              0.0011369223549372283
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": -0.0019145275000482798,
+            "CI95": [
+              -0.004048767208232523,
+              0.00011055582040882227
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 4.991039168089628e-05,
+            "CI95": [
+              -7.785570055920348e-05,
+              0.00018530321273597404
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.0005530973430722952,
+            "CI95": [
+              -0.0025811209439528023,
+              0.0011676499508357916
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": -0.0016542207449674606,
+            "CI95": [
+              -0.0037373591020278406,
+              0.0003315077770424416
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 6.596132880076766e-05,
+            "CI95": [
+              -6.306508268461349e-05,
+              0.00019271248913092578
+            ]
+          },
+          "bad_fraction": {
+            "mean": -0.0005530973430722952,
+            "CI95": [
+              -0.0025811209439528023,
+              0.0011676499508357916
+            ]
+          }
+        },
+        "bs_conditional_gain_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": 0.0003751962794922292,
+            "CI95": [
+              -0.0007964507492594311,
+              0.0015818688487350167
+            ]
+          },
+          "sgcs_gain": {
+            "mean": 2.323901208001189e-05,
+            "CI95": [
+              -5.967113662844445e-05,
+              0.00012096326098563974
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0015978367300704122,
+            "CI95": [
+              0.0,
+              0.004240412979351032
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_random": {
+          "nmse_gain": {
+            "mean": -0.0016605752753093839,
+            "CI95": [
+              -0.0025811310688949795,
+              -0.0007318406823404614
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -4.544554394669831e-05,
+            "CI95": [
+              -0.00013805959647464366,
+              4.863761618875768e-05
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0006152777350507677,
+            "CI95": [
+              -0.0007600828531796191,
+              0.0021501319436448
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_ue_gain": {
+          "nmse_gain": {
+            "mean": -0.003823846811428666,
+            "CI95": [
+              -0.00597583399526958,
+              -0.001991762307306776
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -3.4177519410150126e-05,
+            "CI95": [
+              -0.00016506569883113062,
+              9.011069025144699e-05
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0003687315620481968,
+            "CI95": [
+              -0.0014134709931170107,
+              0.002273844641101278
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_ue_quality_best": {
+          "nmse_gain": {
+            "mean": -0.003563540056347847,
+            "CI95": [
+              -0.005563055343684194,
+              -0.0017670323509968375
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -1.8126580471289344e-05,
+            "CI95": [
+              -0.00014516707791808548,
+              0.00010605310268458343
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.0003687315620481968,
+            "CI95": [
+              -0.0014134709931170107,
+              0.002273844641101278
+            ]
+          }
+        },
+        "bs_conditional_quality_worst_minus_bs_unconditional_gain": {
+          "nmse_gain": {
+            "mean": -0.001534123090095818,
+            "CI95": [
+              -0.0032227102253172134,
+              0.00012088952807667163
+            ]
+          },
+          "sgcs_gain": {
+            "mean": -6.084889901103452e-05,
+            "CI95": [
+              -0.00022284200702562211,
+              9.30540681236964e-05
+            ]
+          },
+          "bad_fraction": {
+            "mean": 0.002519665751606226,
+            "CI95": [
+              0.00021355703048180934,
+              0.005346607669616519
+            ]
+          }
+        }
+      },
+      "fixed_threshold": {
+        "ue_gain": {
+          "retry_rate": 0.20353982300884957,
+          "gain_db": 0.005124093033373356,
+          "random_same_usage_gain_db": 0.0030558137223124504,
+          "UE_same_expected_usage_gain_db": 0.005124093033373356,
+          "minus_UE_matched_usage": {
+            "mean": 0.0,
+            "CI95": [
+              0.0,
+              0.0
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "ue_quality_best": {
+          "retry_rate": 0.1887905604719764,
+          "gain_db": 0.0049856179393827915,
+          "random_same_usage_gain_db": 0.002834378043189645,
+          "UE_same_expected_usage_gain_db": 0.004904475994408131,
+          "minus_UE_matched_usage": {
+            "mean": 8.114202501019463e-05,
+            "CI95": [
+              -0.0003311243966851849,
+              0.0005316775691427195
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "bs_unconditional_gain": {
+          "retry_rate": 0.17305801376597837,
+          "gain_db": 0.002579330001026392,
+          "random_same_usage_gain_db": 0.0025981799699366093,
+          "UE_same_expected_usage_gain_db": 0.004355249460786581,
+          "minus_UE_matched_usage": {
+            "mean": -0.0017759191105142236,
+            "CI95": [
+              -0.0036836566399845168,
+              0.0001427225968200657
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "bs_conditional_gain": {
+          "retry_rate": 0.12291052114060963,
+          "gain_db": 0.002134930808097124,
+          "random_same_usage_gain_db": 0.0018452982185408473,
+          "UE_same_expected_usage_gain_db": 0.0037725267466157675,
+          "minus_UE_matched_usage": {
+            "mean": -0.0016375958221033216,
+            "CI95": [
+              -0.0033808131139026498,
+              0.00018276692665252422
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        },
+        "bs_conditional_quality_worst": {
+          "retry_rate": 0.18092428711897737,
+          "gain_db": 0.0012108267983421683,
+          "random_same_usage_gain_db": 0.002716278890147805,
+          "UE_same_expected_usage_gain_db": 0.004552307538688183,
+          "minus_UE_matched_usage": {
+            "mean": -0.00334148108959198,
+            "CI95": [
+              -0.005197619851000951,
+              -0.0016953191634555122
+            ]
+          },
+          "note": "Fixed validation threshold; matched UE count is an offline expected-resource comparison with possible fractional boundary, not a deployed causal UE controller."
+        }
+      },
+      "control_cost_sensitivity": {
+        "passflag0_request1": {
+          "ue_gain": {
+            "gain_db": 0.005165622103959322,
+            "retry_rate": 0.19999998807907104,
+            "overhead_equivalent_symbols_per_observation": 0.0,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "ue_quality_best": {
+            "gain_db": 0.004910001531243324,
+            "retry_rate": 0.19999998807907104,
+            "overhead_equivalent_symbols_per_observation": 0.0,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "bs_unconditional_gain": {
+            "gain_db": 0.0027501878794282675,
+            "retry_rate": 0.19692307710647583,
+            "overhead_equivalent_symbols_per_observation": 0.19692307710647583,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_gain": {
+            "gain_db": 0.003257661359384656,
+            "retry_rate": 0.19692307710647583,
+            "overhead_equivalent_symbols_per_observation": 0.19692307710647583,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_quality_worst": {
+            "gain_db": 0.0013268392067402601,
+            "retry_rate": 0.19692307710647583,
+            "overhead_equivalent_symbols_per_observation": 0.19692307710647583,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_minus_ue_gain": {
+            "mean": -0.0019079605117440224,
+            "CI95": [
+              -0.004058380580505845,
+              0.00013430290508624983
+            ]
+          }
+        },
+        "passflag1_request1": {
+          "ue_gain": {
+            "gain_db": 0.0046358974650502205,
+            "retry_rate": 0.18437498807907104,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "ue_quality_best": {
+            "gain_db": 0.004972198978066444,
+            "retry_rate": 0.18437498807907104,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "bs_unconditional_gain": {
+            "gain_db": 0.0027883886359632015,
+            "retry_rate": 0.18153846263885498,
+            "overhead_equivalent_symbols_per_observation": 1.181538462638855,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_gain": {
+            "gain_db": 0.0030328286811709404,
+            "retry_rate": 0.18153846263885498,
+            "overhead_equivalent_symbols_per_observation": 1.181538462638855,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_quality_worst": {
+            "gain_db": 0.001191978924907744,
+            "retry_rate": 0.18153846263885498,
+            "overhead_equivalent_symbols_per_observation": 1.181538462638855,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_minus_ue_gain": {
+            "mean": -0.001603068900294602,
+            "CI95": [
+              -0.003605342249049129,
+              0.0003372802027588618
+            ]
+          }
+        },
+        "passflag1_request4": {
+          "ue_gain": {
+            "gain_db": 0.0046358974650502205,
+            "retry_rate": 0.18437498807907104,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "ue_quality_best": {
+            "gain_db": 0.004972198978066444,
+            "retry_rate": 0.18437498807907104,
+            "overhead_equivalent_symbols_per_observation": 1.0,
+            "total_extra_equivalent_symbols_per_observation": 12.799999237060547
+          },
+          "bs_unconditional_gain": {
+            "gain_db": 0.0025708500761538744,
+            "retry_rate": 0.17352941632270813,
+            "overhead_equivalent_symbols_per_observation": 1.6941176652908325,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_gain": {
+            "gain_db": 0.0028984725940972567,
+            "retry_rate": 0.17352941632270813,
+            "overhead_equivalent_symbols_per_observation": 1.6941176652908325,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_quality_worst": {
+            "gain_db": 0.0011742698261514306,
+            "retry_rate": 0.17352941632270813,
+            "overhead_equivalent_symbols_per_observation": 1.6941176652908325,
+            "total_extra_equivalent_symbols_per_observation": 12.800000190734863
+          },
+          "bs_conditional_minus_ue_gain": {
+            "mean": -0.0017374251037836075,
+            "CI95": [
+              -0.0037753052985700416,
+              0.00021938737362784303
+            ]
+          }
+        }
+      },
+      "diagnostics": {
+        "all_passed_repeat_gain_db": 0.015013346448540688,
+        "within_H_BS_gain_score_vs_actual_repeat_gain_spearman": 0.043022336840090686,
+        "noise_excess_mean_db": 0.030940476804971695,
+        "BS_gain_score_vs_noise_excess_spearman": 0.014341794280426597,
+        "noise_excess_definition": "Current NMSE_dB minus same frozen decoder on noiseless symbols at original SNR input; a controlled diagnostic, not additive source/channel mean-error decomposition."
+      }
+    }
+  },
+  "costs": {
+    "bs_unconditional_gain": {
+      "parameters": 25081,
+      "linear_MACs": 24904
+    },
+    "bs_conditional_gain": {
+      "parameters": 25081,
+      "linear_MACs": 24904
+    },
+    "bs_conditional_quality": {
+      "parameters": 25081,
+      "linear_MACs": 24904
+    },
+    "ue_gain": {
+      "parameters": 24956,
+      "linear_MACs": 24645
+    }
+  },
+  "proxy_cost": {
+    "parameters": 112198,
+    "conv_linear_MACs": 4680720
+  },
+  "seconds": 76.87144219999755,
+  "audit": {
+    "source_state_unchanged": true,
+    "source_gradients_empty": true,
+    "original_files_unchanged": true,
+    "gate_and_training_locked_before_fresh_test": true,
+    "BS_inputs_y_features_condition_only": true
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "args": {
+    "seed": 0,
+    "epochs": 40,
+    "bs": 128,
+    "threads": 8,
+    "lam": 1.0,
+    "smoke": false
+  },
+  "scope": "fixedNs64,adaptedRD-AE,AFbothsides,finite16QAM,AWGN,one_seed",
+  "training": "all six from identical per-seed initialization; Adam2e-3 wd1e-5 cosine; 46 batches/epoch, 40 final epochs; original files read only",
+  "shared_conditions": "half batches anchor0/10/20; rest per-sampleU0,20; fixedNs64; shared arms share order, conditions and eps",
+  "weighted": "0dB anchor weight3,rest1; objective divided by constant expected weight4/3",
+  "distilled": "lambda1 on anchor batches only; teacher frozen eval; same standardized Gaussian draw, per-model actual-power scale; no teacher at deployment",
+  "evaluation": "fixed train-calibrated per-model per-SNR power; 0/5/10/15/20; testH600:1000,3 common Gaussian draws; two NMSE definitions and direct squaredSGCS",
+  "bn": "raw,mixed for students,target; each whole6000 trainingH pass; parameters/encoder/power fixed; teachers raw and target at their ownSNR",
+  "limits": "singleseed pilot, known historical testpopulation; fixedlength cannot characterize multi-lengthsharing; no official fullRDJSCC",
+  "planned_models": [
+    "teacher_0",
+    "teacher_10",
+    "teacher_20",
+    "shared",
+    "weighted",
+    "distilled"
+  ],
+  "source_sha256": {
+    "simulation\\model_rdae.py": "5cf3842fe7f863e4b8adae8ab6d44c030d3149345225d81a466b9b42d83aac1b",
+    "simulation\\model_v4.py": "34aa7fc0898072791c9ff42a7320de309735274b55a38bd3abf873405a831122",
+    "simulation\\train_rdae.py": "a1193b1d781a116ae157219ffbaf48ad96eb1994eacb6a9668ea3933b991d773",
+    "simulation\\ckpt_rdae\\rdae_batch_s0.pt": "347e79ce5c6286076a84f38b1968f9ef8e34c777e9ee573043b310c62db93a24",
+    "simulation\\ckpt_rdae\\rdae_sample_s0.pt": "1239c18a17ce302eed12845d6fcdb8e40ed6a9a94bda3216cd049ea6b1714a90",
+    "simulation\\ckpt_rdae\\rdae_sample_s1.pt": "95f08302eb12906c7cace09bcbda919de8d7c32610e8cdd1ee5145471561ad0d",
+    "simulation\\ckpt_rdae\\rdae_sample_s2.pt": "7d81d5f4f8bd236fc601813bd53474655f5f35e1462533fe4549ab0081f80dda",
+    "simulation\\data\\train.npz": "2260eece04ecfb09614f5c792753d5edf154227359e00c7ad336e3e37c460730",
+    "simulation\\data\\val.npz": "a6383947831f883c74c23faa92d1d2ae2e28b9fb30108268006d32cf4d6b4e6e",
+    "simulation\\data\\test.npz": "39483486ca1e0f243498e9f71916351f3d1fa3efdb2deab989722ca8ee6c4f7f"
+  },
+  "script_sha256": "b23be65c3210d6e9fdb4387a0b865dcc3c8e345ef1532a0180b37bf4f1393318",
+  "initial_script_sha256": "a0ed64f66b9b0c0d9fb386666fcff655de742a204bc9c4f713ed7a14f42b0c85",
+  "serialization_amendment": "Only JSON-normalize checkpoint metadata before torch.save; no training, sampling, weights, objectives or evaluation settings changed. Five existing outputs repaired with bitwise state checks. Initial source and pre-repair files preserved."
+}

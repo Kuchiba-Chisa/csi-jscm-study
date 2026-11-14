@@ -1,0 +1,51 @@
+{
+  "seed": 1,
+  "meta": {
+    "selected_epoch": 7,
+    "validation_nmse_db": [
+      -3.129993438720703,
+      -3.1319804191589355,
+      -3.133502721786499,
+      -3.1327314376831055,
+      -3.1331231594085693,
+      -3.1331324577331543,
+      -3.133678674697876,
+      -3.133600950241089,
+      -3.1325950622558594,
+      -3.132131814956665,
+      -3.132675886154175,
+      -3.1318323612213135
+    ],
+    "seconds": 25.325455400001374,
+    "parameters": 39106
+  },
+  "cells": {
+    "0": {
+      "original_continuation_improvement_db": 0.023876694962382317,
+      "adapted_continuation_improvement_db": 0.11080764979124069,
+      "adaptation_extra_update_benefit_db": 0.08693095296621323,
+      "adaptation_extra_update_benefit_H_CI95": [
+        0.07744565127541622,
+        0.09654445621968868
+      ]
+    },
+    "10": {
+      "original_continuation_improvement_db": 0.009157273918390274,
+      "adapted_continuation_improvement_db": 0.08622435480356216,
+      "adaptation_extra_update_benefit_db": 0.07706707715988159,
+      "adaptation_extra_update_benefit_H_CI95": [
+        0.060128901494822154,
+        0.09235010183462873
+      ]
+    },
+    "20": {
+      "original_continuation_improvement_db": 0.012833712622523308,
+      "adapted_continuation_improvement_db": 0.1244957223534584,
+      "adaptation_extra_update_benefit_db": 0.11166201531887054,
+      "adaptation_extra_update_benefit_H_CI95": [
+        0.08847629301863102,
+        0.13549243007274342
+      ]
+    }
+  }
+}

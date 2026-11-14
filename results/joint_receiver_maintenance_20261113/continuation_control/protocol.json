@@ -1,0 +1,9 @@
+{
+  "label": "post-result supplementary control, not prespecified primary arm",
+  "task": "Same data, initialization, optimizer, lr1e-4, max12epochs and earlystop as adapted refiner update, but receiver remains S0",
+  "args": {
+    "ntrain": 2000,
+    "epochs": 12
+  },
+  "main_script_sha256": "ae1c60ff497d199ceeba405d6cfd5800a78f4346b659d55f8a868c4824ba9314"
+}

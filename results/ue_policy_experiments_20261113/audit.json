@@ -1,0 +1,43 @@
+{
+  "checks": [
+    {
+      "seed": 0,
+      "source_hashes_verified": true,
+      "head_predictions_reproduced": true,
+      "UE_inputs_only_local_score_and_condition": true,
+      "UE_decisions_invariant_to_current_noise": true,
+      "all_fixed_quota_strategies_select_360_of_1800": true,
+      "threshold_BS_baseline_matches_actual_UE_usage": true,
+      "policy_gains_independently_recomputed": true
+    },
+    {
+      "seed": 1,
+      "source_hashes_verified": true,
+      "head_predictions_reproduced": true,
+      "UE_inputs_only_local_score_and_condition": true,
+      "UE_decisions_invariant_to_current_noise": true,
+      "all_fixed_quota_strategies_select_360_of_1800": true,
+      "threshold_BS_baseline_matches_actual_UE_usage": true,
+      "policy_gains_independently_recomputed": true
+    },
+    {
+      "seed": 2,
+      "source_hashes_verified": true,
+      "head_predictions_reproduced": true,
+      "UE_inputs_only_local_score_and_condition": true,
+      "UE_decisions_invariant_to_current_noise": true,
+      "all_fixed_quota_strategies_select_360_of_1800": true,
+      "threshold_BS_baseline_matches_actual_UE_usage": true,
+      "policy_gains_independently_recomputed": true
+    }
+  ],
+  "source_split_audit": {
+    "ue_train_bs_train": 0,
+    "ue_train_val": 0,
+    "ue_train_test": 0,
+    "bs_train_val": 0,
+    "bs_train_test": 0,
+    "val_test": 0
+  },
+  "limitations": "top20% offline pool, control overhead omitted, validation-fixed threshold usage is not exactly20%"
+}

@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-13",
+  "args": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "epochs": 65,
+    "future_draws": 16,
+    "threads": 4
+  },
+  "script_sha256": "fc4893c408cbeb867cec3af61b77068ef2290ed3871369e7a56955c055cc6c08",
+  "frozen": "Guo-inspired one-pass UE proxy, finite16QAM RD-AE adaptation, AWGN, Ns64, SNR0/10/20; no codec/proxy retraining",
+  "eligibility": "calibrated UE single-pass proxy quality <= within-SNR valH0:250 80th percentile; H/noise invariant; rejected samples excluded, their fallback not simulated",
+  "fit": "existing trainH3000:5000, 3 current noises, 8 independent future repeats; train/val/test H separate",
+  "BS_inputs": "raw current y128 + deterministic decoder feature64 + known condition2; no UE scalar quality or trueH or transmitted symbols at BS inference",
+  "heads": "matched ~25k MLP BS unconditional gain, conditional gain, conditional current quality; UE conditional gain sees only local proxy quality and condition and averages current-noise training labels byH",
+  "selection": "early stopping valH0:250, action20% thresholds valH250:500; all arms retained, no test-driven search",
+  "historic_validation": "frozen proxy calibration and earlier models used full500valH; this split is not a new independent validation sample",
+  "primary": "fresh confirmation: BS conditional gain vs random, UE conditional gain and UE quality-best on identical eligible cohort with exactly matched20% repetitions; report unconditional BS and BS quality-worst too",
+  "new_evaluation": "testH600:1000, 3 new current noises, 16 new independent future repeats; these H were used by another refinement experiment, so new noise is not wholly new population data",
+  "action": "one repeat of same64complexsymbols; average two received vectors; original SNR input retained for continuity; no effective-SNR retraining or HARQ protocol",
+  "controls": "offline pool top20% resource comparison; fixed validation thresholds separately evaluate actual usage; abstract equivalent-symbol passflag0/1 and request1/4 sensitivity includes UE no-request advantage, no physical control-error/latency simulation",
+  "secondary": "SGCS, fixed-val bad risk, within-H score/gain correlation, noiseless-decoder diagnostic, actual transmit energy",
+  "cost_caveat": "fallback of rejected UE samples, ACK/NACK error, CSI aging, round-trip latency, real multiuser scheduling and throughput not modeled; no claim of system net benefit"
+}

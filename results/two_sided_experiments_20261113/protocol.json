@@ -1,0 +1,25 @@
+{
+  "args": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "nue": 3000,
+    "nfusion": 2000,
+    "nval": 500,
+    "ntest": 600,
+    "ue_draws": 8,
+    "train_repeats": 3,
+    "test_repeats": 3,
+    "epochs": 65,
+    "threads": 4
+  },
+  "script_sha256": "5166df62a3253531e329ea0bd3f61c9a2c99ecf51abce077fcb3ba69cdb2bd18",
+  "scope": "frozen RD-AE adaptation with finite 16-QAM, AWGN; not official full RD-JSCC",
+  "splits": "UE train first nue H; BS train next nfusion H; validation/test separate source files",
+  "ns": 64,
+  "statistics": "per condition; repeated noises clustered by H; worst20 test labels diagnostic only",
+  "hint_power": "constellation scaled with BS-fit H class frequencies per SNR; one symbol, same average energy as main P_ref",
+  "ue_input": "full encoder af2 pre-FC feature and raw latent + known SNR,Ns; no current noise or actual decoder output"
+}

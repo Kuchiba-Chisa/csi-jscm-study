@@ -1,0 +1,341 @@
+{
+  "seed": 1,
+  "source": {
+    "checkpoint": "simulation\\ckpt_rdae\\rdae_sample_s1.pt",
+    "sha256": "95f08302eb12906c7cace09bcbda919de8d7c32610e8cdd1ee5145471561ad0d",
+    "p_cal": "{16: 0.8295749053955078, 32: 0.7859374542236328, 64: 0.7349624328613281}",
+    "p_cal_mode": "ns_only",
+    "source_model_sha256": "5cf3842fe7f863e4b8adae8ab6d44c030d3149345225d81a466b9b42d83aac1b"
+  },
+  "source_hashes": {
+    "experiments\\two_sided_experiments_20261113\\cache_s1_val.pt": "9fb8f896239f28babb6433faef307f22bd4c9aa88bb74d172193c2d57f296c1c",
+    "experiments\\two_sided_experiments_20261113\\cache_s1_test.pt": "4490cbc2828679bf84e3c028d542b135f0675c4b035922ffdae7a023771c784a",
+    "experiments\\two_sided_experiments_20261113\\quality_bs_only_s1.pt": "e0dfa04c279ac8928d1f3f02f18a40bf2693d40d6951f66eb15bbc6eba15e95d"
+  },
+  "training": {
+    "initial_val_nmse_db": -2.8904638290405273,
+    "best_val_nmse_db": -2.9980111122131348,
+    "selected_epoch": 14,
+    "trace": [
+      {
+        "epoch": 1,
+        "train_MSE": 0.057936749789449904,
+        "val_mean_nmse_db": -2.9627890586853027
+      },
+      {
+        "epoch": 2,
+        "train_MSE": 0.0576621170507537,
+        "val_mean_nmse_db": -2.9687917232513428
+      },
+      {
+        "epoch": 3,
+        "train_MSE": 0.057593115005228256,
+        "val_mean_nmse_db": -2.973438262939453
+      },
+      {
+        "epoch": 4,
+        "train_MSE": 0.05752152990963724,
+        "val_mean_nmse_db": -2.9763548374176025
+      },
+      {
+        "epoch": 5,
+        "train_MSE": 0.05748954902092616,
+        "val_mean_nmse_db": -2.9790878295898438
+      },
+      {
+        "epoch": 6,
+        "train_MSE": 0.057438444048166275,
+        "val_mean_nmse_db": -2.9819798469543457
+      },
+      {
+        "epoch": 7,
+        "train_MSE": 0.05737803581688139,
+        "val_mean_nmse_db": -2.9820616245269775
+      },
+      {
+        "epoch": 8,
+        "train_MSE": 0.057344189369016224,
+        "val_mean_nmse_db": -2.986768960952759
+      },
+      {
+        "epoch": 9,
+        "train_MSE": 0.05729951769113541,
+        "val_mean_nmse_db": -2.9910178184509277
+      },
+      {
+        "epoch": 10,
+        "train_MSE": 0.057253563271628484,
+        "val_mean_nmse_db": -2.989413022994995
+      },
+      {
+        "epoch": 11,
+        "train_MSE": 0.05723117081655396,
+        "val_mean_nmse_db": -2.990675210952759
+      },
+      {
+        "epoch": 12,
+        "train_MSE": 0.05721000674698088,
+        "val_mean_nmse_db": -2.989265203475952
+      },
+      {
+        "epoch": 13,
+        "train_MSE": 0.05716824054718018,
+        "val_mean_nmse_db": -2.997894525527954
+      },
+      {
+        "epoch": 14,
+        "train_MSE": 0.05715922779507107,
+        "val_mean_nmse_db": -2.9980111122131348
+      },
+      {
+        "epoch": 15,
+        "train_MSE": 0.05714505344629288,
+        "val_mean_nmse_db": -2.9959990978240967
+      }
+    ],
+    "seconds": 8.930315800000244
+  },
+  "validation_gate_H_mean_gain_db": 0.11722831428050995,
+  "conditions": {
+    "0": {
+      "base_nmse_db": -2.0938854217529297,
+      "refined_all_nmse_db": -2.115621566772461,
+      "all_gain_db": 0.021736128255724907,
+      "all_gain_CI95": [
+        0.012451187835889868,
+        0.031544097400283334
+      ],
+      "all_sgcs_gain": 0.0022017720621079206,
+      "base_sgcs": 0.3899693191051483,
+      "refined_sgcs": 0.39217108488082886,
+      "fraction_refinement_improves": 0.5616666666666666,
+      "gates": {
+        "0.2": {
+          "threshold": -1.4582003355026245,
+          "validation_call_fraction": 0.20000000298023224,
+          "test_call_fraction": 0.21444444444444444,
+          "selected_observations": 386,
+          "base_to_policy_gain_db": 0.004469235893338919,
+          "final_mean_nmse_db": -2.0983548164367676,
+          "policy_sgcs_gain": 0.0009462794987484813,
+          "random_same_calls_gain_db": 0.00466119172051549,
+          "SNR_only_same_calls_note": "Within fixed SNR, SNR-only cannot distinguish realizations; independent random enablement with same observed rate.",
+          "random_same_conv_linear_compute_call_fraction": 0.22963418363320706,
+          "random_same_conv_linear_compute_gain_db": 0.004991357680410147,
+          "quality_minus_random_calls_db": -0.0001919561909744516,
+          "quality_minus_random_calls_H_CI95": [
+            -0.0029559345804631345,
+            0.002515848582760453
+          ],
+          "quality_minus_random_compute_db": -0.0005221224273554981,
+          "quality_minus_random_compute_H_CI95": [
+            -0.0034846057736369856,
+            0.002268666990189481
+          ],
+          "hindsight_same_realization_oracle_gain_db": 0.042835161089897156,
+          "oracle_note": "True-H hindsight selection, not deployable; only diagnostic opportunity for this fixed refiner.",
+          "fraction_selected_samples_harmed": 0.4378238341968912,
+          "mean_added_conv_linear_MACs": 372470.32
+        },
+        "0.5": {
+          "threshold": -2.1423816680908203,
+          "validation_call_fraction": 0.5,
+          "test_call_fraction": 0.4683333333333333,
+          "selected_observations": 843,
+          "base_to_policy_gain_db": 0.005923010874539614,
+          "final_mean_nmse_db": -2.09980845451355,
+          "policy_sgcs_gain": 0.0011995104141533375,
+          "random_same_calls_gain_db": 0.010179752483963966,
+          "SNR_only_same_calls_note": "Within fixed SNR, SNR-only cannot distinguish realizations; independent random enablement with same observed rate.",
+          "random_same_conv_linear_compute_call_fraction": 0.483523072522096,
+          "random_same_conv_linear_compute_gain_db": 0.010509919375181198,
+          "quality_minus_random_calls_db": -0.004256743006408215,
+          "quality_minus_random_calls_H_CI95": [
+            -0.00832505672038173,
+            -0.0002585198084599255
+          ],
+          "quality_minus_random_compute_db": -0.004586908500641584,
+          "quality_minus_random_compute_H_CI95": [
+            -0.00905251485672554,
+            -0.00028397034991768357
+          ],
+          "hindsight_same_realization_oracle_gain_db": 0.057793207466602325,
+          "oracle_note": "True-H hindsight selection, not deployable; only diagnostic opportunity for this fixed refiner.",
+          "fraction_selected_samples_harmed": 0.4543297746144721,
+          "mean_added_conv_linear_MACs": 784282.16
+        }
+      }
+    },
+    "10": {
+      "base_nmse_db": -3.5912694931030273,
+      "refined_all_nmse_db": -3.7073488235473633,
+      "all_gain_db": 0.11607901751995087,
+      "all_gain_CI95": [
+        0.10025991679835393,
+        0.13416441507358104
+      ],
+      "all_sgcs_gain": 0.0035649635829031467,
+      "base_sgcs": 0.5454777479171753,
+      "refined_sgcs": 0.5490427017211914,
+      "fraction_refinement_improves": 0.7227777777777777,
+      "gates": {
+        "0.2": {
+          "threshold": -2.3605475425720215,
+          "validation_call_fraction": 0.20000000298023224,
+          "test_call_fraction": 0.195,
+          "selected_observations": 351,
+          "base_to_policy_gain_db": 0.010475101880729198,
+          "final_mean_nmse_db": -3.6017448902130127,
+          "policy_sgcs_gain": 0.001190174138173461,
+          "random_same_calls_gain_db": 0.022635407745838165,
+          "SNR_only_same_calls_note": "Within fixed SNR, SNR-only cannot distinguish realizations; independent random enablement with same observed rate.",
+          "random_same_conv_linear_compute_call_fraction": 0.21018973918876263,
+          "random_same_conv_linear_compute_gain_db": 0.024398617446422577,
+          "quality_minus_random_calls_db": -0.012160305865108967,
+          "quality_minus_random_calls_H_CI95": [
+            -0.016908962986815216,
+            -0.007304767005217097
+          ],
+          "quality_minus_random_compute_db": -0.013923517428338528,
+          "quality_minus_random_compute_H_CI95": [
+            -0.018340999952123387,
+            -0.009208676949945078
+          ],
+          "hindsight_same_realization_oracle_gain_db": 0.0924047902226448,
+          "oracle_note": "True-H hindsight selection, not deployable; only diagnostic opportunity for this fixed refiner.",
+          "fraction_selected_samples_harmed": 0.28774928774928776,
+          "mean_added_conv_linear_MACs": 340931.12
+        },
+        "0.5": {
+          "threshold": -3.5847651958465576,
+          "validation_call_fraction": 0.5,
+          "test_call_fraction": 0.4444444444444444,
+          "selected_observations": 800,
+          "base_to_policy_gain_db": 0.031568028032779694,
+          "final_mean_nmse_db": -3.622838020324707,
+          "policy_sgcs_gain": 0.0024962525349110365,
+          "random_same_calls_gain_db": 0.051590677350759506,
+          "SNR_only_same_calls_note": "Within fixed SNR, SNR-only cannot distinguish realizations; independent random enablement with same observed rate.",
+          "random_same_conv_linear_compute_call_fraction": 0.45963418363320707,
+          "random_same_conv_linear_compute_gain_db": 0.05335388332605362,
+          "quality_minus_random_calls_db": -0.020022647455334663,
+          "quality_minus_random_calls_H_CI95": [
+            -0.028751461752187728,
+            -0.01197359714507907
+          ],
+          "quality_minus_random_compute_db": -0.021785857155919075,
+          "quality_minus_random_compute_H_CI95": [
+            -0.030803007322984386,
+            -0.01382935646450743
+          ],
+          "hindsight_same_realization_oracle_gain_db": 0.12723283469676971,
+          "oracle_note": "True-H hindsight selection, not deployable; only diagnostic opportunity for this fixed refiner.",
+          "fraction_selected_samples_harmed": 0.30375,
+          "mean_added_conv_linear_MACs": 745534.0
+        }
+      }
+    },
+    "20": {
+      "base_nmse_db": -3.7251999378204346,
+      "refined_all_nmse_db": -3.936389446258545,
+      "all_gain_db": 0.21118947863578796,
+      "all_gain_CI95": [
+        0.18029749928618224,
+        0.2438802782314985
+      ],
+      "all_sgcs_gain": 0.003940204624086618,
+      "base_sgcs": 0.5635970234870911,
+      "refined_sgcs": 0.5675371885299683,
+      "fraction_refinement_improves": 0.745,
+      "gates": {
+        "0.2": {
+          "threshold": -2.376091957092285,
+          "validation_call_fraction": 0.20000000298023224,
+          "test_call_fraction": 0.17277777777777778,
+          "selected_observations": 311,
+          "base_to_policy_gain_db": 0.014563989825546741,
+          "final_mean_nmse_db": -3.7397639751434326,
+          "policy_sgcs_gain": 0.001358086708933115,
+          "random_same_calls_gain_db": 0.0364888496696949,
+          "SNR_only_same_calls_note": "Within fixed SNR, SNR-only cannot distinguish realizations; independent random enablement with same observed rate.",
+          "random_same_conv_linear_compute_call_fraction": 0.1879675169665404,
+          "random_same_conv_linear_compute_gain_db": 0.03969676420092583,
+          "quality_minus_random_calls_db": -0.021924860775470734,
+          "quality_minus_random_calls_H_CI95": [
+            -0.028840176112027015,
+            -0.014702673963038404
+          ],
+          "quality_minus_random_compute_db": -0.02513277716934681,
+          "quality_minus_random_compute_H_CI95": [
+            -0.033226810698189946,
+            -0.01732473868015221
+          ],
+          "hindsight_same_realization_oracle_gain_db": 0.15550947189331055,
+          "oracle_note": "True-H hindsight selection, not deployable; only diagnostic opportunity for this fixed refiner.",
+          "fraction_selected_samples_harmed": 0.19614147909967847,
+          "mean_added_conv_linear_MACs": 304886.32
+        },
+        "0.5": {
+          "threshold": -3.6760201454162598,
+          "validation_call_fraction": 0.5,
+          "test_call_fraction": 0.4211111111111111,
+          "selected_observations": 758,
+          "base_to_policy_gain_db": 0.06137564778327942,
+          "final_mean_nmse_db": -3.7865755558013916,
+          "policy_sgcs_gain": 0.0028471050318330526,
+          "random_same_calls_gain_db": 0.08893424272537231,
+          "SNR_only_same_calls_note": "Within fixed SNR, SNR-only cannot distinguish realizations; independent random enablement with same observed rate.",
+          "random_same_conv_linear_compute_call_fraction": 0.43630085029987375,
+          "random_same_conv_linear_compute_gain_db": 0.09214214980602264,
+          "quality_minus_random_calls_db": -0.027558593079447746,
+          "quality_minus_random_calls_H_CI95": [
+            -0.04274357446593375,
+            -0.012811289940666843
+          ],
+          "quality_minus_random_compute_db": -0.030766507610678673,
+          "quality_minus_random_compute_H_CI95": [
+            -0.045527655270326955,
+            -0.01421257655312226
+          ],
+          "hindsight_same_realization_oracle_gain_db": 0.22105085849761963,
+          "oracle_note": "True-H hindsight selection, not deployable; only diagnostic opportunity for this fixed refiner.",
+          "fraction_selected_samples_harmed": 0.24538258575197888,
+          "mean_added_conv_linear_MACs": 707686.96
+        }
+      }
+    }
+  },
+  "cost": {
+    "refiner_parameters": 1594,
+    "refiner_parameter_bytes": 6376,
+    "refiner_normalization_bytes": 144,
+    "refiner_conv_linear_MACs": 1622016,
+    "monitor_parameters": 24893,
+    "monitor_conv_linear_MACs": 24638,
+    "base_decoder_MACs": 22340048,
+    "notes": "MAC excludes normalization/activation/pooling; storage always includes one refiner, even if rarely enabled"
+  },
+  "timing": {
+    "batch": 1,
+    "threads": 1,
+    "ms_blocks": [
+      0.24508200000127545,
+      0.253143000009004,
+      0.24939599999925122,
+      0.2497860000221408,
+      0.2707689999806462,
+      0.23351899999397574,
+      0.23997799999051495
+    ],
+    "median_ms": 0.24939599999925122,
+    "note": "same PC CPU; normalization, condition concatenation and CNN included; not UE/BS hardware"
+  },
+  "audit": {
+    "base_state_unchanged": true,
+    "no_base_gradients": true,
+    "original_files_unchanged": true,
+    "gate_uses_base_features_only": true,
+    "validation_selected_epoch_and_thresholds": true
+  },
+  "seconds": 18.53964370000176
+}

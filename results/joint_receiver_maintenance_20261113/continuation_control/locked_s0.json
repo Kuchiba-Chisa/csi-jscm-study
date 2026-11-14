@@ -1,0 +1,28 @@
+{
+  "seed": 0,
+  "meta": {
+    "selected_epoch": 5,
+    "validation_nmse_db": [
+      -3.276797294616699,
+      -3.278477907180786,
+      -3.2784602642059326,
+      -3.2790732383728027,
+      -3.280069589614868,
+      -3.279557943344116,
+      -3.279352903366089,
+      -3.27992844581604,
+      -3.279139280319214,
+      -3.2796719074249268
+    ],
+    "seconds": 19.569232900001225,
+    "parameters": 39106
+  },
+  "source": {
+    "checkpoint": "simulation\\ckpt_rdae\\rdae_sample_s0.pt",
+    "sha256": "1239c18a17ce302eed12845d6fcdb8e40ed6a9a94bda3216cd049ea6b1714a90",
+    "p_cal": "{16: 0.8294999694824219, 32: 0.7979374389648437, 64: 0.7424186706542969}",
+    "p_cal_mode": "ns_only",
+    "source_model_sha256": "5cf3842fe7f863e4b8adae8ab6d44c030d3149345225d81a466b9b42d83aac1b"
+  },
+  "locked_before_test_forward": true
+}
