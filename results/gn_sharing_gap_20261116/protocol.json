@@ -1,0 +1,62 @@
+{
+  "args": {
+    "epochs": 40,
+    "seed": 0,
+    "threads": 8,
+    "bs": 128,
+    "repeats": 3,
+    "evaluate_only": false
+  },
+  "models": [
+    "shared",
+    "specialist_0",
+    "specialist_10",
+    "specialist_20"
+  ],
+  "SNR_grid": [
+    0,
+    10,
+    20
+  ],
+  "ns": 64,
+  "shared_training": "pure per-sample continuous uniform(0,20) dB",
+  "specialists": "fixed 0/10/20 dB; same exact GN architecture as shared",
+  "training": "all four identical init, H order, standard Gaussian draws; Adam2e-3 wd1e-5 cosine40; final40",
+  "epochs_per_model": 40,
+  "batch_size": 128,
+  "batches_per_epoch": 46,
+  "data_shapes": {
+    "train": [
+      6000,
+      2,
+      32,
+      32
+    ],
+    "val": [
+      1000,
+      2,
+      32,
+      32
+    ],
+    "test": [
+      1000,
+      2,
+      32,
+      32
+    ]
+  },
+  "evaluation": "train-only actual-Ptx calibration; test1000H x3pairedGaussian; mean per-H NMSEdB and squaredSGCS",
+  "initial_state_sha256": "14b56e44a8b4bab8784669238e46a5e16ba9b2b7032b2b1815d97448995a1a04",
+  "source_sha256": {
+    "simulation\\model_rdae.py": "5cf3842fe7f863e4b8adae8ab6d44c030d3149345225d81a466b9b42d83aac1b",
+    "simulation\\model_v4.py": "34aa7fc0898072791c9ff42a7320de309735274b55a38bd3abf873405a831122",
+    "simulation\\train_rdae.py": "a1193b1d781a116ae157219ffbaf48ad96eb1994eacb6a9668ea3933b991d773",
+    "simulation\\train_rdae_gn.py": "e0596d64b3378e08b7932a590b73814ca2ce78f8bef25bb63709e9ebd1010356",
+    "simulation\\quality_v5.py": "f97b5b5a378ab1d3d466320c24eedb400da62e9e3db8fca497090f9c8aba50fc",
+    "simulation\\data\\train.npz": "2260eece04ecfb09614f5c792753d5edf154227359e00c7ad336e3e37c460730",
+    "simulation\\data\\val.npz": "a6383947831f883c74c23faa92d1d2ae2e28b9fb30108268006d32cf4d6b4e6e",
+    "simulation\\data\\test.npz": "39483486ca1e0f243498e9f71916351f3d1fa3efdb2deab989722ca8ee6c4f7f"
+  },
+  "script_sha256": "d1e90dbea4534b1228d8350146a10ebc4b295cf6d5c0c8f7cfc06b435f5a93f3",
+  "scope": "single seed; fixed length; no official VQ/diffusion reproduction; reused test H"
+}

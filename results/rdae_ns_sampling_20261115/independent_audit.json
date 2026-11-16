@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "source_hashes_unchanged": true,
+  "final_epoch40_both_arms": true,
+  "matched_length_counts_every_epoch": true,
+  "replay_max_error": 0.0,
+  "replay": "2 training arms x9 conditions x2 BN states x1000H x3 noises",
+  "recalibrated_parameters_and_encoder_unchanged": true
+}

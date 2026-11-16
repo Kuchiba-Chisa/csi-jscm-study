@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "unchanged_source_hashes": true,
+  "replay_max_error": 0.0,
+  "replay": "all400H x3 noises x3 anchorSNR x5 checkpoints",
+  "trained_parameter_tensor_changes": {
+    "continue_final": {
+      "enc.": 18,
+      "dec.": 134
+    },
+    "distill_final": {
+      "enc.": 18,
+      "dec.": 134
+    }
+  },
+  "validation_epoch_selection_recomputed": true
+}

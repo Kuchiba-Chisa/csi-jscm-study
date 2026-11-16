@@ -1,0 +1,30 @@
+{
+  "seed": 0,
+  "epochs": 40,
+  "batch_size": 128,
+  "threads": 8,
+  "arms": [
+    "batch_ns",
+    "sample_ns"
+  ],
+  "snr": "per-sample U(0,20), identical across arms",
+  "ns": "batch uniform draw vs randomly permuted per-epoch identical length pool; exact counts matched",
+  "initialization": "identical newly initialized weights; both arms retrained, no historical checkpoint comparison",
+  "optimizer": "Adam2e-3 weight_decay1e-5 cosine40",
+  "selection": "fixed final40, no validation/test-driven checkpoint or parameter selection",
+  "evaluation": "train6000 power/BN calibration; test1000H x3common noises; 3length x3SNR xraw/targetBN",
+  "source_sha256": {
+    "simulation\\train_rdae.py": "a1193b1d781a116ae157219ffbaf48ad96eb1994eacb6a9668ea3933b991d773",
+    "simulation\\model_rdae.py": "5cf3842fe7f863e4b8adae8ab6d44c030d3149345225d81a466b9b42d83aac1b",
+    "simulation\\model_v4.py": "34aa7fc0898072791c9ff42a7320de309735274b55a38bd3abf873405a831122",
+    "simulation\\ckpt_rdae\\rdae_batch_s0.pt": "347e79ce5c6286076a84f38b1968f9ef8e34c777e9ee573043b310c62db93a24",
+    "simulation\\ckpt_rdae\\rdae_sample_s0.pt": "1239c18a17ce302eed12845d6fcdb8e40ed6a9a94bda3216cd049ea6b1714a90",
+    "simulation\\ckpt_rdae\\rdae_sample_s1.pt": "95f08302eb12906c7cace09bcbda919de8d7c32610e8cdd1ee5145471561ad0d",
+    "simulation\\ckpt_rdae\\rdae_sample_s2.pt": "7d81d5f4f8bd236fc601813bd53474655f5f35e1462533fe4549ab0081f80dda",
+    "simulation\\data\\train.npz": "2260eece04ecfb09614f5c792753d5edf154227359e00c7ad336e3e37c460730",
+    "simulation\\data\\val.npz": "a6383947831f883c74c23faa92d1d2ae2e28b9fb30108268006d32cf4d6b4e6e",
+    "simulation\\data\\test.npz": "39483486ca1e0f243498e9f71916351f3d1fa3efdb2deab989722ca8ee6c4f7f"
+  },
+  "script_sha256": "4eb5120507412a8da5f346593ce7d8d389eea1b8d0fd0565da5b3d15c0b6aef5",
+  "scope": "single training seed; H intervals not retraining uncertainty; no specialist models"
+}

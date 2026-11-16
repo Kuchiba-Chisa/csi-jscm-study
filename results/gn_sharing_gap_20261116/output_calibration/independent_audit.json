@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "all_saved_metrics_recomputed": true,
+  "source_and_checkpoints_unchanged": true,
+  "double_reduction_max_difference_db": 4.7201740827063077e-07,
+  "double_reduction_max_difference_sgcs": 6.151571874113415e-08,
+  "raw_replay_max_error_db": 9.5367431640625e-07,
+  "scale_only_SGCS_max_difference": 2.384185791015625e-07
+}

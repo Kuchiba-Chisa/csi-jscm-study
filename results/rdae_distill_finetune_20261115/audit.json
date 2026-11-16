@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "source_files_unchanged": true,
+  "frozen_teacher_states_unchanged": true,
+  "original_shared_state_unchanged": true,
+  "original_baseline_reproduction_max_db_error": 0.0,
+  "saved_metric_max_error": 0.0
+}

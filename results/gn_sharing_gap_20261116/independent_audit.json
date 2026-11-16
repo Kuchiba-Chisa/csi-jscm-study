@@ -1,0 +1,75 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "model": "shared",
+      "snr": 0,
+      "arrays_and_metrics": "pass"
+    },
+    {
+      "model": "shared",
+      "snr": 10,
+      "arrays_and_metrics": "pass"
+    },
+    {
+      "model": "shared",
+      "snr": 20,
+      "arrays_and_metrics": "pass"
+    },
+    {
+      "model": "specialist_0",
+      "snr": 0,
+      "arrays_and_metrics": "pass"
+    },
+    {
+      "model": "specialist_0",
+      "snr": 10,
+      "arrays_and_metrics": "pass"
+    },
+    {
+      "model": "specialist_0",
+      "snr": 20,
+      "arrays_and_metrics": "pass"
+    },
+    {
+      "model": "specialist_10",
+      "snr": 0,
+      "arrays_and_metrics": "pass"
+    },
+    {
+      "model": "specialist_10",
+      "snr": 10,
+      "arrays_and_metrics": "pass"
+    },
+    {
+      "model": "specialist_10",
+      "snr": 20,
+      "arrays_and_metrics": "pass"
+    },
+    {
+      "model": "specialist_20",
+      "snr": 0,
+      "arrays_and_metrics": "pass"
+    },
+    {
+      "model": "specialist_20",
+      "snr": 10,
+      "arrays_and_metrics": "pass"
+    },
+    {
+      "model": "specialist_20",
+      "snr": 20,
+      "arrays_and_metrics": "pass"
+    }
+  ],
+  "training_seeds": 1,
+  "test_H": 1000,
+  "noise_draws_per_H": 3,
+  "all_four_models_same_initialization": true,
+  "all_models_final_40_epochs": true,
+  "no_BN_running_statistics": true,
+  "source_and_training_script_unchanged": true,
+  "parameters_per_model": 553982,
+  "FP32_weight_bytes_per_model": 2215928,
+  "limits": "H-paired intervals do not measure retraining uncertainty"
+}

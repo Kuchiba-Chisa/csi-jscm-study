@@ -1,0 +1,478 @@
+{
+  "date": "2026-11-16",
+  "description": "New sources relocated; original experiment JSON numbers preserved. Historical hashes describe original runs, not relocated files.",
+  "files": [
+    {
+      "path": "results/rdae_distill_finetune_20261115/audit.json",
+      "origin": "Q1_共享起点蒸馏微调_20261115/audit.json",
+      "original_sha256": "335156e288fd7b821369ebb3010a1e16f3f8d227a099c9c62634f5a22bdbfc45",
+      "export_sha256": "0897b10bf0ba827e25deb53bb9487ce0fc27230e655754c747f46c09fd9b65e4",
+      "transformed": true,
+      "bytes": 229
+    },
+    {
+      "path": "experiments/rdae_distill_finetune_20261115/audit_finetune.py",
+      "origin": "Q1_共享起点蒸馏微调_20261115/audit_finetune.py",
+      "original_sha256": "a3cd503d61dda40b72a9ea84f677c671a4047c3f894ec6f707684b2a98f71fbd",
+      "export_sha256": "a3cd503d61dda40b72a9ea84f677c671a4047c3f894ec6f707684b2a98f71fbd",
+      "transformed": false,
+      "bytes": 2774
+    },
+    {
+      "path": "results/rdae_distill_finetune_20261115/finetune_comparison.pdf",
+      "origin": "Q1_共享起点蒸馏微调_20261115/finetune_comparison.pdf",
+      "original_sha256": "19d6a27208ebf2531991401c4b945b92cc9bde519732720262756bb2d671a755",
+      "export_sha256": "19d6a27208ebf2531991401c4b945b92cc9bde519732720262756bb2d671a755",
+      "transformed": false,
+      "bytes": 20694
+    },
+    {
+      "path": "results/rdae_distill_finetune_20261115/finetune_comparison.png",
+      "origin": "Q1_共享起点蒸馏微调_20261115/finetune_comparison.png",
+      "original_sha256": "8e4f9399187eaa27b6ed6d3d3ce7aa27f05eb873706b03e8c2e23e2ed28152a1",
+      "export_sha256": "8e4f9399187eaa27b6ed6d3d3ce7aa27f05eb873706b03e8c2e23e2ed28152a1",
+      "transformed": false,
+      "bytes": 110090
+    },
+    {
+      "path": "results/rdae_distill_finetune_20261115/independent_audit.json",
+      "origin": "Q1_共享起点蒸馏微调_20261115/independent_audit.json",
+      "original_sha256": "09c6e7d71a6d58d4d03afec5bae8a4534ff4a54a34ffff145d5965a8454d60cc",
+      "export_sha256": "28aae5ac5211e727799d6d0dcee520d40a842b3f76a6d5276dd42b6ae310f93d",
+      "transformed": true,
+      "bytes": 371
+    },
+    {
+      "path": "results/rdae_distill_finetune_20261115/protocol.json",
+      "origin": "Q1_共享起点蒸馏微调_20261115/protocol.json",
+      "original_sha256": "6c1ac198f8be1ffce4f9e3d51cc888bf583a25710d3b1dad0ef7f7db9f92e9b0",
+      "export_sha256": "381278461119291d24dc4aa86dd788101d194ea4fab5d88eb68fb64cc5483b30",
+      "transformed": true,
+      "bytes": 1995
+    },
+    {
+      "path": "results/rdae_distill_finetune_20261115/README.md",
+      "origin": "Q1_共享起点蒸馏微调_20261115/README.md",
+      "original_sha256": "e338f9262cf44b98359d967497ed23fd714cdb04b25d2ecf963c1c275a160010",
+      "export_sha256": "61832254971d1b1d7fae98f94a9cffb11f863a119845fab45121dc5afa3c961e",
+      "transformed": true,
+      "bytes": 2222
+    },
+    {
+      "path": "results/rdae_distill_finetune_20261115/results.json",
+      "origin": "Q1_共享起点蒸馏微调_20261115/results.json",
+      "original_sha256": "b08a77c5e6ed310ec2d41f4e3067bfe1aa12d19867a64caf4bc72a2e04e5fd25",
+      "export_sha256": "0dc8201c1ed2a394ce0d26fe94e399388eff719c448d0883317576dceff80063",
+      "transformed": true,
+      "bytes": 14146
+    },
+    {
+      "path": "experiments/rdae_distill_finetune_20261115/run_finetune.py",
+      "origin": "Q1_共享起点蒸馏微调_20261115/run_finetune.py",
+      "original_sha256": "3505753c64d05f40ee7fac1c57fd7ca125634c439a9972cf336eb548162f9d2d",
+      "export_sha256": "12a4abc5b42c0a01d2a43b46376456441f439f19e51106a64be052a631b180fa",
+      "transformed": true,
+      "bytes": 14514
+    },
+    {
+      "path": "results/rdae_distill_finetune_20261115/selection_continue.json",
+      "origin": "Q1_共享起点蒸馏微调_20261115/selection_continue.json",
+      "original_sha256": "aff30c461b59ade9270608afe66e92eb5c99aa68dbaecab9c9701ebc7355a3b2",
+      "export_sha256": "6fbb7acfbae7499c76a35bb710497aa0abefc0438441c320e68a39857070a001",
+      "transformed": true,
+      "bytes": 63
+    },
+    {
+      "path": "results/rdae_distill_finetune_20261115/selection_distill.json",
+      "origin": "Q1_共享起点蒸馏微调_20261115/selection_distill.json",
+      "original_sha256": "f1e5b61d105dd56508e50ad2e5c656d6d750bcf633d424be257d913c9df27857",
+      "export_sha256": "d6755d04db050aab08f6032559d6970ea9a08c4a2d0ec741dc49610d7426495e",
+      "transformed": true,
+      "bytes": 62
+    },
+    {
+      "path": "results/rdae_distill_finetune_20261115/trace_continue.json",
+      "origin": "Q1_共享起点蒸馏微调_20261115/trace_continue.json",
+      "original_sha256": "7fbfb86782e99468dd5dbe7533d0bfcea8bdd033992cc0c67caba4e9bd201e4d",
+      "export_sha256": "10058909c09f1baebe0fd72d450542a604b7872b09e5b83aabd1ecf99468c498",
+      "transformed": true,
+      "bytes": 4001
+    },
+    {
+      "path": "results/rdae_distill_finetune_20261115/trace_distill.json",
+      "origin": "Q1_共享起点蒸馏微调_20261115/trace_distill.json",
+      "original_sha256": "6200957bd1b6fd27fac31c5aef1b934a48b1132cd2947ea6f7c553d5ab576279",
+      "export_sha256": "4f40f8e4a9ff19ce9adbd0dbc902b0f3421a6f5cd196585d1e3dc79d9332c0d1",
+      "transformed": true,
+      "bytes": 4173
+    },
+    {
+      "path": "results/rdae_distill_finetune_20261115/微调实验结果.md",
+      "origin": "Q1_共享起点蒸馏微调_20261115/微调实验结果.md",
+      "original_sha256": "387ec24785cb28be02105624b883706cc09bf4cca735f8495603558d80bde449",
+      "export_sha256": "06cf8b03e041f28273fffbb19d16c1c47adecafd6ce028a9a172a3ce9eb777f7",
+      "transformed": true,
+      "bytes": 3053
+    },
+    {
+      "path": "results/rdae_distill_finetune_20261115/本轮结论.md",
+      "origin": "Q1_共享起点蒸馏微调_20261115/本轮结论.md",
+      "original_sha256": "b25d288f48b98bad983cf9f124caa67a1485bfb8c578beddf9db26f9d0e0bfdd",
+      "export_sha256": "b25d288f48b98bad983cf9f124caa67a1485bfb8c578beddf9db26f9d0e0bfdd",
+      "transformed": false,
+      "bytes": 2272
+    },
+    {
+      "path": "results/rdae_ns_sampling_20261115/audit.json",
+      "origin": "Q1_长度采样与BN对照_20261115/audit.json",
+      "original_sha256": "88e0be5752547909a728a2583588b9a54c27c2ccfb2207272a9ad1d9e987bf05",
+      "export_sha256": "a1ea6ae32cc843cf42ff0dd1bb37a6797840c86f31d2571b01701a46fc156b6c",
+      "transformed": true,
+      "bytes": 291
+    },
+    {
+      "path": "experiments/rdae_ns_sampling_20261115/audit_sampling.py",
+      "origin": "Q1_长度采样与BN对照_20261115/audit_sampling.py",
+      "original_sha256": "3f575fa2b21127ecda7272c409dd6e5c39d2a3c8314892177ee765adcd9d779c",
+      "export_sha256": "3f575fa2b21127ecda7272c409dd6e5c39d2a3c8314892177ee765adcd9d779c",
+      "transformed": false,
+      "bytes": 3273
+    },
+    {
+      "path": "results/rdae_ns_sampling_20261115/independent_audit.json",
+      "origin": "Q1_长度采样与BN对照_20261115/independent_audit.json",
+      "original_sha256": "211f1d877b7a7e67f9318921ab14db9dc3c70a5b869654c1f08d2fd28fae67bb",
+      "export_sha256": "ef54f294ec1682cc5e2ba6260d9561a0adf3fcaefab42b024a965f0a8b52c7e3",
+      "transformed": true,
+      "bytes": 296
+    },
+    {
+      "path": "results/rdae_ns_sampling_20261115/initialization.json",
+      "origin": "Q1_长度采样与BN对照_20261115/initialization.json",
+      "original_sha256": "09757119879839d5ab11a255c1ad1b933515efbca3bd1540518fd785a1528fd0",
+      "export_sha256": "19afd1442a6385d884152c1c29b939326a83b252df064f21b3cc5a739b1cdb3f",
+      "transformed": true,
+      "bytes": 119
+    },
+    {
+      "path": "results/rdae_ns_sampling_20261115/matched_counts.json",
+      "origin": "Q1_长度采样与BN对照_20261115/matched_counts.json",
+      "original_sha256": "8d95bc5d0e63d94dcf7a2d411a2b23ca7db7791bc568f01b36a4baee14583117",
+      "export_sha256": "5e6f1415d768471b19d1953a1cb8ab4a8ff31d789df71bc5f21ba482db6cf8f6",
+      "transformed": true,
+      "bytes": 260
+    },
+    {
+      "path": "results/rdae_ns_sampling_20261115/protocol.json",
+      "origin": "Q1_长度采样与BN对照_20261115/protocol.json",
+      "original_sha256": "726adfcd42584eafda23996fe51ca3764a5e8e701ad2016847aa6185459b05d2",
+      "export_sha256": "59686def5f599f3951176ec7b03597cb0ebdd3a987d318d5e9f026572e99657c",
+      "transformed": true,
+      "bytes": 1924
+    },
+    {
+      "path": "results/rdae_ns_sampling_20261115/README.md",
+      "origin": "Q1_长度采样与BN对照_20261115/README.md",
+      "original_sha256": "61d86fba98fd314f41392a377e52979bdb564b5c65ae6f1128198589d1c2f0bd",
+      "export_sha256": "2b6328279173fab01b3da953fc505523142ebefbf5cbe8b9748f4ab1147f58c0",
+      "transformed": true,
+      "bytes": 2616
+    },
+    {
+      "path": "results/rdae_ns_sampling_20261115/recalibration_gain.pdf",
+      "origin": "Q1_长度采样与BN对照_20261115/recalibration_gain.pdf",
+      "original_sha256": "805a78157e3348e9e4ae6b86630112e2a5940c8782fb65bbaa3a48f4c417abb5",
+      "export_sha256": "805a78157e3348e9e4ae6b86630112e2a5940c8782fb65bbaa3a48f4c417abb5",
+      "transformed": false,
+      "bytes": 21037
+    },
+    {
+      "path": "results/rdae_ns_sampling_20261115/recalibration_gain.png",
+      "origin": "Q1_长度采样与BN对照_20261115/recalibration_gain.png",
+      "original_sha256": "cfc6167e5a4c90815deee351dbf2330f2227459bbadc8d90887e61504b1852fb",
+      "export_sha256": "cfc6167e5a4c90815deee351dbf2330f2227459bbadc8d90887e61504b1852fb",
+      "transformed": false,
+      "bytes": 78560
+    },
+    {
+      "path": "results/rdae_ns_sampling_20261115/results.json",
+      "origin": "Q1_长度采样与BN对照_20261115/results.json",
+      "original_sha256": "581769a9edc6ff97977b17a64f9165dd8e74a8c3a5b124427ea2f7775df889e6",
+      "export_sha256": "9b83ba61d73ec300eb3034fcafaa441611512ffe6298dc086202672f7f5ad453",
+      "transformed": true,
+      "bytes": 25970
+    },
+    {
+      "path": "experiments/rdae_ns_sampling_20261115/run_sampling.py",
+      "origin": "Q1_长度采样与BN对照_20261115/run_sampling.py",
+      "original_sha256": "4eb5120507412a8da5f346593ce7d8d389eea1b8d0fd0565da5b3d15c0b6aef5",
+      "export_sha256": "e11a9c75a9d6a10e0428730b4eccd44bff4518d47fe34a845bbe84b339f92c51",
+      "transformed": true,
+      "bytes": 16680
+    },
+    {
+      "path": "results/rdae_ns_sampling_20261115/sampling_comparison.pdf",
+      "origin": "Q1_长度采样与BN对照_20261115/sampling_comparison.pdf",
+      "original_sha256": "b42202b76919cf18c194127a2120602f837d602b070b4fd5692062ee22f9c4f3",
+      "export_sha256": "b42202b76919cf18c194127a2120602f837d602b070b4fd5692062ee22f9c4f3",
+      "transformed": false,
+      "bytes": 22820
+    },
+    {
+      "path": "results/rdae_ns_sampling_20261115/sampling_comparison.png",
+      "origin": "Q1_长度采样与BN对照_20261115/sampling_comparison.png",
+      "original_sha256": "a7a9c5559a7f051bede8ef28cf066f1defec7ddde12ac3658c941f0901c5946f",
+      "export_sha256": "a7a9c5559a7f051bede8ef28cf066f1defec7ddde12ac3658c941f0901c5946f",
+      "transformed": false,
+      "bytes": 136923
+    },
+    {
+      "path": "results/rdae_ns_sampling_20261115/trace_batch_ns.json",
+      "origin": "Q1_长度采样与BN对照_20261115/trace_batch_ns.json",
+      "original_sha256": "bd518c8c50f6ba6b875a80f421ada6e9aace5dd5814989bf66782dea60f0dcca",
+      "export_sha256": "a71906360743f12ab6cac37f8e132080ad91d625e831839cee2729eb293f64c4",
+      "transformed": true,
+      "bytes": 7280
+    },
+    {
+      "path": "results/rdae_ns_sampling_20261115/trace_sample_ns.json",
+      "origin": "Q1_长度采样与BN对照_20261115/trace_sample_ns.json",
+      "original_sha256": "d52b32a32dd142eb3f5f4ef37d1d4f9eb54440bce9722762ee8ac2f3a2de3896",
+      "export_sha256": "3be12b2b570f5e484f9edf16d50b377608ed6ba8130617f74847b2c95eb044bf",
+      "transformed": true,
+      "bytes": 7269
+    },
+    {
+      "path": "results/rdae_ns_sampling_20261115/本轮结论.md",
+      "origin": "Q1_长度采样与BN对照_20261115/本轮结论.md",
+      "original_sha256": "9a04f46697dfd30f54331f8e3e4fb3019b228075293d73318640af5c21ec807d",
+      "export_sha256": "9a04f46697dfd30f54331f8e3e4fb3019b228075293d73318640af5c21ec807d",
+      "transformed": false,
+      "bytes": 2941
+    },
+    {
+      "path": "results/rdae_ns_sampling_20261115/采样对照结果.md",
+      "origin": "Q1_长度采样与BN对照_20261115/采样对照结果.md",
+      "original_sha256": "3900f21614113cb6b86518d9bdab174a54a12baf481a40e99045eda65c702c11",
+      "export_sha256": "3ec2bdfda3b9090d2a25d3b5234c391a3d937eeaf526df005535e45fbb8c98b4",
+      "transformed": true,
+      "bytes": 2930
+    },
+    {
+      "path": "results/output_calibration_20261115/affine_audit.json",
+      "origin": "Q1_输出校准核对_20261115/affine_audit.json",
+      "original_sha256": "b1e89d15a1ea7dc16d9d85e1f3ec60572da94663bd54f97a6f46159d516f8a26",
+      "export_sha256": "d3362069f97a8a41107eedbfc69105a3d222641802851c20c7dcd8f72f46e2b4",
+      "transformed": true,
+      "bytes": 32802
+    },
+    {
+      "path": "experiments/output_calibration_20261115/audit_affine.py",
+      "origin": "Q1_输出校准核对_20261115/audit_affine.py",
+      "original_sha256": "2c6e2019571800e9f047f63c5327778bb02be5f13d18504349f212b25e007152",
+      "export_sha256": "69c1676166daee19dee606ae37799f22d3b5c065efc69d3e87cfd0a328e65527",
+      "transformed": true,
+      "bytes": 4915
+    },
+    {
+      "path": "results/output_calibration_20261115/核对说明.md",
+      "origin": "Q1_输出校准核对_20261115/核对说明.md",
+      "original_sha256": "060d70e23033a7e972d0202d8b295e219cd2cb25767760930b1f16917afd6b96",
+      "export_sha256": "23b97aadec360a9116401057fc21c9d7dba40cea8b75020d2a1e12870dbcf954",
+      "transformed": true,
+      "bytes": 5327
+    },
+    {
+      "path": "results/gn_sharing_gap_20261116/audit.json",
+      "origin": "Q1_GN共享代价_20261116/audit.json",
+      "original_sha256": "ac6c057c8a42e41292d80928c23804ef4d637753763827968d3ef6d1f6294cee",
+      "export_sha256": "1f78b8c48aa33a383270795b01e13eb3b845f0fb92acc3076d58f15a4d34f3d1",
+      "transformed": true,
+      "bytes": 349
+    },
+    {
+      "path": "experiments/gn_sharing_gap_20261116/audit_results.py",
+      "origin": "Q1_GN共享代价_20261116/audit_results.py",
+      "original_sha256": "18c943b4a788c60dc86e51dcc41be9a0c64c78de4fb3e4d59a1eb5a57333b724",
+      "export_sha256": "18c943b4a788c60dc86e51dcc41be9a0c64c78de4fb3e4d59a1eb5a57333b724",
+      "transformed": false,
+      "bytes": 2754
+    },
+    {
+      "path": "results/gn_sharing_gap_20261116/GN共享与专用.pdf",
+      "origin": "Q1_GN共享代价_20261116/GN共享与专用.pdf",
+      "original_sha256": "a81f57f63c84d976b553e0faadd146614883b715cb4f15805d946f32fb7e894f",
+      "export_sha256": "a81f57f63c84d976b553e0faadd146614883b715cb4f15805d946f32fb7e894f",
+      "transformed": false,
+      "bytes": 42059
+    },
+    {
+      "path": "results/gn_sharing_gap_20261116/GN共享与专用.png",
+      "origin": "Q1_GN共享代价_20261116/GN共享与专用.png",
+      "original_sha256": "4dbf31f3f690980f566298de7d68ec85f3ec41f6960c1e0ab26d78d216b2a31d",
+      "export_sha256": "4dbf31f3f690980f566298de7d68ec85f3ec41f6960c1e0ab26d78d216b2a31d",
+      "transformed": false,
+      "bytes": 122129
+    },
+    {
+      "path": "results/gn_sharing_gap_20261116/GN共享代价与区间.pdf",
+      "origin": "Q1_GN共享代价_20261116/GN共享代价与区间.pdf",
+      "original_sha256": "9bd4ec18fd5f6f007bf2f69f7b29e0c2d3f50e0cafbdd0c67ff703eef68bdd62",
+      "export_sha256": "9bd4ec18fd5f6f007bf2f69f7b29e0c2d3f50e0cafbdd0c67ff703eef68bdd62",
+      "transformed": false,
+      "bytes": 30638
+    },
+    {
+      "path": "results/gn_sharing_gap_20261116/GN共享代价与区间.png",
+      "origin": "Q1_GN共享代价_20261116/GN共享代价与区间.png",
+      "original_sha256": "ef14b5f9fb866d57ee49299cc95fe61ae5e9293c13be15561ac58cfff267922f",
+      "export_sha256": "ef14b5f9fb866d57ee49299cc95fe61ae5e9293c13be15561ac58cfff267922f",
+      "transformed": false,
+      "bytes": 64550
+    },
+    {
+      "path": "results/gn_sharing_gap_20261116/independent_audit.json",
+      "origin": "Q1_GN共享代价_20261116/independent_audit.json",
+      "original_sha256": "c4a31e8d9f143cc1087f62e666dbe4d070559a555faa912ebc25db3330da0b2d",
+      "export_sha256": "8d9b3ad38ca89b59940457b94632f7371bf408f4e8b371475a86feb9e5927e7f",
+      "transformed": true,
+      "bytes": 1560
+    },
+    {
+      "path": "experiments/gn_sharing_gap_20261116/output_calibration/affine_gn.py",
+      "origin": "Q1_GN共享代价_20261116/output_calibration/affine_gn.py",
+      "original_sha256": "a84166c48a6fcef74a08844441787afe365ae5bf4a45393ab4cdd8e13c2b74c5",
+      "export_sha256": "a84166c48a6fcef74a08844441787afe365ae5bf4a45393ab4cdd8e13c2b74c5",
+      "transformed": false,
+      "bytes": 9660
+    },
+    {
+      "path": "experiments/gn_sharing_gap_20261116/output_calibration/audit_results.py",
+      "origin": "Q1_GN共享代价_20261116/output_calibration/audit_results.py",
+      "original_sha256": "27c989956135cf4699db07ad52cda5b6a3bf3dc2287bc4074c9d22d51ff4a4ba",
+      "export_sha256": "27c989956135cf4699db07ad52cda5b6a3bf3dc2287bc4074c9d22d51ff4a4ba",
+      "transformed": false,
+      "bytes": 1553
+    },
+    {
+      "path": "results/gn_sharing_gap_20261116/output_calibration/independent_audit.json",
+      "origin": "Q1_GN共享代价_20261116/output_calibration/independent_audit.json",
+      "original_sha256": "11b0fdb01d947107dd6154ef4256e7959c0a040aee5195bb57046f2b6db52558",
+      "export_sha256": "e46f5d8ec7e24d6b78b37685270a8b2559574de705eb9980b5a69e88eb17de24",
+      "transformed": true,
+      "bytes": 344
+    },
+    {
+      "path": "results/gn_sharing_gap_20261116/output_calibration/protocol.json",
+      "origin": "Q1_GN共享代价_20261116/output_calibration/protocol.json",
+      "original_sha256": "307acbf311d7b3f7a61f0edfc50094cd762df55a48f90b60499cd451f8077fb9",
+      "export_sha256": "adcccdaad0e2fef998ca3a222360eedadfae0d3aa4390c549a6b69b3107e5117",
+      "transformed": true,
+      "bytes": 2341
+    },
+    {
+      "path": "results/gn_sharing_gap_20261116/output_calibration/results.json",
+      "origin": "Q1_GN共享代价_20261116/output_calibration/results.json",
+      "original_sha256": "765a9b846bd5b5ab7b139774236cf62714f0e4d718712379b9306fa79397ff17",
+      "export_sha256": "55379e4fc3594c8612852abce531a71fc78e5d2ddcb0ec403f661e661581a2e0",
+      "transformed": true,
+      "bytes": 15033
+    },
+    {
+      "path": "results/gn_sharing_gap_20261116/output_calibration/结果说明.md",
+      "origin": "Q1_GN共享代价_20261116/output_calibration/结果说明.md",
+      "original_sha256": "5bf593152c2935a981ba598a0c1927e95fceb5ce7ecbbcfd548518f155fce375",
+      "export_sha256": "5372215b86f7781d4806f4f60f1276a0d85f7ce483bb7cd44e987e7bc6878a05",
+      "transformed": true,
+      "bytes": 3162
+    },
+    {
+      "path": "experiments/gn_sharing_gap_20261116/plot_results.py",
+      "origin": "Q1_GN共享代价_20261116/plot_results.py",
+      "original_sha256": "9a4d2aceab82bc8c15ce16a35f618361926952a963b5f2d620f73ff999ea6d95",
+      "export_sha256": "97e9520d5c681aae3d2778116af2bf8b97bb3501706ac19da0cb21a8f7a3f7ee",
+      "transformed": true,
+      "bytes": 2599
+    },
+    {
+      "path": "results/gn_sharing_gap_20261116/protocol.json",
+      "origin": "Q1_GN共享代价_20261116/protocol.json",
+      "original_sha256": "3b8427d3b024b40701d0c5ef78c7245b0481854d49b79a61bf3ae756064ee074",
+      "export_sha256": "0320d2baea8fc419c5adea9e7a7171928ac95804d8b0e070b154d500f562dd63",
+      "transformed": true,
+      "bytes": 2040
+    },
+    {
+      "path": "results/gn_sharing_gap_20261116/README.md",
+      "origin": "Q1_GN共享代价_20261116/README.md",
+      "original_sha256": "340125c0ca19f09a2dfc3c93526f9862ea56d6bcb95857021152bf2738bf331e",
+      "export_sha256": "09ec155732f7d9f7db98db0af5e26744b696e8529f5639a00086ec287519520f",
+      "transformed": true,
+      "bytes": 2722
+    },
+    {
+      "path": "results/gn_sharing_gap_20261116/results.json",
+      "origin": "Q1_GN共享代价_20261116/results.json",
+      "original_sha256": "b88daa58db4676c99b42baa554065f19a74145c8ea6aa9fb9331da83ae35513f",
+      "export_sha256": "06f1e790c126994e2fbc3aa26679462ad1e3eedea899b38683780782c3a2bdda",
+      "transformed": true,
+      "bytes": 9355
+    },
+    {
+      "path": "experiments/gn_sharing_gap_20261116/run_gn_gap.py",
+      "origin": "Q1_GN共享代价_20261116/run_gn_gap.py",
+      "original_sha256": "d1e90dbea4534b1228d8350146a10ebc4b295cf6d5c0c8f7cfc06b435f5a93f3",
+      "export_sha256": "ff33febec1e07cb3860ffefa686682934cd409e31b1c86bcd5e414def31378ce",
+      "transformed": true,
+      "bytes": 15699
+    },
+    {
+      "path": "results/gn_sharing_gap_20261116/trace_shared.json",
+      "origin": "Q1_GN共享代价_20261116/trace_shared.json",
+      "original_sha256": "274b5bef51a7fd407edcd4ad773ca87f1382dd869233f058f109575dbdc4a551",
+      "export_sha256": "d6f131eba1f3bdccf68b8d96527c880346f085a5ea45ef2207b6f687c39cfe0c",
+      "transformed": true,
+      "bytes": 4149
+    },
+    {
+      "path": "results/gn_sharing_gap_20261116/trace_specialist_0.json",
+      "origin": "Q1_GN共享代价_20261116/trace_specialist_0.json",
+      "original_sha256": "15a7d5657bc2782dfbe63af0275cf005f94d6831e62a48b9616eb74f58f64918",
+      "export_sha256": "1cd33cac7043d6928b916eb019ae4cd49af004dabcfd6d7d9a2a2d3bdd68d350",
+      "transformed": true,
+      "bytes": 4171
+    },
+    {
+      "path": "results/gn_sharing_gap_20261116/trace_specialist_10.json",
+      "origin": "Q1_GN共享代价_20261116/trace_specialist_10.json",
+      "original_sha256": "e614d4121fa20647404344e44fa22dd05770596c2725702d5423328965a65333",
+      "export_sha256": "a6629c91081a7d025ca9e927bea6046ebb360806249b1b91db126142aec818c1",
+      "transformed": true,
+      "bytes": 4212
+    },
+    {
+      "path": "results/gn_sharing_gap_20261116/trace_specialist_20.json",
+      "origin": "Q1_GN共享代价_20261116/trace_specialist_20.json",
+      "original_sha256": "4deabdcc0f9428a719f57d395311c0e70152310ca6d85f9f30b7276324c7c0e7",
+      "export_sha256": "7410f44cf11903f0d40776f10088074b44f1e75e82b399dd0af4db31a81eae47",
+      "transformed": true,
+      "bytes": 4198
+    },
+    {
+      "path": "results/gn_sharing_gap_20261116/结果说明.md",
+      "origin": "Q1_GN共享代价_20261116/结果说明.md",
+      "original_sha256": "afcaece4202b34af8e95107cea851185f844de33498a68f847070b88614484c9",
+      "export_sha256": "152e28541387b094c50ca6dae257bae0c517ec4376377b610b3b3b8efb9438dd",
+      "transformed": true,
+      "bytes": 3058
+    },
+    {
+      "path": "simulation/affine_calib.py",
+      "origin": "affine_calib.py",
+      "original_sha256": "3125720466b8ba06f876f30a01eba8ab707c2e49111483c80f86457f54e44123",
+      "export_sha256": "a71c2e0c4184784035c450cc9e1c22052fe2381606ce153bc5c69ccc50433569",
+      "transformed": true,
+      "bytes": 2840
+    }
+  ]
+}

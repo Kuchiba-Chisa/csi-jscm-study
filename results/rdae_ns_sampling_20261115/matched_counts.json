@@ -1,0 +1,10 @@
+{
+  "length_counts_each_arm": {
+    "16": 77184,
+    "32": 77440,
+    "64": 80896
+  },
+  "steps_each_arm": 1840,
+  "batch_order_snr_standard_noise_identical": true,
+  "initialization_sha256": "36e2ae5af6ce0d9b962b38414b758605837dbef6fcdf786d8fdd0d2082358270"
+}

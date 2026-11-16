@@ -10,6 +10,8 @@
 
 本次整理验证了前两类入口。没有重新训练全部正式模型或从头重跑全部 Q2 流水线，也没有声称跨环境逐位复现历史曲线。
 
+11月15–16日新增的 GN 共享/专用、输出仿射、共享起点微调与 Ns 采样对照，集中见 [补充实验运行顺序](RECENT_EXPERIMENTS.md)。
+
 ## 2. 安装
 
 Python 3.12 为推荐运行版本。本机验证环境为 Python 3.12.14、PyTorch 2.15.0+cpu、NumPy 2.5.4、Matplotlib 3.11.2。`requirements.txt`是兼容范围，不是完整锁定环境；不同版本、设备及随机实现可能产生数值差别。CI 配置已提供，本次未在 GitHub 上执行。
@@ -25,6 +27,7 @@ python -m pip install -r requirements-optional.txt
 
 ```bash
 python scripts/smoke_check.py
+python scripts/smoke_recent.py
 python scripts/show_results.py
 ```
 

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "original_files_unchanged": true,
+  "paired_y_raw_target_identical": true,
+  "only_decoder_bn_buffers_changed": true,
+  "length_counts_identical_per_epoch": true,
+  "training_seconds_both_arms": 1286.264394400001,
+  "total_seconds_before_report": 1434.0964478000024
+}

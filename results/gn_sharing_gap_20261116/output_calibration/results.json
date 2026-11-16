@@ -1,0 +1,448 @@
+{
+  "protocol": {
+    "models": [
+      [
+        "shared",
+        0
+      ],
+      [
+        "shared",
+        10
+      ],
+      [
+        "shared",
+        20
+      ],
+      [
+        "specialist_0",
+        0
+      ],
+      [
+        "specialist_10",
+        10
+      ],
+      [
+        "specialist_20",
+        20
+      ]
+    ],
+    "fit": "one global real affine and scale-only pair per model/SNR; FP32 coefficients",
+    "val_fit_H": 1000,
+    "val_noise_repeats": 3,
+    "val_noise_seed_base": 150000,
+    "test_H": 1000,
+    "test_noise_repeats": 3,
+    "test_noise_seed_base": 50000,
+    "power": "parent experiment train-only fixed actual-Ptx references, unchanged",
+    "fit_objective": "global elementwise MSE, not mean per-H NMSEdB",
+    "comparison": "both shared and specialist calibrated on val separately, no test fitting",
+    "source_sha256": {
+      "experiments/gn_sharing_gap_20261116\\results.json": "b88daa58db4676c99b42baa554065f19a74145c8ea6aa9fb9331da83ae35513f",
+      "experiments/gn_sharing_gap_20261116\\observations.npz": "4d27618be3b9fab7d885ae584547c0586c84aaf632a313ef4272c4562a73593f",
+      "experiments/gn_sharing_gap_20261116\\protocol.json": "3b8427d3b024b40701d0c5ef78c7245b0481854d49b79a61bf3ae756064ee074",
+      "experiments/gn_sharing_gap_20261116\\run_gn_gap.py": "d1e90dbea4534b1228d8350146a10ebc4b295cf6d5c0c8f7cfc06b435f5a93f3",
+      "experiments/gn_sharing_gap_20261116\\checkpoints\\shared.pt": "4c3d478435eef07a03831ca8b433f86323db1d9e11d98925763ec4d648552ffd",
+      "experiments/gn_sharing_gap_20261116\\checkpoints\\specialist_0.pt": "20f21d99fa1a8060efe0f094b9c5549930e0e8df84283385e78f90dc260802b0",
+      "experiments/gn_sharing_gap_20261116\\checkpoints\\specialist_10.pt": "d7fe9b1a6d095355fa346a3a7a8ba48cadebd035e3a30364f6190c25452ea61c",
+      "experiments/gn_sharing_gap_20261116\\checkpoints\\specialist_20.pt": "3c8cad8c286bede865edae219f947d376fa21a9723d290cdbcf6c86d3b8ce620",
+      "simulation\\data\\train.npz": "2260eece04ecfb09614f5c792753d5edf154227359e00c7ad336e3e37c460730",
+      "simulation\\data\\val.npz": "a6383947831f883c74c23faa92d1d2ae2e28b9fb30108268006d32cf4d6b4e6e",
+      "simulation\\data\\test.npz": "39483486ca1e0f243498e9f71916351f3d1fa3efdb2deab989722ca8ee6c4f7f"
+    },
+    "script_sha256": "a84166c48a6fcef74a08844441787afe365ae5bf4a45393ab4cdd8e13c2b74c5",
+    "limits": "one training seed; same historical synthetic data; scalar scaling does not improve SGCS"
+  },
+  "results": {
+    "shared": {
+      "0": {
+        "coefficients": {
+          "a": 0.9486691951751709,
+          "b": 0.0009200621861964464,
+          "scale_a": 0.948665201663971
+        },
+        "train_power_reference": 0.8021436929702759,
+        "raw": {
+          "mean_nmse_db": -2.046783924102783,
+          "db_mean_linear_nmse": -1.9210023880004883,
+          "sgcs": 0.38524454832077026
+        },
+        "scale_only": {
+          "mean_nmse_db": -2.0468156337738037,
+          "db_mean_linear_nmse": -1.92779541015625,
+          "sgcs": 0.38524454832077026
+        },
+        "affine": {
+          "mean_nmse_db": -2.0467398166656494,
+          "db_mean_linear_nmse": -1.9277384281158447,
+          "sgcs": 0.3852320909500122
+        }
+      },
+      "10": {
+        "coefficients": {
+          "a": 0.9917188882827759,
+          "b": 0.0007220358238555491,
+          "scale_a": 0.991719126701355
+        },
+        "train_power_reference": 0.8031311631202698,
+        "raw": {
+          "mean_nmse_db": -4.170478820800781,
+          "db_mean_linear_nmse": -3.7857577800750732,
+          "sgcs": 0.5981281399726868
+        },
+        "scale_only": {
+          "mean_nmse_db": -4.169750213623047,
+          "db_mean_linear_nmse": -3.786463499069214,
+          "sgcs": 0.5981281995773315
+        },
+        "affine": {
+          "mean_nmse_db": -4.1696248054504395,
+          "db_mean_linear_nmse": -3.7863688468933105,
+          "sgcs": 0.5981167554855347
+        }
+      },
+      "20": {
+        "coefficients": {
+          "a": 0.976616621017456,
+          "b": -0.000491802638862282,
+          "scale_a": 0.9766077995300293
+        },
+        "train_power_reference": 0.8039312362670898,
+        "raw": {
+          "mean_nmse_db": -4.5530219078063965,
+          "db_mean_linear_nmse": -4.097119331359863,
+          "sgcs": 0.6273482441902161
+        },
+        "scale_only": {
+          "mean_nmse_db": -4.554477691650391,
+          "db_mean_linear_nmse": -4.102231025695801,
+          "sgcs": 0.6273482441902161
+        },
+        "affine": {
+          "mean_nmse_db": -4.5546464920043945,
+          "db_mean_linear_nmse": -4.102359294891357,
+          "sgcs": 0.6273608207702637
+        }
+      }
+    },
+    "specialist_0": {
+      "0": {
+        "coefficients": {
+          "a": 0.9775723218917847,
+          "b": 0.0008753988659009337,
+          "scale_a": 0.977569580078125
+        },
+        "train_power_reference": 0.8256749510765076,
+        "raw": {
+          "mean_nmse_db": -2.35819673538208,
+          "db_mean_linear_nmse": -2.1809120178222656,
+          "sgcs": 0.4277075231075287
+        },
+        "scale_only": {
+          "mean_nmse_db": -2.3565573692321777,
+          "db_mean_linear_nmse": -2.181690216064453,
+          "sgcs": 0.4277075231075287
+        },
+        "affine": {
+          "mean_nmse_db": -2.3563387393951416,
+          "db_mean_linear_nmse": -2.1816015243530273,
+          "sgcs": 0.42768919467926025
+        }
+      }
+    },
+    "specialist_10": {
+      "10": {
+        "coefficients": {
+          "a": 0.9798018336296082,
+          "b": 0.0003253890899941325,
+          "scale_a": 0.9798039793968201
+        },
+        "train_power_reference": 0.7982332110404968,
+        "raw": {
+          "mean_nmse_db": -4.114986419677734,
+          "db_mean_linear_nmse": -3.7529704570770264,
+          "sgcs": 0.5949928164482117
+        },
+        "scale_only": {
+          "mean_nmse_db": -4.113165378570557,
+          "db_mean_linear_nmse": -3.755669355392456,
+          "sgcs": 0.5949928164482117
+        },
+        "affine": {
+          "mean_nmse_db": -4.113133907318115,
+          "db_mean_linear_nmse": -3.75563383102417,
+          "sgcs": 0.5949879884719849
+        }
+      }
+    },
+    "specialist_20": {
+      "20": {
+        "coefficients": {
+          "a": 0.9795831441879272,
+          "b": 0.00037428343784995377,
+          "scale_a": 0.9795851707458496
+        },
+        "train_power_reference": 0.7969498634338379,
+        "raw": {
+          "mean_nmse_db": -4.5212721824646,
+          "db_mean_linear_nmse": -4.055097579956055,
+          "sgcs": 0.6206210255622864
+        },
+        "scale_only": {
+          "mean_nmse_db": -4.516923904418945,
+          "db_mean_linear_nmse": -4.058682918548584,
+          "sgcs": 0.6206210255622864
+        },
+        "affine": {
+          "mean_nmse_db": -4.516894340515137,
+          "db_mean_linear_nmse": -4.0586419105529785,
+          "sgcs": 0.6206172108650208
+        }
+      }
+    }
+  },
+  "gaps": {
+    "0": {
+      "raw": {
+        "nmse_shared_minus_specialist": {
+          "mean": 0.31141266226768494,
+          "H_cluster_CI95": [
+            0.27025685757398604,
+            0.3510863929986954
+          ],
+          "uncertainty": "test H resampling only; not retraining-seed uncertainty"
+        },
+        "sgcs_specialist_minus_shared": {
+          "mean": 0.04246292635798454,
+          "H_cluster_CI95": [
+            0.0372868575155735,
+            0.047413792461156845
+          ],
+          "uncertainty": "test H resampling only; not retraining-seed uncertainty"
+        }
+      },
+      "scale_only": {
+        "nmse_shared_minus_specialist": {
+          "mean": 0.30974191427230835,
+          "H_cluster_CI95": [
+            0.269129591435194,
+            0.34963580742478373
+          ],
+          "uncertainty": "test H resampling only; not retraining-seed uncertainty"
+        },
+        "sgcs_specialist_minus_shared": {
+          "mean": 0.04246292635798454,
+          "H_cluster_CI95": [
+            0.03728685388341546,
+            0.047413792461156845
+          ],
+          "uncertainty": "test H resampling only; not retraining-seed uncertainty"
+        }
+      },
+      "affine": {
+        "nmse_shared_minus_specialist": {
+          "mean": 0.3095991313457489,
+          "H_cluster_CI95": [
+            0.2690334051847458,
+            0.3494574807584286
+          ],
+          "uncertainty": "test H resampling only; not retraining-seed uncertainty"
+        },
+        "sgcs_specialist_minus_shared": {
+          "mean": 0.04245712235569954,
+          "H_cluster_CI95": [
+            0.037281564064323904,
+            0.047399744298309086
+          ],
+          "uncertainty": "test H resampling only; not retraining-seed uncertainty"
+        }
+      },
+      "gap_reduction_affine": {
+        "mean": 0.0018135557183995843,
+        "H_cluster_CI95": [
+          1.946871161635501e-05,
+          0.003578669624403119
+        ],
+        "uncertainty": "test H resampling only; not retraining-seed uncertainty"
+      }
+    },
+    "10": {
+      "raw": {
+        "nmse_shared_minus_specialist": {
+          "mean": -0.055492646992206573,
+          "H_cluster_CI95": [
+            -0.10231652799993754,
+            -0.011009114445187141
+          ],
+          "uncertainty": "test H resampling only; not retraining-seed uncertainty"
+        },
+        "sgcs_specialist_minus_shared": {
+          "mean": -0.0031353686936199665,
+          "H_cluster_CI95": [
+            -0.00728926908923313,
+            0.0007128972676582636
+          ],
+          "uncertainty": "test H resampling only; not retraining-seed uncertainty"
+        }
+      },
+      "scale_only": {
+        "nmse_shared_minus_specialist": {
+          "mean": -0.05658425763249397,
+          "H_cluster_CI95": [
+            -0.10326096210628748,
+            -0.011841590725816767
+          ],
+          "uncertainty": "test H resampling only; not retraining-seed uncertainty"
+        },
+        "sgcs_specialist_minus_shared": {
+          "mean": -0.0031353712547570467,
+          "H_cluster_CI95": [
+            -0.007289271871559322,
+            0.0007128968383767644
+          ],
+          "uncertainty": "test H resampling only; not retraining-seed uncertainty"
+        }
+      },
+      "affine": {
+        "nmse_shared_minus_specialist": {
+          "mean": -0.05649103596806526,
+          "H_cluster_CI95": [
+            -0.10322237778455019,
+            -0.0117517343489453
+          ],
+          "uncertainty": "test H resampling only; not retraining-seed uncertainty"
+        },
+        "sgcs_specialist_minus_shared": {
+          "mean": -0.0031287665478885174,
+          "H_cluster_CI95": [
+            -0.007278769055847078,
+            0.0007132794198696507
+          ],
+          "uncertainty": "test H resampling only; not retraining-seed uncertainty"
+        }
+      },
+      "gap_reduction_affine": {
+        "mean": 0.0009983860654756427,
+        "H_cluster_CI95": [
+          -0.00046064147099968974,
+          0.002524744858965278
+        ],
+        "uncertainty": "test H resampling only; not retraining-seed uncertainty"
+      }
+    },
+    "20": {
+      "raw": {
+        "nmse_shared_minus_specialist": {
+          "mean": -0.031749919056892395,
+          "H_cluster_CI95": [
+            -0.07748546823859215,
+            0.012789342412725096
+          ],
+          "uncertainty": "test H resampling only; not retraining-seed uncertainty"
+        },
+        "sgcs_specialist_minus_shared": {
+          "mean": -0.006727265194058418,
+          "H_cluster_CI95": [
+            -0.010669146897271276,
+            -0.0030059357348363835
+          ],
+          "uncertainty": "test H resampling only; not retraining-seed uncertainty"
+        }
+      },
+      "scale_only": {
+        "nmse_shared_minus_specialist": {
+          "mean": -0.03755427524447441,
+          "H_cluster_CI95": [
+            -0.08322730436921119,
+            0.006733684334903956
+          ],
+          "uncertainty": "test H resampling only; not retraining-seed uncertainty"
+        },
+        "sgcs_specialist_minus_shared": {
+          "mean": -0.006727263331413269,
+          "H_cluster_CI95": [
+            -0.010669145081192256,
+            -0.003005936858244239
+          ],
+          "uncertainty": "test H resampling only; not retraining-seed uncertainty"
+        }
+      },
+      "affine": {
+        "nmse_shared_minus_specialist": {
+          "mean": -0.03775235638022423,
+          "H_cluster_CI95": [
+            -0.08335852790623903,
+            0.006351751007605358
+          ],
+          "uncertainty": "test H resampling only; not retraining-seed uncertainty"
+        },
+        "sgcs_specialist_minus_shared": {
+          "mean": -0.006743588484823704,
+          "H_cluster_CI95": [
+            -0.010678312252275645,
+            -0.0030325523577630496
+          ],
+          "uncertainty": "test H resampling only; not retraining-seed uncertainty"
+        }
+      },
+      "gap_reduction_affine": {
+        "mean": 0.006002443376928568,
+        "H_cluster_CI95": [
+          0.0031901937327347696,
+          0.008947821543551981
+        ],
+        "uncertainty": "test H resampling only; not retraining-seed uncertainty"
+      }
+    }
+  },
+  "seconds": 16.200544499999523,
+  "audit": {
+    "original_files_unchanged": true,
+    "weights_unchanged": true,
+    "raw_max_per_observation_replay_error_db": 9.5367431640625e-07,
+    "scale_only_SGCS_max_absolute_difference": 2.384185791015625e-07,
+    "validation_normal_equations": [
+      {
+        "model": "shared",
+        "snr": 0,
+        "scale_residual_times_pred_mean": 6.670433956301735e-10,
+        "affine_residual_mean": -2.788573827405827e-11,
+        "affine_residual_times_pred_mean": 8.424446246898161e-10
+      },
+      {
+        "model": "shared",
+        "snr": 10,
+        "scale_residual_times_pred_mean": -9.371300924987392e-10,
+        "affine_residual_mean": 7.817343513257432e-12,
+        "affine_residual_times_pred_mean": 7.511277041645966e-10
+      },
+      {
+        "model": "shared",
+        "snr": 20,
+        "scale_residual_times_pred_mean": -1.8411829423558198e-09,
+        "affine_residual_mean": 1.2553415362770438e-11,
+        "affine_residual_times_pred_mean": -8.450742342939559e-11
+      },
+      {
+        "model": "specialist_0",
+        "snr": 0,
+        "scale_residual_times_pred_mean": 9.124756157191661e-10,
+        "affine_residual_mean": -1.1678044346356369e-11,
+        "affine_residual_times_pred_mean": -6.687323119887919e-10
+      },
+      {
+        "model": "specialist_10",
+        "snr": 10,
+        "scale_residual_times_pred_mean": -1.4374095398210034e-09,
+        "affine_residual_mean": 7.821860936729763e-13,
+        "affine_residual_times_pred_mean": 1.8449782018536975e-09
+      },
+      {
+        "model": "specialist_20",
+        "snr": 20,
+        "scale_residual_times_pred_mean": -2.6911716168032116e-10,
+        "affine_residual_mean": -1.1842790155943325e-11,
+        "affine_residual_times_pred_mean": -3.43527219059947e-10
+      }
+    ]
+  }
+}

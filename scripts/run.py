@@ -73,7 +73,7 @@ def main():
     gen=sub.add_parser('generate',help='generate the original synthetic splits')
     gen.add_argument('--small',action='store_true',help='256/64/64 H; smoke only')
     train=sub.add_parser('train',help='isolated core training entry point',add_help=False)
-    train.add_argument('model',choices=('bn','gn','stage-a','distill'))
+    train.add_argument('model',choices=('bn','gn','stage-a','distill','affine'))
     exp=sub.add_parser('experiment',help='run a research script; prerequisites vary',add_help=False)
     exp.add_argument('name',choices=sorted(p.name for p in (REPO/'experiments').iterdir() if p.is_dir()))
     exp.add_argument('script',help='a .py filename in that experiment directory')
@@ -84,12 +84,14 @@ def main():
     root=stage(args.run_dir)
     if args.command=='generate':return generate(root,args.small)
     if args.command=='train':
-        name={'bn':'train_rdae.py','gn':'train_rdae_gn.py','stage-a':'run_experiments.py','distill':'distill.py'}[args.model]
+        name={'bn':'train_rdae.py','gn':'train_rdae_gn.py','stage-a':'run_experiments.py','distill':'distill.py','affine':'affine_calib.py'}[args.model]
         script=root/'simulation'/name
     else:
-        if Path(args.script).name!=args.script or not args.script.endswith('.py'):
-            parser.error('script must be a plain .py filename')
-        script=root/'experiments'/args.name/args.script
+        relative=Path(args.script)
+        base=(root/'experiments'/args.name).resolve()
+        script=(base/relative).resolve()
+        if relative.is_absolute() or '..' in relative.parts or not script.is_relative_to(base) or script.suffix!='.py':
+            parser.error('script must be a relative .py path within the chosen experiment')
         if not script.is_file():parser.error('unknown script')
     if '--help' not in extra and '-h' not in extra:
         if not (root/'simulation/data/train.npz').is_file():

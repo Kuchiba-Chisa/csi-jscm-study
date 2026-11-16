@@ -1,0 +1,11 @@
+{
+  "forward_equivalence": {
+    "max_absolute_forward_difference": 4.76837158203125e-06,
+    "GN_layers": 18,
+    "BN_layers": 0
+  },
+  "identical_initial_state_sha256": "14b56e44a8b4bab8784669238e46a5e16ba9b2b7032b2b1815d97448995a1a04",
+  "source_hashes_unchanged": true,
+  "paired_eval_noise_hashes_verified": true,
+  "all_results_finite": true
+}

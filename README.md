@@ -37,6 +37,7 @@ Q1 先比较各条件下的平均重建误差，检验训练目标和 BN 统计�
 |---|---|
 | 场景、联合训练与两个问题的联系 | [研究流程](docs/METHOD.md) |
 | 主要结果及实验条件 | [结果说明](docs/RESULTS.md) |
+| 最新 Q1 实验与运行顺序 | [补充实验索引](docs/RECENT_EXPERIMENTS.md) |
 | 对照公式阅读实现 | [代码导读](docs/study/03_主要代码导读.md)、[公式推导](docs/study/04_公式推导与代码对应.md) |
 | 环境安装与运行顺序 | [复现说明](docs/REPRODUCING.md) |
 | 引用与改编来源 | [文献及第三方来源](THIRD_PARTY_NOTICES.md) |
@@ -54,6 +55,7 @@ python -m pip install -r requirements.txt
 
 # 检查链路、STE 梯度和接收端 BN 重统计
 python scripts/smoke_check.py
+python scripts/smoke_recent.py
 
 # 读取已有 BN / GN 三种子结果
 python scripts/show_results.py
@@ -79,6 +81,8 @@ runs/          新运行的输出，默认不提交
 ## 主要结果
 
 - **共享代价：** 前期 64 实符号模型的差距集中在低 SNR。蒸馏和重加权能够改善低 SNR，但伴随中高 SNR 的性能取舍。
+- **训练策略：** 后期含 BN 的 RD-AE 固定 `Ns=64` 对照中，重加权将 0 dB 共享差距从 **0.370 缩至 0.032 dB**，20 dB 有退步；单种子结果。共享起点蒸馏相对同预算普通微调没有稳定额外优势。
+- **GN 与输出校准：** 新的固定长度、逐样本 SNR 对照中，GN 在 0 dB 仍有约 **0.311 dB** 共享差距。输出仿射在这组 GN 上基本无效；前期 CNN 的约0.47 dB NMSE收益不改变 SGCS，不能外推为方向或吞吐改善。
 - **BN 与 GN：** 后期统一评估中，`Ns=16`、10/20 dB 时，目标重标定 BN 比 GN 分别好约 **0.203/0.221 dB**；`Ns=64` 中高 SNR 时，GN 均值略优。
 - **质量判断：** BS 质量头利用解码特征优于直接输入 y；当前配置下，UE 代理的判断更准确。
 - **选择性处理：** 本地精修和 UE 预检后的重复发送在特定条件下减少超门限样本，收益随处理动作、SNR 和评价目标变化。
